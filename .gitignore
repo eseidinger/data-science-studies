@@ -47,3 +47,9 @@ htmlcov/
 .pylint.d/
 
 # Local environment
+
+# PyTorch Models
+*.pth
+
+# PyTorch Data
+notebooks/data/

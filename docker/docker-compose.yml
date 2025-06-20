@@ -1,0 +1,17 @@
+services:
+  tensorflow-jupyter:
+    image: nvcr.io/nvidia/tensorflow:25.02-tf2-py3
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../notebooks:/tf/notebooks
+    restart: unless-stopped
+    command: >
+      jupyter lab --notebook-dir=/tf/notebooks --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
