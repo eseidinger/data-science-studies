@@ -39,5 +39,5 @@ see <https://docs.docker.com/compose/how-tos/gpu-support/>
 
 Pull NVIDIA TensorFlow Image.
 
-see <https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow>
+see <https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow>  
 see <https://docs.nvidia.com/ngc/gpu-cloud/ngc-catalog-user-guide/index.html>
