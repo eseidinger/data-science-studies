@@ -53,3 +53,5 @@ htmlcov/
 
 # PyTorch Data
 notebooks/data/
+
+MNIST_data/
