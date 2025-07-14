@@ -59,3 +59,6 @@ F_MNIST_data/
 Cat_Dog_data/
 Cat_Dog_data.zip
 CIFAR10/
+
+**/6-identify_customer_segments/*.csv
+**/6-identify_customer_segments/*.md
