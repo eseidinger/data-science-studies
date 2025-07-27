@@ -1,0 +1,24 @@
+This file contains informations about the dataset employee_satisfaction.csv
+
+
++------------------+----------------------------------------------------------------------------------------------------------+
+|   column_name    |                                                description                                               |
++------------------+----------------------------------------------------------------------------------------------------------+
+| emp_id           |  ID, die die Angestellten eindeutig identifiziert                                                        |
+| age              |  Alter der Angestellten                                                                                  |
+| Dept             |  Abteilung der Angestellten                                                                              |
+| education        |  Ausbildungsgrad der Angestellten, UG=Undergraduate (all postsecondary programs up to the level of a     |
+|                  |       bachelor's degree), PG=Postgraduate (qualifications for which a first or bachelor's degree         |
+|                  |       generally is required, normally considered to be part of higher education)                         |
+| recruitment_type |  Art der Rekrutierung                                                                                    |
+| job_level        |  1 ist die niedrigste Stufe und 5 die höchste                                                            |
+| rating           |  Bewertung der Angestellten aus dem letzten Jahr, 1 ist die schlechteste und 5 die beste Bewertung       |
+| awards           |  Anzahl der Auszeichnungen                                                                               |
+| certifications   |  Zertifizierungsstatus: 1=zertifiziert, 0=nicht zertifiziert                                             |
+| salary           |  Netto-Gehalt, Angabe in Euro                                                                            |
+| gender           |  Geschlecht                                                                                              |
+| entry_date       |  Datum, zu dem die Angestellten bei der Firma begonnen haben                                             |
+| last_raise       |  Prozentsatz der letzten Gehaltserhöhung                                                                 |
+| satisfied        |  Zufriedenheit: 1=zufrieden, 0=unzufrieden                                                               |
++------------------+----------------------------------------------------------------------------------------------------------+
+

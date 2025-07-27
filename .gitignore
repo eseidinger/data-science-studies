@@ -62,3 +62,5 @@ CIFAR10/
 
 **/6-identify_customer_segments/*.csv
 **/6-identify_customer_segments/*.md
+
+projects.csv

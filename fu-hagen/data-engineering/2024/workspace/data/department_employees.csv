@@ -1,0 +1,499 @@
+department_name,employee_id,department_city,department_zip_code,employee_satisfied
+HR,0,Frankfurt a.M.,60306,1
+HR,4,Frankfurt a.M.,60306,1
+HR,8,Frankfurt a.M.,60306,1
+HR,18,Frankfurt a.M.,60306,1
+HR,20,Frankfurt a.M.,60306,1
+HR,21,Frankfurt a.M.,60306,1
+HR,42,Frankfurt a.M.,60306,0
+HR,43,Frankfurt a.M.,60306,1
+HR,47,Frankfurt a.M.,60306,1
+HR,49,Frankfurt a.M.,60306,0
+HR,50,Frankfurt a.M.,60306,1
+HR,51,Frankfurt a.M.,60306,1
+HR,67,Frankfurt a.M.,60306,0
+HR,69,Frankfurt a.M.,60306,1
+HR,70,Frankfurt a.M.,60306,0
+HR,71,Frankfurt a.M.,60306,0
+HR,74,Frankfurt a.M.,60306,1
+HR,91,Frankfurt a.M.,60306,1
+HR,94,Frankfurt a.M.,60306,1
+HR,95,Frankfurt a.M.,60306,0
+HR,96,Frankfurt a.M.,60306,1
+HR,108,Frankfurt a.M.,60306,1
+HR,115,Frankfurt a.M.,60306,0
+HR,116,Frankfurt a.M.,60306,0
+HR,118,Frankfurt a.M.,60306,1
+HR,122,Frankfurt a.M.,60306,1
+HR,125,Frankfurt a.M.,60306,1
+HR,127,Frankfurt a.M.,60306,0
+HR,129,Frankfurt a.M.,60306,1
+HR,131,Frankfurt a.M.,60306,1
+HR,134,Frankfurt a.M.,60306,1
+HR,145,Frankfurt a.M.,60306,0
+HR,147,Frankfurt a.M.,60306,1
+HR,148,Frankfurt a.M.,60306,1
+HR,153,Frankfurt a.M.,60306,1
+HR,154,Frankfurt a.M.,60306,0
+HR,164,Frankfurt a.M.,60306,1
+HR,168,Frankfurt a.M.,60306,1
+HR,169,Frankfurt a.M.,60306,1
+HR,184,Frankfurt a.M.,60306,0
+HR,185,Frankfurt a.M.,60306,0
+HR,189,Frankfurt a.M.,60306,1
+HR,194,Frankfurt a.M.,60306,0
+HR,196,Frankfurt a.M.,60306,1
+HR,208,Frankfurt a.M.,60306,1
+HR,212,Frankfurt a.M.,60306,1
+HR,229,Frankfurt a.M.,60306,0
+HR,231,Frankfurt a.M.,60306,1
+HR,235,Frankfurt a.M.,60306,0
+HR,239,Frankfurt a.M.,60306,1
+HR,241,Frankfurt a.M.,60306,1
+HR,242,Frankfurt a.M.,60306,0
+HR,245,Frankfurt a.M.,60306,1
+HR,248,Frankfurt a.M.,60306,0
+HR,249,Frankfurt a.M.,60306,1
+HR,268,Frankfurt a.M.,60306,1
+HR,272,Frankfurt a.M.,60306,1
+HR,273,Frankfurt a.M.,60306,0
+HR,276,Frankfurt a.M.,60306,1
+HR,277,Frankfurt a.M.,60306,1
+HR,280,Frankfurt a.M.,60306,1
+HR,284,Frankfurt a.M.,60306,1
+HR,289,Frankfurt a.M.,60306,1
+HR,293,Frankfurt a.M.,60306,0
+HR,302,Frankfurt a.M.,60306,1
+HR,303,Frankfurt a.M.,60306,1
+HR,308,Frankfurt a.M.,60306,1
+HR,318,Frankfurt a.M.,60306,1
+HR,320,Frankfurt a.M.,60306,0
+HR,332,Frankfurt a.M.,60306,1
+HR,334,Frankfurt a.M.,60306,1
+HR,336,Frankfurt a.M.,60306,0
+HR,344,Frankfurt a.M.,60306,1
+HR,354,Frankfurt a.M.,60306,0
+HR,356,Frankfurt a.M.,60306,0
+HR,357,Frankfurt a.M.,60306,1
+HR,358,Frankfurt a.M.,60306,1
+HR,361,Frankfurt a.M.,60306,1
+HR,368,Frankfurt a.M.,60306,1
+HR,373,Frankfurt a.M.,60306,1
+HR,377,Frankfurt a.M.,60306,0
+HR,388,Frankfurt a.M.,60306,1
+HR,391,Frankfurt a.M.,60306,1
+HR,395,Frankfurt a.M.,60306,1
+HR,396,Frankfurt a.M.,60306,1
+HR,397,Frankfurt a.M.,60306,1
+HR,398,Frankfurt a.M.,60306,0
+HR,399,Frankfurt a.M.,60306,0
+HR,409,Frankfurt a.M.,60306,1
+HR,414,Frankfurt a.M.,60306,1
+HR,415,Frankfurt a.M.,60306,1
+HR,419,Frankfurt a.M.,60306,0
+HR,426,Frankfurt a.M.,60306,1
+HR,456,Frankfurt a.M.,60306,1
+HR,457,Frankfurt a.M.,60306,0
+HR,467,Frankfurt a.M.,60306,0
+HR,470,Frankfurt a.M.,60306,0
+HR,473,Frankfurt a.M.,60306,0
+HR,475,Frankfurt a.M.,60306,1
+HR,480,Frankfurt a.M.,60306,1
+HR,481,Frankfurt a.M.,60306,0
+HR,484,Frankfurt a.M.,60306,1
+HR,486,Frankfurt a.M.,60306,1
+HR,489,Frankfurt a.M.,60306,1
+HR,492,Frankfurt a.M.,60306,1
+HR,495,Frankfurt a.M.,60306,1
+Marketing,10,Berlin,10115,1
+Marketing,16,Berlin,10115,0
+Marketing,26,Berlin,10115,1
+Marketing,29,Berlin,10115,1
+Marketing,32,Berlin,10115,1
+Marketing,33,Berlin,10115,1
+Marketing,44,Berlin,10115,1
+Marketing,60,Berlin,10115,1
+Marketing,64,Berlin,10115,1
+Marketing,65,Berlin,10115,1
+Marketing,73,Berlin,10115,1
+Marketing,75,Berlin,10115,1
+Marketing,93,Berlin,10115,0
+Marketing,103,Berlin,10115,0
+Marketing,106,Berlin,10115,1
+Marketing,112,Berlin,10115,0
+Marketing,119,Berlin,10115,0
+Marketing,123,Berlin,10115,0
+Marketing,124,Berlin,10115,1
+Marketing,130,Berlin,10115,1
+Marketing,137,Berlin,10115,1
+Marketing,144,Berlin,10115,1
+Marketing,149,Berlin,10115,0
+Marketing,160,Berlin,10115,0
+Marketing,161,Berlin,10115,0
+Marketing,167,Berlin,10115,1
+Marketing,173,Berlin,10115,1
+Marketing,174,Berlin,10115,0
+Marketing,180,Berlin,10115,0
+Marketing,181,Berlin,10115,1
+Marketing,204,Berlin,10115,1
+Marketing,205,Berlin,10115,0
+Marketing,206,Berlin,10115,1
+Marketing,207,Berlin,10115,1
+Marketing,209,Berlin,10115,0
+Marketing,213,Berlin,10115,1
+Marketing,214,Berlin,10115,1
+Marketing,220,Berlin,10115,0
+Marketing,221,Berlin,10115,1
+Marketing,238,Berlin,10115,1
+Marketing,243,Berlin,10115,0
+Marketing,250,Berlin,10115,1
+Marketing,258,Berlin,10115,0
+Marketing,259,Berlin,10115,0
+Marketing,260,Berlin,10115,0
+Marketing,261,Berlin,10115,0
+Marketing,266,Berlin,10115,0
+Marketing,267,Berlin,10115,1
+Marketing,283,Berlin,10115,1
+Marketing,291,Berlin,10115,1
+Marketing,298,Berlin,10115,1
+Marketing,299,Berlin,10115,0
+Marketing,307,Berlin,10115,1
+Marketing,309,Berlin,10115,1
+Marketing,310,Berlin,10115,1
+Marketing,316,Berlin,10115,1
+Marketing,319,Berlin,10115,0
+Marketing,322,Berlin,10115,0
+Marketing,324,Berlin,10115,1
+Marketing,330,Berlin,10115,1
+Marketing,339,Berlin,10115,1
+Marketing,342,Berlin,10115,1
+Marketing,343,Berlin,10115,1
+Marketing,359,Berlin,10115,0
+Marketing,360,Berlin,10115,0
+Marketing,367,Berlin,10115,1
+Marketing,371,Berlin,10115,1
+Marketing,372,Berlin,10115,0
+Marketing,376,Berlin,10115,1
+Marketing,380,Berlin,10115,1
+Marketing,384,Berlin,10115,0
+Marketing,385,Berlin,10115,1
+Marketing,393,Berlin,10115,1
+Marketing,402,Berlin,10115,1
+Marketing,403,Berlin,10115,1
+Marketing,404,Berlin,10115,1
+Marketing,405,Berlin,10115,1
+Marketing,411,Berlin,10115,0
+Marketing,418,Berlin,10115,0
+Marketing,424,Berlin,10115,1
+Marketing,438,Berlin,10115,1
+Marketing,439,Berlin,10115,0
+Marketing,440,Berlin,10115,0
+Marketing,444,Berlin,10115,1
+Marketing,445,Berlin,10115,1
+Marketing,448,Berlin,10115,0
+Marketing,451,Berlin,10115,1
+Marketing,459,Berlin,10115,1
+Marketing,471,Berlin,10115,1
+Marketing,474,Berlin,10115,1
+Marketing,482,Berlin,10115,1
+Marketing,493,Berlin,10115,0
+Marketing,497,Berlin,10115,1
+Purchasing,5,München,80331,1
+Purchasing,6,München,80331,1
+Purchasing,13,München,80331,1
+Purchasing,14,München,80331,1
+Purchasing,15,München,80331,1
+Purchasing,17,München,80331,1
+Purchasing,22,München,80331,1
+Purchasing,27,München,80331,0
+Purchasing,34,München,80331,1
+Purchasing,35,München,80331,1
+Purchasing,41,München,80331,1
+Purchasing,45,München,80331,1
+Purchasing,52,München,80331,0
+Purchasing,55,München,80331,1
+Purchasing,56,München,80331,1
+Purchasing,57,München,80331,1
+Purchasing,58,München,80331,1
+Purchasing,59,München,80331,0
+Purchasing,62,München,80331,1
+Purchasing,72,München,80331,0
+Purchasing,80,München,80331,1
+Purchasing,90,München,80331,0
+Purchasing,97,München,80331,0
+Purchasing,99,München,80331,1
+Purchasing,101,München,80331,1
+Purchasing,102,München,80331,1
+Purchasing,104,München,80331,1
+Purchasing,107,München,80331,1
+Purchasing,113,München,80331,0
+Purchasing,114,München,80331,1
+Purchasing,120,München,80331,1
+Purchasing,126,München,80331,1
+Purchasing,132,München,80331,0
+Purchasing,133,München,80331,1
+Purchasing,135,München,80331,1
+Purchasing,136,München,80331,1
+Purchasing,138,München,80331,1
+Purchasing,139,München,80331,0
+Purchasing,140,München,80331,0
+Purchasing,141,München,80331,0
+Purchasing,146,München,80331,0
+Purchasing,150,München,80331,1
+Purchasing,151,München,80331,1
+Purchasing,166,München,80331,1
+Purchasing,170,München,80331,1
+Purchasing,171,München,80331,0
+Purchasing,190,München,80331,1
+Purchasing,191,München,80331,1
+Purchasing,199,München,80331,1
+Purchasing,201,München,80331,0
+Purchasing,203,München,80331,0
+Purchasing,216,München,80331,1
+Purchasing,218,München,80331,0
+Purchasing,222,München,80331,1
+Purchasing,223,München,80331,1
+Purchasing,227,München,80331,0
+Purchasing,228,München,80331,0
+Purchasing,230,München,80331,1
+Purchasing,237,München,80331,1
+Purchasing,244,München,80331,1
+Purchasing,251,München,80331,1
+Purchasing,256,München,80331,0
+Purchasing,263,München,80331,0
+Purchasing,269,München,80331,1
+Purchasing,278,München,80331,1
+Purchasing,285,München,80331,1
+Purchasing,294,München,80331,1
+Purchasing,300,München,80331,1
+Purchasing,301,München,80331,1
+Purchasing,304,München,80331,1
+Purchasing,305,München,80331,1
+Purchasing,311,München,80331,1
+Purchasing,317,München,80331,0
+Purchasing,325,München,80331,1
+Purchasing,327,München,80331,1
+Purchasing,338,München,80331,1
+Purchasing,340,München,80331,1
+Purchasing,341,München,80331,1
+Purchasing,347,München,80331,0
+Purchasing,351,München,80331,1
+Purchasing,355,München,80331,1
+Purchasing,362,München,80331,0
+Purchasing,366,München,80331,0
+Purchasing,374,München,80331,1
+Purchasing,375,München,80331,1
+Purchasing,378,München,80331,1
+Purchasing,381,München,80331,1
+Purchasing,382,München,80331,1
+Purchasing,383,München,80331,0
+Purchasing,389,München,80331,1
+Purchasing,394,München,80331,1
+Purchasing,401,München,80331,0
+Purchasing,408,München,80331,1
+Purchasing,413,München,80331,0
+Purchasing,416,München,80331,1
+Purchasing,417,München,80331,1
+Purchasing,423,München,80331,1
+Purchasing,427,München,80331,1
+Purchasing,429,München,80331,0
+Purchasing,431,München,80331,1
+Purchasing,432,München,80331,1
+Purchasing,433,München,80331,1
+Purchasing,436,München,80331,0
+Purchasing,446,München,80331,1
+Purchasing,454,München,80331,1
+Purchasing,463,München,80331,0
+Purchasing,464,München,80331,0
+Purchasing,465,München,80331,1
+Purchasing,472,München,80331,1
+Purchasing,476,München,80331,1
+Purchasing,477,München,80331,0
+Purchasing,483,München,80331,0
+Purchasing,485,München,80331,1
+Purchasing,490,München,80331,0
+Sales,3,Hamburg,21140,1
+Sales,19,Hamburg,21140,1
+Sales,23,Hamburg,21140,1
+Sales,24,Hamburg,21140,1
+Sales,25,Hamburg,21140,1
+Sales,28,Hamburg,21140,0
+Sales,37,Hamburg,21140,1
+Sales,39,Hamburg,21140,1
+Sales,40,Hamburg,21140,1
+Sales,46,Hamburg,21140,1
+Sales,48,Hamburg,21140,1
+Sales,54,Hamburg,21140,1
+Sales,61,Hamburg,21140,1
+Sales,63,Hamburg,21140,1
+Sales,66,Hamburg,21140,1
+Sales,76,Hamburg,21140,1
+Sales,78,Hamburg,21140,1
+Sales,79,Hamburg,21140,1
+Sales,82,Hamburg,21140,1
+Sales,83,Hamburg,21140,1
+Sales,86,Hamburg,21140,1
+Sales,88,Hamburg,21140,1
+Sales,89,Hamburg,21140,1
+Sales,92,Hamburg,21140,1
+Sales,98,Hamburg,21140,1
+Sales,100,Hamburg,21140,1
+Sales,152,Hamburg,21140,1
+Sales,156,Hamburg,21140,0
+Sales,163,Hamburg,21140,1
+Sales,165,Hamburg,21140,0
+Sales,175,Hamburg,21140,1
+Sales,183,Hamburg,21140,1
+Sales,186,Hamburg,21140,1
+Sales,192,Hamburg,21140,1
+Sales,197,Hamburg,21140,0
+Sales,198,Hamburg,21140,1
+Sales,210,Hamburg,21140,1
+Sales,211,Hamburg,21140,0
+Sales,225,Hamburg,21140,1
+Sales,232,Hamburg,21140,1
+Sales,247,Hamburg,21140,1
+Sales,252,Hamburg,21140,1
+Sales,254,Hamburg,21140,1
+Sales,262,Hamburg,21140,1
+Sales,270,Hamburg,21140,1
+Sales,275,Hamburg,21140,1
+Sales,279,Hamburg,21140,1
+Sales,281,Hamburg,21140,0
+Sales,287,Hamburg,21140,0
+Sales,290,Hamburg,21140,1
+Sales,295,Hamburg,21140,1
+Sales,306,Hamburg,21140,0
+Sales,312,Hamburg,21140,1
+Sales,314,Hamburg,21140,1
+Sales,315,Hamburg,21140,0
+Sales,326,Hamburg,21140,1
+Sales,329,Hamburg,21140,1
+Sales,331,Hamburg,21140,1
+Sales,333,Hamburg,21140,1
+Sales,335,Hamburg,21140,1
+Sales,349,Hamburg,21140,1
+Sales,353,Hamburg,21140,0
+Sales,363,Hamburg,21140,0
+Sales,364,Hamburg,21140,1
+Sales,370,Hamburg,21140,1
+Sales,379,Hamburg,21140,1
+Sales,387,Hamburg,21140,1
+Sales,407,Hamburg,21140,0
+Sales,410,Hamburg,21140,1
+Sales,412,Hamburg,21140,1
+Sales,420,Hamburg,21140,1
+Sales,428,Hamburg,21140,1
+Sales,430,Hamburg,21140,0
+Sales,434,Hamburg,21140,1
+Sales,435,Hamburg,21140,1
+Sales,441,Hamburg,21140,1
+Sales,442,Hamburg,21140,1
+Sales,447,Hamburg,21140,1
+Sales,452,Hamburg,21140,1
+Sales,458,Hamburg,21140,1
+Sales,460,Hamburg,21140,0
+Sales,461,Hamburg,21140,1
+Sales,462,Hamburg,21140,0
+Sales,468,Hamburg,21140,1
+Sales,479,Hamburg,21140,0
+Sales,488,Hamburg,21140,0
+Sales,494,Hamburg,21140,1
+Technology,1,Berlin,10115,0
+Technology,2,Berlin,10115,1
+Technology,7,Berlin,10115,0
+Technology,9,Berlin,10115,0
+Technology,11,Berlin,10115,1
+Technology,12,Berlin,10115,0
+Technology,30,Berlin,10115,0
+Technology,31,Berlin,10115,1
+Technology,36,Berlin,10115,0
+Technology,38,Berlin,10115,1
+Technology,53,Berlin,10115,1
+Technology,68,Berlin,10115,1
+Technology,77,Berlin,10115,0
+Technology,81,Berlin,10115,1
+Technology,84,Berlin,10115,1
+Technology,85,Berlin,10115,0
+Technology,87,Berlin,10115,1
+Technology,105,Berlin,10115,1
+Technology,109,Berlin,10115,1
+Technology,110,Berlin,10115,1
+Technology,111,Berlin,10115,1
+Technology,117,Berlin,10115,1
+Technology,121,Berlin,10115,1
+Technology,128,Berlin,10115,1
+Technology,142,Berlin,10115,1
+Technology,143,Berlin,10115,1
+Technology,155,Berlin,10115,0
+Technology,157,Berlin,10115,1
+Technology,158,Berlin,10115,1
+Technology,159,Berlin,10115,1
+Technology,162,Berlin,10115,1
+Technology,172,Berlin,10115,1
+Technology,176,Berlin,10115,1
+Technology,177,Berlin,10115,1
+Technology,178,Berlin,10115,1
+Technology,179,Berlin,10115,1
+Technology,182,Berlin,10115,1
+Technology,187,Berlin,10115,1
+Technology,193,Berlin,10115,1
+Technology,195,Berlin,10115,1
+Technology,200,Berlin,10115,1
+Technology,202,Berlin,10115,1
+Technology,217,Berlin,10115,0
+Technology,219,Berlin,10115,1
+Technology,224,Berlin,10115,0
+Technology,226,Berlin,10115,1
+Technology,233,Berlin,10115,1
+Technology,234,Berlin,10115,1
+Technology,236,Berlin,10115,1
+Technology,240,Berlin,10115,0
+Technology,246,Berlin,10115,1
+Technology,253,Berlin,10115,1
+Technology,255,Berlin,10115,1
+Technology,257,Berlin,10115,1
+Technology,264,Berlin,10115,0
+Technology,265,Berlin,10115,1
+Technology,271,Berlin,10115,0
+Technology,274,Berlin,10115,1
+Technology,282,Berlin,10115,0
+Technology,286,Berlin,10115,1
+Technology,288,Berlin,10115,1
+Technology,292,Berlin,10115,0
+Technology,296,Berlin,10115,1
+Technology,297,Berlin,10115,0
+Technology,313,Berlin,10115,1
+Technology,321,Berlin,10115,1
+Technology,323,Berlin,10115,0
+Technology,328,Berlin,10115,1
+Technology,337,Berlin,10115,1
+Technology,345,Berlin,10115,0
+Technology,346,Berlin,10115,1
+Technology,348,Berlin,10115,1
+Technology,350,Berlin,10115,1
+Technology,352,Berlin,10115,1
+Technology,365,Berlin,10115,0
+Technology,369,Berlin,10115,1
+Technology,386,Berlin,10115,1
+Technology,390,Berlin,10115,0
+Technology,392,Berlin,10115,1
+Technology,400,Berlin,10115,1
+Technology,406,Berlin,10115,1
+Technology,421,Berlin,10115,1
+Technology,422,Berlin,10115,1
+Technology,425,Berlin,10115,1
+Technology,437,Berlin,10115,1
+Technology,443,Berlin,10115,1
+Technology,449,Berlin,10115,1
+Technology,450,Berlin,10115,1
+Technology,453,Berlin,10115,1
+Technology,455,Berlin,10115,0
+Technology,466,Berlin,10115,1
+Technology,469,Berlin,10115,1
+Technology,478,Berlin,10115,1
+Technology,487,Berlin,10115,1
+Technology,491,Berlin,10115,1
+Technology,496,Berlin,10115,0
+Technology,498,Berlin,10115,0
+Technology,499,Berlin,10115,0

@@ -1,0 +1,501 @@
+,emp_id,age,Dept,education,recruitment_type,job_level,rating,awards,certifications,salary,gender,entry_date,last_raise,satisfied
+0,HR8270,28,HR,PG,Referral,5,2,1,0,86750,m,2019-02-01,,1
+1,TECH1860,50,Technology,PG,Recruitment Agency,3,5,2,1,42419,Male,2017-01-17,,0
+2,TECH6390,43,Technology,UG,Referral,4,1,2,0,65715,f,2012-08-27,,1
+3,SAL6191,44,Sales,PG,On-Campus,2,3,0,0,29805,f,2017-07-25,,1
+4,HR6734,33,HR,UG,Recruitment Agency,2,1,5,0,29805,m,2019-05-17,,1
+5,PUR7265,40,Purchasing,UG,Walk-in,3,3,7,1,42419,m,2004-04-22,0.02,1
+6,PUR1466,26,Purchasing,UG,Referral,5,5,2,0,86750,m,2019-12-10,,1
+7,TECH5426,25,Technology,UG,Recruitment Agency,1,1,4,0,24076,Female,2017-03-18,,0
+8,HR6578,35,HR,PG,Referral,3,4,0,0,42419,f,2015-04-02,,1
+9,TECH9322,45,Technology,PG,Referral,3,3,9,0,42419,f,2004-03-19,0.07,0
+10,MKT2685,31,Marketing,UG,Walk-in,4,4,6,0,65715,m,2009-01-24,,1
+11,TECH1769,43,Technology,PG,Recruitment Agency,2,1,9,1,29805,Male,2016-03-10,,1
+12,TECH7949,28,Technology,UG,On-Campus,3,4,0,0,42419,Female,2013-04-24,,0
+13,PUR3433,48,Purchasing,PG,Referral,3,4,8,0,42419,m,2010-07-25,,1
+14,PUR6311,52,Purchasing,PG,Recruitment Agency,5,1,7,0,86750,m,2018-02-07,,1
+15,PUR6051,50,Purchasing,UG,Recruitment Agency,5,5,6,0,86750,m,2014-04-24,,1
+16,MKT7420,34,Marketing,PG,On-Campus,1,4,9,0,24076,m,2014-12-10,,0
+17,PUR2184,24,Purchasing,UG,Recruitment Agency,4,4,6,0,65715,f,2018-02-18,,1
+18,HR5555,54,HR,PG,On-Campus,1,5,4,0,24076,f,2014-05-07,,1
+19,SAL4385,25,Sales,UG,Recruitment Agency,5,4,4,0,86750,m,2012-02-15,,1
+20,HR7396,35,HR,UG,On-Campus,2,4,4,0,29805,f,2008-01-15,,1
+21,HR9666,50,HR,PG,Referral,5,4,0,0,86750,m,2015-04-13,,1
+22,PUR3558,34,Purchasing,PG,Referral,4,2,7,1,65715,m,2013-07-02,,1
+23,SAL8849,37,Sales,UG,Recruitment Agency,5,5,0,1,86750,m,2016-03-22,,1
+24,SAL3047,31,Sales,PG,Walk-in,4,4,3,1,65715,f,2006-09-05,,1
+25,SAL3747,53,Sales,PG,Walk-in,4,5,8,1,65715,f,2005-10-08,,1
+26,MKT1189,45,Marketing,UG,Walk-in,4,3,8,0,65715,m,2008-01-08,,1
+27,PUR3734,40,Purchasing,UG,Walk-in,4,3,4,1,65715,f,2005-11-19,,0
+28,SAL4005,33,Sales,PG,On-Campus,4,4,3,1,65715,f,2011-02-28,,0
+29,MKT5658,38,Marketing,UG,Referral,2,5,2,0,29805,m,2008-06-03,,1
+30,TECH2899,54,Technology,UG,On-Campus,1,5,2,1,24076,f,2006-07-24,,0
+31,TECH8734,48,Technology,UG,Recruitment Agency,3,5,4,1,42419,m,2015-04-14,,1
+32,MKT2267,49,Marketing,PG,On-Campus,1,2,9,0,24076,m,2011-03-06,,1
+33,MKT2528,47,Marketing,PG,Walk-in,4,3,0,0,65715,Male,2011-11-11,,1
+34,PUR4556,44,Purchasing,UG,Recruitment Agency,2,5,4,0,29805,Male,2019-05-04,,1
+35,PUR4890,26,Purchasing,PG,Walk-in,5,5,5,1,86750,Female,2018-12-31,,1
+36,TECH9838,50,Technology,UG,Walk-in,2,2,6,1,29805,m,2013-03-07,,0
+37,SAL6393,33,Sales,PG,Referral,4,2,8,0,65715,m,2006-10-21,,1
+38,TECH9792,46,Technology,UG,Referral,2,5,2,0,29805,f,2019-01-08,,1
+39,SAL9433,39,Sales,UG,Walk-in,2,1,1,1,29805,f,2004-08-19,0.01,1
+40,SAL8513,34,Sales,PG,On-Campus,4,5,2,0,65715,m,2005-10-15,,1
+41,PUR3612,46,Purchasing,UG,On-Campus,2,5,8,1,29805,f,2009-11-22,,1
+42,HR8041,50,HR,PG,Referral,3,2,6,0,42419,m,2014-02-25,,0
+43,HR7235,27,HR,PG,On-Campus,3,2,8,0,42419,Male,2016-01-09,,1
+44,MKT6486,29,Marketing,UG,Recruitment Agency,2,5,1,1,29805,m,2009-01-18,,1
+45,PUR8099,36,Purchasing,UG,On-Campus,5,5,4,0,86750,f,2004-01-16,0.04,1
+46,SAL1775,27,Sales,PG,Recruitment Agency,4,5,3,0,65715,m,2018-04-28,,1
+47,HR9226,46,HR,UG,Referral,3,2,1,0,42419,f,2014-11-09,,1
+48,SAL4152,33,Sales,UG,Walk-in,5,5,8,1,86750,f,2010-05-14,,1
+49,HR2585,33,HR,UG,Referral,2,5,8,0,29805,m,2008-12-10,,0
+50,HR4943,37,HR,UG,Recruitment Agency,5,4,5,0,86750,Male,2005-02-24,,1
+51,HR8555,42,HR,UG,On-Campus,1,1,5,0,24076,f,2007-03-05,,1
+52,PUR4073,41,Purchasing,PG,Referral,3,3,7,0,42419,Male,2016-02-15,,0
+53,TECH2021,51,Technology,PG,Recruitment Agency,2,1,5,0,29805,Female,2016-05-07,,1
+54,SAL4843,32,Sales,UG,Recruitment Agency,4,4,0,0,65715,f,2017-05-18,,1
+55,PUR8989,50,Purchasing,UG,On-Campus,2,3,3,1,29805,Male,2014-04-19,,1
+56,PUR7873,40,Purchasing,UG,On-Campus,4,5,6,1,65715,m,2008-12-25,,1
+57,PUR6675,50,Purchasing,PG,On-Campus,2,4,1,0,29805,m,2009-06-01,,1
+58,PUR1161,35,Purchasing,UG,On-Campus,5,5,8,1,86750,m,2008-02-05,,1
+59,PUR5297,33,Purchasing,PG,Recruitment Agency,5,2,7,1,86750,m,2014-06-16,,0
+60,MKT1995,37,Marketing,PG,Recruitment Agency,5,4,7,0,86750,m,2019-02-08,,1
+61,SAL8629,53,Sales,PG,Recruitment Agency,1,,6,1,24076,m,2020-11-26,,1
+62,PUR2016,49,Purchasing,UG,Referral,4,4,3,1,65715,Female,2013-05-26,,1
+63,SAL8869,52,Sales,PG,Referral,5,4,1,1,86750,m,2005-08-13,,1
+64,MKT7439,33,Marketing,UG,On-Campus,1,2,2,1,24076,m,2008-09-19,,1
+65,MKT8892,39,Marketing,PG,Walk-in,4,3,5,1,65715,f,2010-04-22,,1
+66,SAL7863,39,Sales,UG,Referral,2,1,4,1,29805,m,2006-03-31,,1
+67,HR8916,28,HR,PG,Referral,1,,7,1,24076,Female,2020-09-10,,0
+68,TECH9529,56,Technology,UG,Walk-in,3,4,5,1,42419,m,2009-11-22,,1
+69,HR1878,27,HR,PG,Walk-in,1,,5,0,24076,Male,2020-06-01,,1
+70,HR5887,30,HR,UG,Recruitment Agency,1,,0,0,24076,f,2020-05-30,,0
+71,HR5859,24,HR,UG,Recruitment Agency,4,5,3,1,65715,m,2014-08-24,,0
+72,PUR7331,38,Purchasing,UG,On-Campus,2,2,4,1,29805,m,2008-11-15,,0
+73,MKT9571,42,Marketing,UG,Recruitment Agency,3,5,2,0,42419,Female,2013-04-03,,1
+74,HR9684,46,HR,PG,Referral,5,1,8,1,86750,f,2007-03-15,,1
+75,MKT8208,34,Marketing,PG,Walk-in,5,1,0,1,86750,f,2008-10-30,,1
+76,SAL6276,38,Sales,UG,On-Campus,1,1,5,0,24076,f,2007-03-31,,1
+77,TECH3062,23,Technology,PG,Referral,4,1,5,0,65715,m,2016-04-20,,0
+78,SAL1064,53,Sales,UG,Recruitment Agency,4,1,9,0,65715,m,2013-01-01,,1
+79,SAL9006,36,Sales,UG,Walk-in,5,1,4,1,86750,m,2010-08-13,,1
+80,PUR3568,39,Purchasing,PG,Recruitment Agency,3,2,4,1,42419,Female,2010-04-09,,1
+81,TECH6463,35,Technology,UG,On-Campus,2,4,9,0,29805,f,2013-08-23,,1
+82,SAL3027,40,Sales,UG,Referral,3,5,4,0,42419,m,2014-07-31,,1
+83,SAL3695,27,Sales,PG,Referral,2,1,5,1,29805,m,2019-09-19,,1
+84,TECH6258,52,Technology,UG,Referral,5,2,7,0,86750,m,2016-09-08,,1
+85,TECH6618,46,Technology,UG,Recruitment Agency,2,2,1,1,29805,m,2017-02-26,,0
+86,SAL7736,46,Sales,UG,Walk-in,4,2,5,1,65715,f,2012-07-21,,1
+87,TECH1391,49,Technology,UG,Walk-in,1,4,0,0,24076,f,2015-11-10,,1
+88,SAL6892,35,Sales,PG,Referral,1,5,3,0,24076,Female,2009-08-22,,1
+89,SAL4561,33,Sales,PG,Walk-in,5,4,9,1,86750,f,2005-10-27,,1
+90,PUR7184,35,Purchasing,PG,Recruitment Agency,4,3,2,0,65715,m,2016-02-01,,0
+91,HR4099,36,HR,UG,Recruitment Agency,3,2,8,0,42419,f,2008-04-22,,1
+92,SAL7278,48,Sales,UG,On-Campus,4,3,2,0,65715,f,2008-08-31,,1
+93,MKT9392,49,Marketing,PG,Referral,1,1,5,0,24076,f,2009-09-29,,0
+94,HR4104,36,HR,UG,Walk-in,1,1,0,1,24076,f,2004-08-26,0.09,1
+95,HR8215,44,HR,UG,Referral,4,4,5,1,65715,f,2004-09-07,0.05,0
+96,HR3454,33,HR,UG,Recruitment Agency,4,5,3,1,65715,f,2012-04-17,,1
+97,PUR9996,54,Purchasing,UG,Walk-in,1,3,7,1,24076,f,2009-12-31,,0
+98,SAL3731,49,Sales,PG,Referral,3,5,8,0,42419,m,2014-12-04,,1
+99,PUR9154,32,Purchasing,PG,Referral,5,4,3,0,86750,m,2005-08-27,,1
+100,SAL6056,41,Sales,PG,Recruitment Agency,5,1,9,1,86750,m,2017-04-02,,1
+101,PUR9110,40,Purchasing,UG,Walk-in,4,5,9,1,65715,f,2008-04-10,,1
+102,PUR4840,28,Purchasing,PG,On-Campus,5,5,5,0,86750,m,2019-10-02,,1
+103,MKT2028,49,Marketing,PG,Referral,1,1,0,1,24076,f,2015-09-27,,0
+104,PUR8385,51,Purchasing,UG,Referral,1,3,3,1,24076,Male,2014-06-15,,1
+105,TECH1502,37,Technology,UG,Recruitment Agency,4,1,6,0,65715,m,2006-05-13,,1
+106,MKT7910,43,Marketing,PG,Walk-in,4,5,0,1,65715,f,2007-11-18,,1
+107,PUR7938,52,Purchasing,PG,Referral,4,3,7,0,65715,f,2018-08-18,,1
+108,HR5488,32,HR,PG,Referral,3,3,9,0,42419,m,2007-04-26,,1
+109,TECH1206,27,Technology,PG,Recruitment Agency,5,1,5,1,86750,m,2012-02-17,,1
+110,TECH6134,48,Technology,UG,Recruitment Agency,4,5,4,0,65715,m,2014-07-18,,1
+111,TECH6977,51,Technology,PG,Walk-in,2,4,9,1,29805,m,2007-01-24,,1
+112,MKT8721,37,Marketing,PG,On-Campus,2,5,8,0,29805,Male,2009-09-22,,0
+113,PUR8035,32,Purchasing,UG,Referral,1,2,1,1,24076,Female,2018-11-29,,0
+114,PUR2484,50,Purchasing,PG,Walk-in,5,4,4,1,86750,f,2008-09-17,,1
+115,HR8858,37,HR,UG,Referral,4,3,5,1,65715,Female,2009-10-07,,0
+116,HR1863,25,HR,UG,Referral,2,4,6,0,29805,Female,2019-11-28,,0
+117,TECH3790,45,Technology,UG,On-Campus,5,,4,0,86750,m,2020-10-18,,1
+118,HR8408,28,HR,PG,Recruitment Agency,1,3,8,1,24076,Female,2014-11-16,,1
+119,MKT9755,36,Marketing,PG,Referral,3,4,0,0,42419,f,2009-03-05,,0
+120,PUR6116,40,Purchasing,UG,Recruitment Agency,5,3,6,1,86750,Female,2016-07-31,,1
+121,TECH7019,50,Technology,PG,Walk-in,5,3,9,1,86750,Male,2012-03-08,,1
+122,HR2757,31,HR,PG,Referral,3,2,6,0,42419,m,2014-11-07,,1
+123,MKT8574,39,Marketing,UG,Recruitment Agency,5,,3,1,86750,m,2020-01-10,,0
+124,MKT7374,51,Marketing,UG,Recruitment Agency,1,5,8,0,24076,m,2013-06-15,,1
+125,HR7892,35,HR,PG,Recruitment Agency,1,2,4,1,24076,f,2015-01-08,,1
+126,PUR2678,49,Purchasing,UG,Recruitment Agency,3,4,3,0,42419,Female,2006-02-08,,1
+127,HR4242,37,HR,PG,Recruitment Agency,4,1,6,1,65715,Female,2009-12-14,,0
+128,TECH5636,52,Technology,PG,On-Campus,2,1,3,1,29805,m,2018-09-10,,1
+129,HR2059,42,HR,PG,Referral,4,1,2,9,65715,f,2014-04-09,,1
+130,MKT7668,39,Marketing,PG,Recruitment Agency,5,2,8,1,86750,f,2015-03-12,,1
+131,HR4157,35,HR,UG,Recruitment Agency,2,2,7,1,29805,m,2018-09-15,,1
+132,PUR6915,54,Purchasing,UG,Walk-in,3,3,0,0,42419,m,2004-07-13,0.05,0
+133,PUR3693,38,Purchasing,UG,On-Campus,3,1,6,1,42419,m,2009-11-01,,1
+134,HR4627,44,HR,UG,Referral,2,4,8,0,29805,Male,2004-02-24,0.01,1
+135,PUR6450,36,Purchasing,PG,Walk-in,1,4,7,1,24076,m,2008-11-13,,1
+136,PUR2663,27,Purchasing,PG,Walk-in,2,1,7,0,29805,f,2013-01-21,,1
+137,MKT6592,27,Marketing,UG,Referral,5,1,5,1,86750,f,2014-04-02,,1
+138,PUR8392,31,Purchasing,PG,Referral,1,1,3,1,24076,m,2018-12-08,,1
+139,PUR2306,39,Purchasing,PG,Walk-in,3,2,7,1,42419,Male,2010-04-14,,0
+140,PUR7776,35,Purchasing,PG,On-Campus,2,2,2,0,29805,Male,2017-03-21,,0
+141,PUR6864,34,Purchasing,UG,Walk-in,4,2,8,0,65715,m,2006-03-10,,0
+142,TECH8526,35,Technology,UG,Walk-in,4,5,1,0,65715,f,2007-09-06,,1
+143,TECH9901,44,Technology,UG,Referral,5,4,1,0,86750,m,2016-02-24,,1
+144,MKT6575,43,Marketing,PG,On-Campus,4,4,6,1,65715,m,2013-05-14,,1
+145,HR6530,49,HR,UG,Referral,2,,9,1,29805,m,2020-10-10,,0
+146,PUR5413,45,Purchasing,UG,On-Campus,2,2,3,0,29805,f,2018-05-30,,0
+147,HR4748,41,HR,UG,Referral,4,5,9,0,65715,f,2019-03-28,,1
+148,HR1663,35,HR,UG,Walk-in,2,5,7,0,29805,m,2004-10-30,0.08,1
+149,MKT2998,32,Marketing,UG,Referral,5,4,8,1,86750,m,2010-02-05,,0
+150,PUR8994,24,Purchasing,UG,Referral,1,2,6,0,24076,Male,2016-12-26,,1
+151,PUR2495,54,Purchasing,PG,Walk-in,5,3,4,0,86750,m,2004-07-15,0.05,1
+152,SAL4304,35,Sales,PG,On-Campus,5,2,7,1,86750,m,2006-02-20,,1
+153,HR4763,41,HR,UG,Recruitment Agency,2,1,3,1,29805,f,2011-03-27,,1
+154,HR6232,48,HR,UG,Walk-in,1,2,1,0,24076,Male,2012-10-02,,0
+155,TECH2853,39,Technology,PG,Walk-in,2,1,5,1,29805,m,2014-05-29,,0
+156,SAL7585,43,Sales,PG,On-Campus,3,1,8,0,42419,f,2019-08-22,,0
+157,TECH2291,36,Technology,UG,Walk-in,2,3,0,1,29805,f,2004-06-20,0.04,1
+158,TECH4581,53,Technology,UG,On-Campus,2,4,9,0,29805,m,2010-08-25,,1
+159,TECH8554,34,Technology,UG,Referral,2,2,6,0,29805,f,2006-08-10,,1
+160,MKT8280,43,Marketing,UG,Referral,1,1,9,0,24076,m,2018-03-13,,0
+161,MKT2636,34,Marketing,PG,On-Campus,2,2,8,0,29805,f,2004-01-20,0.1,0
+162,TECH4696,33,Technology,UG,Referral,1,4,9,1,24076,f,2008-12-17,,1
+163,SAL1698,29,Sales,UG,Walk-in,4,4,8,1,65715,f,2016-04-06,,1
+164,HR5737,26,HR,UG,Referral,3,5,9,1,42419,m,2018-06-15,,1
+165,SAL1854,41,Sales,UG,Referral,1,4,2,1,24076,Female,2012-02-07,,0
+166,PUR9164,23,Purchasing,PG,Referral,4,3,4,0,65715,m,2018-04-14,,1
+167,MKT6855,50,Marketing,PG,Recruitment Agency,1,1,7,0,24076,m,2008-10-31,,1
+168,HR8392,53,HR,PG,Recruitment Agency,1,5,7,1,24076,m,2018-07-10,,1
+169,HR7528,46,HR,UG,Referral,3,3,3,1,42419,f,2011-02-18,,1
+170,PUR6249,51,Purchasing,UG,Walk-in,5,2,0,1,86750,f,2008-10-14,,1
+171,PUR6172,35,Purchasing,PG,Walk-in,5,1,0,1,86750,m,2010-03-10,,0
+172,TECH2707,35,Technology,UG,Recruitment Agency,1,4,3,1,24076,f,2011-03-24,,1
+173,MKT6791,37,Marketing,UG,On-Campus,2,1,5,0,29805,m,2007-06-22,,1
+174,MKT6535,24,Marketing,PG,On-Campus,4,2,7,0,65715,f,2018-06-03,,0
+175,SAL5931,33,Sales,PG,Walk-in,2,5,5,0,29805,m,2013-03-06,,1
+176,TECH4510,36,Technology,PG,Referral,2,5,8,1,29805,f,2005-10-02,,1
+177,TECH1202,41,Technology,PG,Recruitment Agency,1,5,8,1,24076,m,2008-11-17,,1
+178,TECH5218,51,Technology,UG,Referral,1,4,1,1,24076,Male,2005-12-17,,1
+179,TECH9958,39,Technology,UG,Recruitment Agency,1,3,9,1,24076,m,2015-09-11,,1
+180,MKT5389,35,Marketing,PG,Walk-in,1,3,0,0,24076,m,2009-11-28,,0
+181,MKT3327,50,Marketing,UG,On-Campus,5,1,1,0,86750,m,2007-12-17,,1
+182,TECH9004,40,Technology,PG,Recruitment Agency,1,4,4,1,24076,Male,2016-05-03,,1
+183,SAL3931,30,Sales,PG,Recruitment Agency,5,5,3,0,86750,Female,2008-01-02,,1
+184,HR8777,44,HR,UG,On-Campus,5,,3,0,86750,m,2020-03-19,,0
+185,HR1197,47,HR,PG,Walk-in,1,2,8,1,24076,f,2014-07-05,,0
+186,SAL8125,46,Sales,UG,Recruitment Agency,3,2,7,1,42419,Female,2017-03-10,,1
+187,TECH2930,48,Technology,UG,Recruitment Agency,4,5,5,1,65715,f,2019-01-05,,1
+188,MKT7287,41,Marketing,UG,Referral,2,5,0,1,29805,f,2014-04-07,,1
+189,HR9800,27,HR,UG,On-Campus,5,4,1,1,86750,m,2018-01-11,,1
+190,PUR5282,39,Purchasing,PG,Referral,4,3,5,1,65715,m,2007-12-25,,1
+191,PUR3511,43,Purchasing,UG,Recruitment Agency,3,2,1,0,42419,Male,2009-01-21,,1
+192,SAL1659,30,Sales,PG,Recruitment Agency,2,3,9,0,29805,Male,2015-08-14,,1
+193,TECH3811,50,Technology,PG,Walk-in,2,4,4,1,29805,f,2007-12-15,,1
+194,HR8098,27,HR,PG,Recruitment Agency,5,5,4,0,86750,m,2012-06-17,,0
+195,TECH7546,39,Technology,PG,Referral,1,3,5,1,24076,m,2014-10-23,,1
+196,HR2986,37,HR,UG,On-Campus,3,5,5,1,42419,f,2005-06-25,,1
+197,SAL9338,36,Sales,UG,Referral,5,5,5,1,86750,Male,2006-08-27,,0
+198,SAL3911,44,Sales,PG,On-Campus,3,1,1,1,42419,Female,2004-11-13,,1
+199,PUR2734,41,Purchasing,PG,Walk-in,1,3,9,0,24076,f,2005-03-12,,1
+200,TECH2843,53,Technology,UG,Walk-in,1,3,2,1,24076,f,2013-02-18,,1
+201,PUR9680,54,Purchasing,PG,On-Campus,5,5,5,0,86750,m,2014-08-22,,0
+202,TECH3976,49,Technology,UG,On-Campus,1,4,7,1,24076,m,2019-05-01,,1
+203,PUR2959,43,Purchasing,PG,Recruitment Agency,4,1,0,1,65715,Male,2004-10-30,0.01,0
+204,MKT6759,24,Marketing,UG,On-Campus,2,5,0,1,29805,f,2017-11-06,,1
+205,MKT7694,33,Marketing,PG,On-Campus,5,2,1,0,86750,m,2018-01-20,,0
+206,MKT3385,44,Marketing,PG,Referral,3,2,5,1,42419,m,2019-10-13,,1
+207,MKT5736,35,Marketing,UG,Referral,4,1,8,1,65715,f,2005-04-19,,1
+208,HR2802,37,HR,PG,Walk-in,5,4,3,1,86750,m,2013-01-31,,1
+209,MKT9155,34,Marketing,PG,Referral,1,5,2,0,24076,m,2006-02-11,,0
+210,SAL9120,44,Sales,UG,Walk-in,1,3,7,0,24076,f,2016-12-28,,1
+211,SAL7616,43,Sales,PG,On-Campus,1,1,9,0,24076,f,2018-02-18,,0
+212,HR6534,44,HR,UG,On-Campus,1,4,8,1,24076,f,2013-05-11,,1
+213,MKT5061,33,Marketing,UG,Walk-in,3,3,4,0,42419,m,2011-08-28,,1
+214,MKT1262,29,Marketing,PG,Recruitment Agency,4,2,8,1,65715,f,2014-01-01,,1
+215,MKT7287,50,Marketing,PG,Referral,2,2,1,0,29805,m,2013-08-01,,0
+216,PUR9815,27,Purchasing,PG,On-Campus,3,3,2,0,42419,m,2018-12-11,,1
+217,TECH3049,39,Technology,PG,Referral,3,1,6,1,42419,f,2019-10-04,,0
+218,PUR6423,46,Purchasing,PG,Recruitment Agency,2,2,6,0,29805,f,2011-10-27,,0
+219,TECH5548,42,Technology,PG,Walk-in,2,5,5,1,29805,Female,2009-04-14,,1
+220,MKT4108,31,Marketing,PG,Recruitment Agency,1,3,5,1,24076,f,2018-07-27,,0
+221,MKT8158,36,Marketing,UG,On-Campus,3,3,1,0,42419,f,2013-09-25,,1
+222,PUR8400,48,Purchasing,PG,Recruitment Agency,5,,9,1,86750,m,2020-05-14,,1
+223,PUR4170,34,Purchasing,UG,Walk-in,2,1,5,1,29805,m,2005-03-15,,1
+224,TECH3255,28,Technology,PG,On-Campus,2,5,3,0,29805,m,2012-07-30,,0
+225,SAL2154,39,Sales,PG,On-Campus,4,1,2,0,65715,m,2016-09-30,,1
+226,TECH5499,41,Technology,UG,Referral,5,4,1,1,86750,Male,2017-06-20,,1
+227,PUR7295,41,Purchasing,PG,On-Campus,5,4,0,0,86750,m,2013-10-09,,0
+228,PUR7197,48,Purchasing,PG,Walk-in,2,2,4,1,29805,Female,2010-02-11,,0
+229,HR2648,38,HR,UG,On-Campus,1,2,1,1,24076,f,2019-04-11,,0
+230,PUR6539,34,Purchasing,PG,Walk-in,4,2,1,0,65715,f,2009-04-29,,1
+231,HR5199,34,HR,PG,Walk-in,5,4,6,0,86750,f,2015-12-30,,1
+232,SAL9445,42,Sales,PG,Recruitment Agency,2,1,7,0,29805,f,2015-02-26,,1
+233,TECH3557,55,Technology,UG,Referral,5,1,25,0,86750,f,2010-05-02,,1
+234,TECH6592,38,Technology,PG,On-Campus,4,2,7,1,65715,m,2007-08-20,,1
+235,HR1098,53,HR,PG,Walk-in,4,5,3,1,65715,f,2004-06-01,0.09,0
+236,TECH3200,45,Technology,PG,Referral,3,,0,0,42419,m,2020-04-06,,1
+237,PUR3961,48,Purchasing,PG,Walk-in,2,4,6,0,29805,m,2011-02-11,,1
+238,MKT5973,26,Marketing,UG,Referral,4,3,0,1,65715,f,2011-06-25,,1
+239,HR5433,38,HR,UG,On-Campus,3,3,3,1,42419,m,2004-04-19,0.04,1
+240,TECH3869,33,Technology,PG,Referral,3,3,7,1,42419,Male,2008-10-31,,0
+241,HR1956,23,HR,PG,Recruitment Agency,5,5,1,1,86750,Male,2019-09-01,,1
+242,HR9352,52,HR,UG,Referral,5,2,5,0,86750,Male,2014-01-18,,0
+243,MKT6699,46,Marketing,UG,Recruitment Agency,3,4,5,1,42419,m,2009-05-25,,0
+244,PUR7944,45,Purchasing,PG,Recruitment Agency,5,5,8,1,86750,m,2015-10-20,,1
+245,HR5493,37,HR,UG,Recruitment Agency,4,4,4,0,65715,Male,2019-01-08,,1
+246,TECH5911,49,Technology,PG,Walk-in,1,4,9,1,24076,f,2007-06-12,,1
+247,SAL4987,33,Sales,UG,On-Campus,4,2,3,1,65715,Male,2014-02-03,,1
+248,HR7015,54,HR,UG,Walk-in,3,3,4,0,42419,Male,2007-08-14,,0
+249,HR2218,47,HR,UG,Referral,3,2,9,0,42419,Female,2012-01-20,,1
+250,MKT5496,41,Marketing,UG,Walk-in,4,5,4,0,65715,m,2009-09-09,,1
+251,PUR5735,40,Purchasing,PG,On-Campus,5,5,7,1,86750,m,2007-11-26,,1
+252,SAL5555,39,Sales,UG,On-Campus,5,5,9,1,86750,Female,2010-07-04,,1
+253,TECH9050,41,Technology,UG,Walk-in,3,2,7,0,42419,m,2013-03-23,,1
+254,SAL4446,43,Sales,PG,On-Campus,2,4,1,0,29805,m,2014-07-30,,1
+255,TECH2045,36,Technology,UG,Referral,5,4,6,1,86750,f,2006-02-07,,1
+256,PUR7893,49,Purchasing,UG,Walk-in,4,1,7,0,65715,Male,2010-11-14,,0
+257,TECH2693,40,Technology,PG,Walk-in,5,5,5,0,86750,f,2009-10-23,,1
+258,MKT4436,50,Marketing,UG,Recruitment Agency,4,4,4,0,65715,f,2014-12-25,,0
+259,MKT9754,41,Marketing,PG,Recruitment Agency,3,1,8,1,42419,m,2006-07-14,,0
+260,MKT6895,37,Marketing,PG,On-Campus,5,4,2,1,86750,f,2016-12-03,,0
+261,MKT4354,53,Marketing,PG,Recruitment Agency,4,5,9,1,65715,,2018-04-15,,0
+262,SAL1225,37,Sales,PG,Walk-in,3,3,3,1,42419,m,2015-06-14,,1
+263,PUR5893,36,Purchasing,UG,Referral,2,5,8,1,29805,f,2010-11-13,,0
+264,TECH8022,29,Technology,PG,On-Campus,4,2,5,1,65715,Female,2014-10-14,,0
+265,TECH6600,35,Technology,UG,Walk-in,2,4,7,0,29805,f,2010-01-21,,1
+266,MKT8996,25,Marketing,UG,On-Campus,2,4,6,1,29805,f,2013-10-09,,0
+267,MKT8683,38,Marketing,UG,Referral,1,2,1,1,24076,f,2007-05-05,,1
+268,HR5642,53,HR,UG,Referral,5,2,2,0,86750,m,2008-11-04,,1
+269,PUR8679,31,Purchasing,UG,Referral,4,3,0,1,65715,m,2018-07-28,,1
+270,SAL9208,30,Sales,UG,On-Campus,2,4,8,1,29805,Female,2009-02-27,,1
+271,TECH8339,42,Technology,UG,On-Campus,1,4,6,0,24076,Female,2007-10-12,,0
+272,HR3205,35,HR,UG,Referral,3,3,0,0,42419,Female,2005-05-29,,1
+273,HR2069,39,HR,UG,Recruitment Agency,4,1,2,0,65715,Male,2016-12-20,,0
+274,TECH4444,39,Technology,UG,On-Campus,2,3,3,1,29805,f,2004-04-13,0.08,1
+275,SAL2060,39,Sales,PG,Recruitment Agency,5,5,3,0,86750,f,2014-01-19,,1
+276,HR3327,22,HR,PG,Recruitment Agency,1,4,4,1,24076,f,2016-07-06,,1
+277,HR4420,54,HR,PG,On-Campus,2,2,2,1,29805,f,2009-10-08,,1
+278,PUR1301,30,Purchasing,UG,Referral,5,5,2,1,86750,f,2017-05-16,,1
+279,SAL1606,41,Sales,PG,Referral,2,4,0,1,29805,f,2007-11-14,,1
+280,HR4170,53,HR,PG,Recruitment Agency,4,3,6,0,65715,Female,2015-10-22,,1
+281,SAL1699,28,Sales,PG,Referral,4,5,9,0,65715,m,2012-07-29,,0
+282,TECH6088,25,Technology,UG,Walk-in,4,4,0,1,65715,m,2012-05-07,,0
+283,MKT1190,49,Marketing,UG,Recruitment Agency,1,,1,0,24076,m,2020-12-16,,1
+284,HR1980,27,HR,UG,Referral,4,1,3,1,65715,f,2015-04-07,,1
+285,PUR3975,35,Purchasing,UG,Referral,5,2,3,1,86750,m,2016-03-09,,1
+286,TECH7102,37,Technology,PG,Recruitment Agency,2,4,4,1,29805,f,2013-02-03,,1
+287,SAL2184,36,Sales,PG,On-Campus,3,1,1,0,42419,f,2007-08-10,,0
+288,TECH4327,51,Technology,PG,Walk-in,5,3,3,1,86750,m,2011-10-02,,1
+289,HR4394,53,HR,PG,On-Campus,5,4,0,1,86750,f,2007-08-28,,1
+290,SAL9319,45,Sales,UG,On-Campus,4,3,1,0,65715,m,2005-08-21,,1
+291,MKT2816,38,Marketing,UG,Walk-in,1,3,0,0,24076,m,2007-08-16,,1
+292,TECH6854,40,Technology,UG,Walk-in,2,1,9,0,29805,Female,2006-05-01,,0
+293,HR7709,54,HR,PG,Recruitment Agency,1,4,9,0,24076,m,2009-11-25,,0
+294,PUR1569,44,Purchasing,UG,Referral,2,5,3,1,29805,m,2008-04-22,,1
+295,SAL6442,51,Sales,UG,Recruitment Agency,2,1,3,0,29805,f,2009-08-06,,1
+296,TECH2895,44,Technology,PG,Referral,1,1,6,1,24076,f,2011-10-22,,1
+297,TECH3733,33,Technology,PG,Referral,5,4,9,0,86750,m,2015-07-14,,0
+298,MKT4863,25,Marketing,UG,Recruitment Agency,2,4,8,0,29805,f,2014-03-20,,1
+299,MKT8455,44,Marketing,UG,Referral,1,3,8,0,24076,m,2016-04-12,,0
+300,PUR5014,32,Purchasing,UG,On-Campus,2,4,4,0,29805,m,2006-09-11,,1
+301,PUR2686,32,Purchasing,UG,Recruitment Agency,3,3,9,0,42419,f,2019-03-27,,1
+302,HR4009,54,HR,UG,Recruitment Agency,5,1,0,0,86750,f,2010-07-14,,1
+303,HR8806,52,HR,UG,On-Campus,4,2,0,1,65715,f,2012-12-03,,1
+304,PUR1154,43,Purchasing,PG,Referral,2,5,5,0,29805,f,2015-10-13,,1
+305,PUR2409,38,Purchasing,PG,Walk-in,3,1,1,0,42419,Male,2015-09-19,,1
+306,SAL1784,34,Sales,PG,Walk-in,4,4,7,0,65715,f,2012-12-27,,0
+307,MKT9096,24,Marketing,UG,On-Campus,4,5,8,0,65715,m,2017-07-03,,1
+308,HR8560,41,HR,PG,Referral,2,2,3,1,29805,f,2004-07-05,0.05,1
+309,MKT8343,46,Marketing,UG,Walk-in,1,2,4,0,24076,m,2004-06-08,0.01,1
+310,MKT8206,35,Marketing,UG,On-Campus,2,3,7,0,29805,f,2008-01-31,,1
+311,PUR6596,46,Purchasing,PG,Recruitment Agency,3,5,2,0,42419,m,2011-04-23,,1
+312,SAL6801,52,Sales,UG,Recruitment Agency,4,3,4,0,65715,m,2010-09-17,,1
+313,TECH3806,47,Technology,UG,On-Campus,2,1,2,1,29805,Male,2014-12-09,,1
+314,SAL1537,52,Sales,PG,On-Campus,1,5,9,0,24076,Female,2013-02-09,,1
+315,SAL6986,37,Sales,PG,On-Campus,2,1,2,1,29805,f,2015-01-03,,0
+316,MKT2841,35,Marketing,PG,On-Campus,5,3,2,0,86750,f,2009-06-10,,1
+317,PUR9716,41,Purchasing,UG,Referral,1,5,6,1,24076,m,2015-12-02,,0
+318,HR7971,40,HR,PG,Referral,3,3,6,1,42419,m,2005-03-30,,1
+319,MKT6625,30,Marketing,PG,Recruitment Agency,4,5,6,0,65715,m,2013-03-17,,0
+320,HR3950,48,HR,UG,Referral,2,3,9,0,29805,f,2010-02-27,,0
+321,TECH8992,39,Technology,PG,Referral,1,2,7,1,24076,f,2010-11-12,,1
+322,MKT5780,30,Marketing,PG,Referral,5,3,4,1,86750,f,2012-02-05,,0
+323,TECH3368,29,Technology,PG,Recruitment Agency,1,,4,0,24076,m,2020-10-27,,0
+324,MKT7655,52,Marketing,UG,Walk-in,5,3,3,1,86750,Male,2005-12-23,,1
+325,PUR9173,29,Purchasing,UG,On-Campus,3,5,6,1,42419,f,2012-09-28,,1
+326,SAL5495,25,Sales,UG,Recruitment Agency,4,5,9,1,65715,f,2015-06-13,,1
+327,PUR7002,33,Purchasing,UG,Recruitment Agency,3,5,3,0,42419,f,2007-10-23,,1
+328,TECH7614,36,Technology,PG,Referral,2,4,1,1,29805,f,2007-05-29,,1
+329,SAL6919,47,Sales,UG,Walk-in,1,1,3,1,24076,m,2017-09-10,,1
+330,MKT1853,37,Marketing,UG,Walk-in,5,5,7,1,86750,m,2009-05-21,,1
+331,SAL5146,33,Sales,PG,Referral,5,2,8,0,86750,f,2007-08-14,,1
+332,HR4769,37,HR,PG,Recruitment Agency,1,5,2,0,24076,m,2019-09-07,,1
+333,SAL1574,27,Sales,PG,Referral,1,4,6,1,24076,m,2019-04-28,,1
+334,HR2148,35,HR,UG,On-Campus,2,2,8,0,29805,m,2015-11-07,,1
+335,SAL7293,30,Sales,UG,Recruitment Agency,3,4,3,1,42419,m,2019-09-01,,1
+336,HR7457,30,HR,UG,Referral,5,2,9,0,86750,Female,2018-12-24,,0
+337,TECH8509,27,Technology,PG,Referral,2,3,2,0,29805,f,2011-05-25,,1
+338,PUR5777,50,Purchasing,PG,On-Campus,3,1,4,1,42419,f,2017-05-26,,1
+339,MKT4854,54,Marketing,UG,Referral,2,1,0,0,29805,m,2007-09-01,,1
+340,PUR3491,31,Purchasing,PG,Walk-in,5,4,2,0,86750,f,2006-02-09,,1
+341,PUR4124,53,Purchasing,PG,Recruitment Agency,1,1,7,0,24076,f,2013-05-07,,1
+342,MKT6691,23,Marketing,PG,On-Campus,1,4,7,1,24076,m,2019-01-20,,1
+343,MKT4051,26,Marketing,UG,Referral,3,,3,0,42419,f,2020-11-09,,1
+344,HR1004,25,HR,PG,On-Campus,4,4,1,0,65715,m,2014-01-20,,1
+345,TECH6222,34,Technology,PG,Walk-in,3,1,7,1,42419,f,2004-12-03,,0
+346,TECH6315,53,Technology,UG,Referral,4,4,7,0,65715,f,2005-10-07,,1
+347,PUR5869,40,Purchasing,UG,Walk-in,2,1,9,0,29805,m,2006-02-04,,0
+348,TECH1876,45,Technology,PG,Recruitment Agency,2,4,3,0,29805,m,2016-11-16,,1
+349,SAL8027,31,Sales,PG,Recruitment Agency,5,5,2,0,86750,f,2007-11-13,,1
+350,TECH5142,34,Technology,UG,Referral,4,4,1,0,65715,f,2012-08-27,,1
+351,PUR7966,36,Purchasing,UG,Recruitment Agency,5,2,8,1,86750,Female,2017-12-31,,1
+352,TECH8079,36,Technology,PG,Referral,1,4,0,1,24076,f,2016-12-08,,1
+353,SAL8987,54,Sales,PG,On-Campus,4,3,6,0,65715,m,2010-05-02,,0
+354,HR7799,36,HR,PG,On-Campus,3,4,4,0,42419,m,2007-08-03,,0
+355,PUR5465,52,Purchasing,PG,Referral,1,2,7,0,24076,f,2005-09-16,,1
+356,HR1635,53,HR,UG,On-Campus,1,,3,1,24076,m,2020-12-04,,0
+357,HR2693,28,HR,PG,Recruitment Agency,3,,6,1,42419,f,2020-04-15,,1
+358,HR5752,33,HR,PG,Walk-in,1,5,4,0,24076,Male,2005-02-12,,1
+359,MKT9311,35,Marketing,UG,Walk-in,4,4,4,0,65715,f,2009-03-22,,0
+360,MKT1830,40,Marketing,PG,Walk-in,5,1,8,1,86750,m,2004-01-20,0.08,0
+361,HR6177,25,HR,UG,On-Campus,1,,8,0,24076,f,2020-11-16,,1
+362,PUR9932,36,Purchasing,PG,Walk-in,4,4,8,1,65715,f,2009-11-12,,0
+363,SAL9308,50,Sales,PG,Recruitment Agency,2,3,5,1,29805,f,2011-03-04,,0
+364,SAL6949,35,Sales,UG,Recruitment Agency,4,4,5,0,65715,Male,2008-10-28,,1
+365,TECH3838,35,Technology,UG,Recruitment Agency,5,,4,1,86750,m,2020-05-30,,0
+366,PUR2150,54,Purchasing,PG,Referral,4,2,8,0,65715,Male,2005-06-25,,0
+367,MKT8560,34,Marketing,PG,Walk-in,3,3,9,0,42419,Male,2011-03-29,,1
+368,HR2931,35,HR,PG,Recruitment Agency,5,1,7,0,86750,m,2012-05-23,,1
+369,TECH2664,51,Technology,UG,On-Campus,2,,6,0,29805,m,2020-02-21,,1
+370,SAL2081,41,Sales,PG,Walk-in,3,4,6,0,42419,m,2008-11-06,,1
+371,MKT1512,49,Marketing,UG,Referral,4,2,5,0,65715,m,2019-09-01,,1
+372,MKT8805,28,Marketing,UG,Recruitment Agency,5,1,4,1,86750,m,2013-11-14,,0
+373,HR6237,38,HR,PG,Recruitment Agency,2,3,3,1,29805,f,2014-02-18,,1
+374,PUR1559,34,Purchasing,UG,Recruitment Agency,3,2,2,1,42419,m,2011-01-03,,1
+375,PUR4672,40,Purchasing,PG,Referral,2,3,2,1,29805,m,2004-01-22,0.02,1
+376,MKT8404,39,Marketing,PG,Walk-in,4,4,5,0,65715,Female,2005-10-15,,1
+377,HR4343,45,HR,PG,Referral,2,5,3,1,29805,m,2014-05-17,,0
+378,PUR5070,34,Purchasing,PG,Walk-in,1,2,5,1,24076,Female,2008-11-01,,1
+379,SAL1580,32,Sales,PG,On-Campus,3,2,2,1,42419,m,2014-05-28,,1
+380,MKT8004,50,Marketing,UG,Walk-in,2,4,3,0,29805,m,2016-12-31,,1
+381,PUR9130,38,Purchasing,UG,Referral,4,1,8,1,65715,f,2017-08-09,,1
+382,PUR4147,38,Purchasing,PG,Walk-in,4,5,4,0,65715,f,2006-06-01,,1
+383,PUR5249,50,Purchasing,PG,Recruitment Agency,2,2,6,1,29805,Female,2015-03-01,,0
+384,MKT2679,34,Marketing,UG,Referral,4,5,9,0,65715,f,2012-07-04,,0
+385,MKT4506,24,Marketing,UG,On-Campus,5,2,1,0,86750,Female,2016-10-28,,1
+386,TECH8253,48,Technology,UG,Referral,5,5,4,1,86750,m,2004-01-05,0.07,1
+387,SAL3744,35,Sales,UG,On-Campus,5,3,8,0,86750,m,2016-10-14,,1
+388,HR6188,46,HR,PG,Referral,1,,2,0,24076,f,2020-04-11,,1
+389,PUR3141,37,Purchasing,PG,Walk-in,2,5,8,1,29805,Female,2004-04-17,0.02,1
+390,TECH7617,53,Technology,UG,Recruitment Agency,1,1,5,1,24076,,2007-06-01,,0
+391,HR3479,50,HR,PG,Walk-in,4,3,3,1,65715,f,2016-05-16,,1
+392,TECH7484,24,Technology,UG,Referral,1,3,6,0,24076,m,2016-10-24,,1
+393,MKT8421,29,Marketing,PG,Recruitment Agency,4,,7,0,65715,f,2020-04-05,,1
+394,PUR5452,35,Purchasing,UG,Walk-in,4,5,5,0,65715,m,2007-06-17,,1
+395,HR6881,40,HR,PG,Referral,3,4,4,1,42419,Male,2005-06-05,,1
+396,HR7665,45,HR,UG,Recruitment Agency,5,1,5,0,86750,Female,2010-09-18,,1
+397,HR3849,36,HR,UG,Recruitment Agency,4,5,4,0,65715,f,2018-06-21,,1
+398,HR8390,46,HR,PG,Recruitment Agency,3,,7,0,42419,f,2020-11-22,,0
+399,HR7905,52,HR,UG,Referral,5,1,0,0,86750,f,2018-06-22,,0
+400,TECH3489,45,Technology,PG,Referral,4,2,6,0,65715,m,2018-04-10,,1
+401,PUR5611,49,Purchasing,PG,Referral,4,5,9,0,65715,Male,2016-11-13,,0
+402,MKT3839,44,Marketing,UG,Referral,1,4,9,0,24076,f,2012-12-16,,1
+403,MKT9527,51,Marketing,PG,Recruitment Agency,1,2,1,1,24076,Female,2017-02-16,,1
+404,MKT6878,29,Marketing,PG,Recruitment Agency,5,,8,1,86750,m,2020-02-11,,1
+405,MKT7303,43,Marketing,PG,On-Campus,4,1,0,1,65715,Male,2005-11-03,,1
+406,TECH1851,29,Technology,PG,Referral,2,1,9,0,29805,m,2017-04-12,,1
+407,SAL2687,23,Sales,PG,Referral,1,5,5,0,24076,m,2015-10-12,,0
+408,PUR7833,39,Purchasing,UG,Recruitment Agency,5,5,8,1,86750,Male,2016-12-05,,1
+409,HR3427,31,HR,PG,Walk-in,4,2,0,0,65715,m,2006-11-01,,1
+410,SAL5000,52,Sales,PG,Recruitment Agency,4,4,3,1,65715,m,2009-09-29,,1
+411,MKT6052,43,Marketing,PG,Referral,2,2,3,0,29805,Male,2006-09-10,,0
+412,SAL3738,35,Sales,PG,On-Campus,5,3,8,0,86750,Male,2018-11-05,,1
+413,PUR6732,43,Purchasing,PG,Walk-in,4,1,4,1,65715,f,2007-07-17,,0
+414,HR6387,41,HR,UG,Walk-in,1,1,4,1,24076,f,2005-01-12,,1
+415,HR9002,43,HR,PG,On-Campus,2,1,5,1,29805,f,2008-04-11,,1
+416,PUR6536,41,Purchasing,UG,Referral,5,,0,1,86750,m,2020-12-17,,1
+417,PUR4913,47,Purchasing,UG,Recruitment Agency,2,2,0,1,29805,m,2016-10-31,,1
+418,MKT2066,47,Marketing,UG,Walk-in,1,1,8,0,24076,f,2010-01-17,,0
+419,HR8723,44,HR,UG,Referral,5,2,2,0,86750,f,2013-08-13,,0
+420,SAL5380,53,Sales,PG,Referral,2,5,3,0,29805,f,2009-06-19,,1
+421,TECH5107,39,Technology,UG,Recruitment Agency,3,5,0,1,42419,f,2019-09-19,,1
+422,TECH6726,45,Technology,UG,Walk-in,1,2,8,1,24076,m,2011-07-05,,1
+423,PUR4373,45,Purchasing,PG,Referral,1,1,7,1,24076,f,2008-02-04,,1
+424,MKT9945,54,Marketing,PG,Recruitment Agency,1,2,1,1,24076,m,2013-09-17,,1
+425,TECH3082,52,Technology,PG,On-Campus,3,2,7,1,42419,f,2014-07-02,,1
+426,HR9967,32,HR,UG,Recruitment Agency,3,2,6,1,42419,f,2019-04-24,,1
+427,PUR7748,32,Purchasing,PG,On-Campus,4,3,5,0,65715,Female,2016-10-06,,1
+428,SAL1417,36,Sales,PG,Walk-in,2,5,0,0,29805,m,2006-11-01,,1
+429,PUR9306,30,Purchasing,UG,Recruitment Agency,4,4,6,0,65715,m,2017-07-29,,0
+430,SAL9808,44,Sales,PG,Referral,2,4,9,0,29805,m,2007-05-13,,0
+431,PUR4974,42,Purchasing,PG,Walk-in,3,3,6,0,42419,f,2007-08-13,,1
+432,PUR4267,42,Purchasing,PG,Walk-in,3,2,8,1,42419,f,2008-07-18,,1
+433,PUR1825,54,Purchasing,PG,Recruitment Agency,4,3,0,1,65715,m,2014-11-26,,1
+434,SAL8668,40,Sales,UG,Referral,5,3,1,1,86750,m,2006-03-21,,1
+435,SAL6745,36,Sales,PG,Walk-in,4,1,8,1,65715,f,2019-11-20,,1
+436,PUR1412,40,Purchasing,PG,Recruitment Agency,2,5,8,1,29805,m,2008-10-12,,0
+437,TECH8543,50,Technology,UG,Recruitment Agency,4,4,5,1,65715,Female,2019-05-19,,1
+438,MKT8587,36,Marketing,PG,Walk-in,1,2,5,0,24076,f,2007-09-03,,1
+439,MKT1728,42,Marketing,UG,Referral,2,4,3,1,29805,m,2016-11-04,,0
+440,MKT8164,43,Marketing,PG,Referral,2,,3,1,29805,m,2020-04-26,,0
+441,SAL9867,46,Sales,UG,Walk-in,5,5,4,1,86750,Male,2006-07-02,,1
+442,SAL6988,37,Sales,UG,Recruitment Agency,3,4,2,1,42419,m,2014-10-26,,1
+443,TECH3504,44,Technology,UG,Referral,2,4,0,0,29805,m,2019-03-25,,1
+444,MKT3967,52,Marketing,UG,Referral,3,3,0,0,42419,Female,2017-09-14,,1
+445,MKT3786,53,Marketing,PG,Referral,4,5,6,1,65715,Male,2008-01-21,,1
+446,PUR2122,26,Purchasing,UG,On-Campus,1,1,0,0,24076,Male,2019-05-12,,1
+447,SAL5079,35,Sales,PG,On-Campus,5,2,0,0,86750,f,2015-08-22,,1
+448,MKT2571,49,Marketing,UG,Walk-in,3,4,2,1,42419,m,2007-09-22,,0
+449,TECH6073,45,Technology,UG,Recruitment Agency,2,2,9,1,29805,m,2010-07-08,,1
+450,TECH6104,40,Technology,UG,Recruitment Agency,3,1,3,1,42419,f,2005-11-15,,1
+451,MKT3143,40,Marketing,PG,Referral,2,,3,1,29805,f,2020-02-14,,1
+452,SAL7806,34,Sales,UG,Referral,3,1,1,1,42419,f,2006-02-09,,1
+453,TECH8357,45,Technology,PG,Walk-in,2,3,0,0,29805,Male,2004-10-04,0.09,1
+454,PUR4440,53,Purchasing,PG,Walk-in,4,4,2,1,65715,m,2011-10-29,,1
+455,TECH4766,36,Technology,PG,Recruitment Agency,2,1,3,1,29805,f,2005-03-15,,0
+456,HR6644,34,HR,PG,On-Campus,2,2,2,1,29805,m,2005-04-27,,1
+457,HR3914,40,HR,PG,Walk-in,1,4,7,0,24076,f,2015-10-30,,0
+458,SAL5968,46,Sales,PG,On-Campus,2,,9,1,29805,m,2020-06-03,,1
+459,MKT6917,34,Marketing,PG,On-Campus,1,4,0,1,24076,m,2006-03-17,,1
+460,SAL9787,53,Sales,PG,Recruitment Agency,5,1,1,1,86750,m,2012-03-21,,0
+461,SAL1728,33,Sales,PG,Walk-in,1,3,6,0,24076,f,2011-07-31,,1
+462,SAL2365,31,Sales,UG,Recruitment Agency,4,2,3,1,65715,f,2013-01-14,,0
+463,PUR5492,34,Purchasing,UG,Walk-in,1,3,7,1,24076,f,2010-04-06,,0
+464,PUR1698,39,Purchasing,UG,Recruitment Agency,5,3,2,1,86750,Male,2013-03-20,,0
+465,PUR8186,37,Purchasing,UG,Recruitment Agency,4,5,5,0,65715,m,2018-07-09,,1
+466,TECH1395,47,Technology,UG,Recruitment Agency,3,3,8,1,42419,m,2019-04-19,,1
+467,HR8400,53,HR,PG,Referral,3,3,0,1,42419,Female,2016-08-16,,0
+468,SAL9082,39,Sales,PG,On-Campus,1,4,0,1,24076,m,2012-02-07,,1
+469,TECH5171,48,Technology,PG,Walk-in,1,2,7,0,24076,Male,2004-07-05,0.05,1
+470,HR5360,51,HR,PG,Walk-in,5,4,2,1,86750,m,2008-02-25,,0
+471,MKT3502,48,Marketing,PG,On-Campus,5,4,4,1,86750,Male,2019-10-26,,1
+472,PUR1717,40,Purchasing,PG,Walk-in,2,1,0,1,29805,m,2006-06-14,,1
+473,HR3782,54,HR,PG,Referral,5,4,4,0,86750,Female,2009-07-13,,0
+474,MKT5946,44,Marketing,UG,Recruitment Agency,2,5,5,0,29805,f,2017-01-25,,1
+475,HR6486,28,HR,UG,On-Campus,4,5,7,1,65715,,2019-02-23,,1
+476,PUR9335,39,Purchasing,UG,On-Campus,1,1,2,0,24076,m,2010-11-08,,1
+477,PUR5980,45,Purchasing,UG,Recruitment Agency,4,2,2,0,65715,f,2013-07-26,,0
+478,TECH8266,46,Technology,PG,On-Campus,5,2,9,0,86750,Male,2004-08-14,0.05,1
+479,SAL5491,40,Sales,PG,Referral,4,4,8,1,65715,f,2017-04-13,,0
+480,HR8192,30,HR,PG,Walk-in,4,4,3,1,65715,f,2008-04-09,,1
+481,HR6588,31,HR,UG,Walk-in,4,4,3,0,65715,f,2008-09-08,,0
+482,MKT8651,38,Marketing,PG,Walk-in,5,2,6,0,86750,f,2004-09-16,0.01,1
+483,PUR4636,27,Purchasing,PG,Recruitment Agency,4,,1,0,65715,f,2020-07-22,,0
+484,HR2167,34,HR,PG,Walk-in,2,5,7,1,29805,f,2013-01-14,,1
+485,PUR2062,47,Purchasing,UG,Recruitment Agency,5,3,5,1,86750,Male,2019-01-06,,1
+486,HR3156,54,HR,PG,Recruitment Agency,4,3,2,0,65715,m,2015-08-09,,1
+487,TECH8860,51,Technology,UG,On-Campus,5,,8,0,86750,m,2020-02-25,,1
+488,SAL6161,50,Sales,UG,On-Campus,3,3,4,0,42419,Male,2019-06-26,,0
+489,HR6305,33,HR,UG,On-Campus,2,1,7,0,29805,Female,2016-09-03,,1
+490,PUR7541,47,Purchasing,UG,Recruitment Agency,4,4,6,1,65715,f,2019-10-17,,0
+491,TECH5729,23,Technology,PG,On-Campus,3,1,7,0,42419,f,2015-05-05,,1
+492,HR8330,33,HR,UG,On-Campus,3,5,6,1,42419,m,2017-08-09,,1
+493,MKT6334,41,Marketing,UG,Walk-in,5,4,2,0,86750,m,2005-07-22,,0
+494,SAL9924,31,Sales,PG,Referral,3,3,1,0,42419,f,2006-03-29,,1
+495,HR5330,49,HR,PG,On-Campus,2,5,6,0,29805,m,2014-03-21,,1
+496,TECH9010,24,Technology,UG,Referral,2,4,2,0,29805,f,2018-02-20,,0
+497,MKT7801,34,Marketing,PG,On-Campus,1,,2,0,24076,m,2020-10-20,,1
+498,TECH5846,26,Technology,UG,Walk-in,2,1,1,1,29805,Male,2012-05-18,,0
+499,TECH7731,26,Technology,UG,Recruitment Agency,3,4,3,0,42419,Male,2018-12-28,,0

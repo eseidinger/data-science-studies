@@ -1,0 +1,131 @@
+version: "3.5"
+services:
+
+  ## ------------------------------------
+  ## -- Hadoop Edge Node
+  ## ------------------------------------
+  hadoop-edge-node:
+    image: registry.dbis-pro1.fernuni-hagen.de/pub-access/data-engineering-infrastructure/hadoop-node:0.2.0-rootless
+    container_name: dbis-hadoop-edge-node
+    hostname: hadoop-edge
+    restart: unless-stopped
+    networks:
+      - hadoop-cluster
+    ports:
+      # Namenode, dfs.http.address
+      - 9000:9000
+      # Namenode, WebUI http, dfs.namenode.http-address
+      - 9870:9870
+      # Cluster Metrics, yarn.resourcemanager.webapp.address
+      - 8088:8088
+    command: edge
+    env_file: hadoop-conf.env
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2048M
+
+
+  ## ------------------------------------
+  ## -- Hadoop Worker Node 1
+  ## ------------------------------------
+  hadoop-worker-node-1:
+    image: registry.dbis-pro1.fernuni-hagen.de/pub-access/data-engineering-infrastructure/hadoop-node:0.2.0-rootless
+    container_name: dbis-hadoop-worker-node-1
+    hostname: hadoop-worker-1
+    restart: unless-stopped
+    networks:
+      - hadoop-cluster
+    ports:
+      # yarn.nodemanager.webapp.address
+      - 8041:8042
+      # dfs.datanode.http.address
+      - 9901:9864
+    command: worker
+    env_file: hadoop-conf.env
+    deploy:
+      resources:
+        limits:
+          cpus: '3.0'
+          memory: 4096M
+
+
+  ## ------------------------------------
+  ## -- Hadoop Worker Node 2
+  ## ------------------------------------
+  hadoop-worker-node-2:
+    image: registry.dbis-pro1.fernuni-hagen.de/pub-access/data-engineering-infrastructure/hadoop-node:0.2.0-rootless
+    container_name: dbis-hadoop-worker-node-2
+    hostname: hadoop-worker-2
+    restart: unless-stopped
+    networks:
+      - hadoop-cluster
+    ports:
+      # yarn.nodemanager.webapp.address
+      - 8042:8042
+      # dfs.datanode.http.address
+      - 9902:9864
+    command: worker
+    env_file: hadoop-conf.env
+    deploy:
+      resources:
+        limits:
+          cpus: '3.0'
+          memory: 4096M
+
+
+  ## ------------------------------------
+  ## -- Client Node
+  ## ------------------------------------
+  client-node:
+    image: registry.dbis-pro1.fernuni-hagen.de/pub-access/data-engineering-infrastructure/pyspark-client-node:0.6.0-rootless
+    container_name: dbis-pyspark-client-node
+    hostname: pyspark-client
+    restart: unless-stopped
+    networks:
+      - hadoop-cluster
+    ports:
+      - 4050:4050
+      - 8888:8888
+    command: >
+      notebook
+      --ip 0.0.0.0
+      --NotebookApp.token=''
+      --NotebookApp.password=''
+      --NotebookApp.allow_remote_access="True"
+      --NotebookApp.open_browser="False"
+      --NotebookApp.disable_check_xsrf="True"
+      --TemplateExporter.extra_template_basedirs="['/home/pyspark-client/nbconvert-templates']"
+      --Exporter.preprocessors nbconvert.preprocessors.ExtractAttachmentsPreprocessor
+      --LatexExporter.template_name='fernuni-latex'
+      --PDFExporter.template_name='fernuni-latex'
+      --ASCIIDocExporter.enabled="False"
+      --HTMLExporter.enabled="False"
+      --MarkdownExporter.enabled="False"
+      --PythonExporter.enabled="False"
+      --RSTExporter.enabled="False"
+      --ScriptExporter.enabled="False"
+      --SlidesExporter.enabled="False"
+      --WebPDFExporter.enabled="False"
+    env_file:
+      - hadoop-conf.env
+      - spark-defaults-conf.env
+    volumes:
+      - ./workspace:/home/pyspark-client/workspace
+      # mount the docker socket for dind
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2048M
+
+
+## -- Docker networks 
+networks:
+  hadoop-cluster:
+    name: dbis-hadoop-cluster-network
+    driver: bridge
+
+

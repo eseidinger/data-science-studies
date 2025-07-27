@@ -1,0 +1,22 @@
+This file contains informations about the dataset employee_satisfaction.csv
+
+
++------------------+----------------------------------------------------------------------------------------------------------+
+|   column_name    |                                                description                                               |
++------------------+----------------------------------------------------------------------------------------------------------+
+| emp_id           |  ID, die die Angestellten eindeutig identifiziert                                                        |
+| age              |  Alter der Angestellten                                                                                  |
+| Dept             |  Abteilung der Angestellten                                                                              |
+| education        |  Ausbildungsgrad der Angestellten                                                                        |
+| recruitment_type |  Art der Rekrutierung                                                                                    |
+| job_level        |  1 ist die niedrigste Stufe und 5 die höchste                                                            |
+| rating           |  Bewertung der Angestellten aus dem letzten Jahr, 1 ist die schlechteste und 5 die beste Bewertung       |
+| awards           |  Anzahl der Auszeichnungen                                                                               |
+| certifications   |  Zertifizierungsstatus: 1=zertifiziert, 0=nicht zertifiziert                                             |
+| salary           |  Netto-Gehalt, Angabe in US-Dollar                                                                       |
+| gender           |  Geschlecht                                                                                              |
+| entry_date       |  Datum, zu dem die Angestellten bei der Firma begonnen haben                                             |
+| last_raise       |  Prozentsatz der letzten Gehaltserhöhung                                                                   |
+| satisfied        |  Zufriedenheit: 1=zufrieden, 0=unzufrieden                                                               |
++------------------+----------------------------------------------------------------------------------------------------------+
+
