@@ -1,0 +1,213 @@
+# Hello Data Science in R
+
+In diesem Notebook finden Sie eine kurze Übungsaufgabe zu Data Science mit R. Für die Bearbeitung benötigen Sie die Datensets **train.csv** und **test.csv**, die sich im selben Ordner wie dieses Notebook befinden.
+
+Sie können die Code-Blöcke in diesem Notebook mit der Tastenkombination *Ctrl+Shift+Enter* ausführen:
+
+```{r}
+print('Hello World')
+```
+
+Mit **help** erhalten Sie weitere Informationen zu einer Funktion:
+
+```{r}
+help("print")
+```
+
+Und mit **help.search()** können Sie die Dokumentation durchsuchen:
+
+```{r}
+help.search("csv")
+```
+
+# Datensatz vorbereiten
+
+In den zwei Datensätzen befinden sich Informationen zu den Passagieren auf der Titanic. Mit dem folgenden Code-Block laden Sie den Datensatz **train.csv**.
+
+```{r}
+path=getwd()
+train<-read.csv(paste(path,"/train.csv",collapse=NULL,sep=""),header=TRUE)
+```
+
+Laden Sie den zweiten Datensatz **test.csv**.
+
+```{r}
+test<-read.csv(paste(path,"/test.csv",collapse=NULL,sep=""),header=TRUE)
+```
+
+Mit dem Befehl **head** können Sie sich die ersten Zeilen des Datensatzes anzeigen lassen:
+
+```{r}
+head(train)
+```
+
+Verwenden Sie *help.search("head")* um herauszufinden, wie man die letzten Zeilen eines Datensatzes anzeigt:
+
+```{r}
+#help.search("head")
+tail(train)
+```
+
+Einzelne Einträge können mit den entsprechenden Koordinaten aufgerufen werden:
+
+```{r}
+train[891,5]
+```
+
+Wie heißt der Passagier mit PassengerID 773?
+
+```{r}
+train[773,4]
+```
+
+# Daten analysieren
+
+Die Befehle **nrow** und **ncol** geben die Anzahl der der Zeilen und Spalten eines Datensatzes an. Wieviele Datenpunkte und Kategorien hat **train**?
+
+```{r}
+nrow(train)
+ncol(train)
+```
+
+Der Datentyp **data.frame()** wird oft für Data Science Projekte verwendet.
+
+```{r}
+data<-data.frame(train)
+```
+
+Man kann damit zum Beispiel die Namen der Variablen auslesen:
+
+```{r}
+variablen_namen <- colnames(data[1:12])
+variablen_namen
+```
+
+Oder weitere Informationen zu den Datentypen herausfinden:
+
+```{r}
+str(data)
+```
+
+Man kann aus dem Datensatz auch Teilmengen entnehmen:
+
+```{r}
+subset(data,data$Sex=="male")
+```
+
+Und berechnen, wieviele Passagiere überlebt haben:
+
+```{r}
+sum(data$Survived==1)
+```
+
+# Daten reinigen
+
+Fehlen im Data-Frame Einträge?
+
+```{r}
+any(is.na(data))
+```
+
+Wieviele Einträge fehlen? In welcher Spalte verstecken sich die fehlenden Einträge?
+
+```{r}
+sum(is.na(data))
+colSums((is.na(data)))
+```
+
+Um mit dem Datensatz weiter zu arbeiten, ersetzt man die fehlenden Einträge:
+
+```{r}
+data$Age[which(is.na(data$Age))]<-0
+```
+
+Gibt es im **test** -Datensatz fehlende Einträge? Bitte ersetzen Sie die fehlenden Werte:
+
+```{r}
+testData<-data.frame(test)
+sum(is.na(testData))
+colSums((is.na(testData)))
+testData$Age[which(is.na(testData$Age))]<-0
+testData$Fare[which(is.na(testData$Fare))]<-0
+sum(is.na(testData))
+```
+
+# Übungen
+
+```{r}
+# Wieviele Frauen und Mädchen sind im Datensatz data enthalten?
+women<-subset(data,data$Sex=="female")
+nrow(women)
+```
+
+```{r}
+# Wieviele Kinder unter 12 Jahren?
+children<-data$Age<12
+sum(children)
+```
+
+```{r}
+# Wieviele Frauen haben überlebt?
+women<-subset(data,data$Sex=="female"&data$Age>18)
+sum(women$Survived==1)
+```
+
+# Interessante Einsichten
+
+**Hatte das Geschlecht einen Einfluss auf die Überlebenswahrscheinlichkeit?**
+
+```{r}
+survivors<-subset(data,data$Survived==1)
+
+#Frauen
+female.total=sum(data$Sex=="female"&data$Age>18)
+female.survived=sum(survivors$Sex=="female"&survivors$Age>18)
+
+#Kinder
+children.total=sum(data$Age<18)
+children.survived=sum(survivors$Age<18)
+
+#Männer
+male.total=sum(data$Sex=="male"&data$Age>18)
+male.survived=sum(survivors$Sex=="male"&survivors$Age>18)
+
+cat("Überlebenswahrscheinlichkeit\n",
+    "Frauen:", sprintf("%1.2f%%",female.survived/female.total ),"\n",
+    "Männer:", sprintf("%1.2f%%",male.survived/male.total ),"\n",
+    "Kinder:", sprintf("%1.2f%%",children.survived/children.total ),"\n")
+```
+
+**Welche Altersgruppen sind im Datensatz am häufigsten vertreten?**
+
+```{r}
+bereinigt_Age<-subset(data,data$Age>1)
+Age<-bereinigt_Age$Age
+
+# Histogramm
+hist(Age,
+     main="Altersverteilung",
+     xlab="Alter der Passagiere",
+     ylab="Absolute Häufigkeit",
+     ylim=c(0,250),
+     col="lightblue")
+
+# Altersdurchschnitt
+abline(v = mean(Age),col = "red",lwd = 3) # Durchschnitt eintragen
+text(x = mean(Age)+1,y = 200, adj=0,      # Position
+     paste("Durchschnittsalter =",round(mean(Age),1)),col = "red")
+```
+
+**Gab es zwischen den Preiskategorien Altersunterschiede?**
+
+```{r}
+bereinigt_Age<-subset(data,data$Age>1)
+
+# Welche Preisklassen gabe es auf der Titanic?
+sort(unique(data$Pclass))
+
+# Boxplot Preisklasse vs Alter der Passagiere
+boxplot(bereinigt_Age$Age~bereinigt_Age$Pclass,
+        xlab="Preisklasse",
+        ylab="Alter der Passagiere",
+        col="lightblue")
+```
