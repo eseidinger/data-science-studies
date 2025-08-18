@@ -1,0 +1,9 @@
+Planet, Abstand zur Sonne, Durchmesser, Masse, Umlaufzeit, Geschwindigkeit
+Merkur,   5.79e7,  4.879, 0.33e24,    88, 172.332
+Venus,   1.08e8,  12.103, 4.87e24,   225, 126.072
+Erde,    1.50e8,  12.735, 5.97e24,   365, 107.208
+Mars,    2.28e8,   6.772, 0.64e24,   687,  86.868
+Jupiter, 7.78e8, 138.346, 1.90e27,  4329,  47.052
+Saturn,  1.43e9, 114.632, 5.69e26, 10751,  34.884
+Uranus,  2.87e9,  50.532, 8.68e25, 30664,  24.516
+Neptun,  4.50e9,  49.105, 1.02e26, 60148,  19.548
