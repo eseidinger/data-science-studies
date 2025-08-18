@@ -1,0 +1,53 @@
+version: "3.5"
+services:
+
+  ## ------------------------------------
+  ## -- Hadoop Edge Node
+  ## ------------------------------------
+  hadoop-edge-node:
+    env_file: hadoop-conf-small.env
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+
+
+  ## ------------------------------------
+  ## -- Hadoop Worker Node 1
+  ## ------------------------------------
+  hadoop-worker-node-1:
+    env_file: hadoop-conf-small.env
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 1408M
+
+
+  ## ------------------------------------
+  ## -- Hadoop Worker Node 2
+  ## ------------------------------------
+  hadoop-worker-node-2:
+    env_file: hadoop-conf-small.env
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 1408M
+
+
+  ## ------------------------------------
+  ## -- Client Node
+  ## ------------------------------------
+  client-node:
+    env_file:
+      - hadoop-conf-small.env
+      - spark-defaults-conf-small.env
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 768M
+
+
