@@ -1,0 +1,2173 @@
+[{
+    "fid": "MRN_Refill_4326_Point.151",
+    "description": "                     ",
+    "rating": 3.7115384615384617,
+    "station_name": "Der Amerikanische Freund - Craft Beer Pub",
+    "opening_hours": "Mi;Do 18:00-22:00 Fr-Sa 18:00-24:00",
+    "address": {
+        "city": "Bensheim",
+        "plz": "64625",
+        "street": "Dalbergergasse 15"
+    },
+    "location_id": "1f9049e6-fb62-4a6b-bdb0-a33da7021091"
+}, {
+    "fid": "MRN_Refill_4326_Point.3",
+    "description": "Der Stadtteilverein Boxberg e.V. geht mit der Zeit und arbeitet an vielen aktuellen. Jetzt gibt es auch noch kostenlos Leitungswasser zum Trinken. Einfach reinkommen!",
+    "rating": 3.8529411764705883,
+    "station_name": "Refill-Station im Stadtteilverein Boxberg e.V.",
+    "opening_hours": "Mo 17:00-18:30",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Boxbergring 12"
+    },
+    "location_id": "fb0ece00-323e-4358-9726-90e1303a4374"
+}, {
+    "fid": "MRN_Refill_4326_Point.17",
+    "description": "Öffnungszeiten: immer geöffnet",
+    "rating": 3.691588785046729,
+    "station_name": "Trinkwasserstelle Forstquelle",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Zur Forstquelle 0"
+    },
+    "location_id": "d509242b-1524-405a-bed6-1388adb9d2d8"
+}, {
+    "fid": "MRN_Refill_4326_Point.180",
+    "description": "",
+    "rating": 3.7413793103448274,
+    "station_name": "Starbucks SOF Heidelberg",
+    "opening_hours": "Mo-Sa 9:30-20:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": "Hauptstr. 9-13"
+    },
+    "location_id": "4e9df391-91af-4735-bcf2-a846cfb3d7fd"
+}, {
+    "fid": "MRN_Refill_4326_Point.18",
+    "description": "",
+    "rating": 3.6363636363636362,
+    "station_name": "Bleuwater Labor - Bluesales GmbH",
+    "opening_hours": "15:00-18:30",
+    "address": {
+        "city": "Otterstadt",
+        "plz": "67166",
+        "street": "Merowinger Str. 21A"
+    },
+    "location_id": "9b0979ad-1593-4595-8652-fe6f1e1ab45a"
+}, {
+    "fid": "MRN_Refill_4326_Point.47",
+    "description": "Gläserne Backstube mit Café  Bäckerei mi",
+    "rating": 3.759493670886076,
+    "station_name": "De' Bäcker Becker",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Edenkoben",
+        "plz": "67480",
+        "street": "Venninger Straße 1"
+    },
+    "location_id": "3b9c98c8-4231-4aa4-a96a-0f8113f68984"
+}, {
+    "fid": "MRN_Refill_4326_Point.85",
+    "description": "Kaufhaus für grünes Design (nachhaltige Kleidung. Accessoires. Haushaltsgegenstände. Wohntextilien) Im Hof. Durchgang neben Gino’s",
+    "rating": 3.735294117647059,
+    "station_name": "GOODsHOUSE",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": " 113a"
+    },
+    "location_id": "6d3d5b7b-af06-4613-b654-fe1e797d551b"
+}, {
+    "fid": "MRN_Refill_4326_Point.153",
+    "description": "Seniorenbegegnungstätte SBS 55+ ",
+    "rating": 3.584,
+    "station_name": "Seniorenbegegnungstätte SBS 55+",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Viernheim",
+        "plz": "68519",
+        "street": "Am Schillerpl. 1a"
+    },
+    "location_id": "f3bbc9cc-676d-42d3-a194-10bfe1a71066"
+}, {
+    "fid": "MRN_Refill_4326_Point.164",
+    "description": "Fahrradladen mit Werkstatt. refill refill-station",
+    "rating": 3.826530612244898,
+    "station_name": "Tari-Bikes",
+    "opening_hours": "Mo-Fr 10:00-19:00 Sa 10:00-14:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Wieslocher Straße 34"
+    },
+    "location_id": "b6bff378-34ce-4309-b8d6-e36ae18aab94"
+}, {
+    "fid": "MRN_Refill_4326_Point.65",
+    "description": "Haus für die Nachbarschaft",
+    "rating": 3.3949579831932772,
+    "station_name": "Nachbarschaftshaus Rheinau",
+    "opening_hours": "Mo-Do 15:00-21:00 Fr 15:00-18:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68219",
+        "street": "Rheinauer Ring 101"
+    },
+    "location_id": "70bdfaf7-0170-456c-a974-72563b6d4ad2"
+}, {
+    "fid": "MRN_Refill_4326_Point.69",
+    "description": "",
+    "rating": 3.6788990825688073,
+    "station_name": "Firma An- und Verkauf Ochs",
+    "opening_hours": "Mo-Fr 15:00-18:30 Sa 10:00-14:00",
+    "address": {
+        "city": "Schwetzingen",
+        "plz": "68723",
+        "street": "Mannheimer Str. 51 +53"
+    },
+    "location_id": "5f11b4b7-275a-4211-8f4e-0c61c975b33b"
+}, {
+    "fid": "MRN_Refill_4326_Point.79",
+    "description": "",
+    "rating": 3.6666666666666665,
+    "station_name": "Bloom's Friseur",
+    "opening_hours": "Mo-Mi 9:00-18:00 Do-Fr 9:00-20:00 Sa 8:00-19:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Wormser Straße 50"
+    },
+    "location_id": "740f5437-2bf7-4e39-b3f8-17362393ffb5"
+}, {
+    "fid": "MRN_Refill_4326_Point.110",
+    "description": "Jugenstil-Trinkbrunnen am Wassertur",
+    "rating": 3.6859504132231407,
+    "station_name": "Öffentlicher Trinkbrunnen / Wasserturm",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68165",
+        "street": "Friedrichsplatz"
+    },
+    "location_id": "953998ac-0c37-41ce-83ec-6e9babdf4147"
+}, {
+    "fid": "MRN_Refill_4326_Point.117",
+    "description": "Barrierefreier Zugang aus Richtung Dalberg-Schule/Museum.",
+    "rating": 3.760330578512397,
+    "station_name": "Stadtbibliothek Ladenburg",
+    "opening_hours": "Di;Do 8:00-15:00 Mi;Fr 12:00-18:00 Sa 10:00-13:00",
+    "address": {
+        "city": "Ladenburg",
+        "plz": "68526",
+        "street": "Hauptstraße 8"
+    },
+    "location_id": "11b1f364-09ab-4a8a-b346-54a3633da95f"
+}, {
+    "fid": "MRN_Refill_4326_Point.126",
+    "description": "Dessousgeschäft",
+    "rating": 3.7027027027027026,
+    "station_name": "Boehm Dessous und Mode zum Wohlfühlen",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Germersheim",
+        "plz": "76726",
+        "street": "Marktstraße 15"
+    },
+    "location_id": "5799fa5b-4784-461c-8bf1-e96aa5060660"
+}, {
+    "fid": "MRN_Refill_4326_Point.144",
+    "description": "Granitsäule in der Nähe der Straßenbahnhaltestelle. Betriebssaison: Mai-Oktober",
+    "rating": 3.8737864077669903,
+    "station_name": "Öffentlicher Trinkbrunnen / Marktplatz",
+    "opening_hours": "Mai-Oktober",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "Unbekannt"
+    },
+    "location_id": "a375cf53-d7b7-4460-9ba5-7d259054955b"
+}, {
+    "fid": "MRN_Refill_4326_Point.146",
+    "description": "Edelstahlsäule",
+    "rating": 3.7788461538461537,
+    "station_name": "Öffentlicher Trinkbrunnen / BUGA Spielplatz \"Aufzug\"",
+    "opening_hours": "Mai-Oktober",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68259",
+        "street": "Radschnellweg Mannheim - Weinheim"
+    },
+    "location_id": "9f68d4ca-cb25-405d-8f50-ed2decf87be2"
+}, {
+    "fid": "MRN_Refill_4326_Point.101",
+    "description": "Refill-Station in City-Lage am Wasserturm. Das Team des City- und Tagungshotels bietet gerne die Auffüllung von Trinkwasser in eigene Flaschen an! Bitte meldet euch dafür an der Rezeption.",
+    "rating": 3.7777777777777777,
+    "station_name": "Dorint Kongresshotel Mannheim",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "Friedrichsring 6"
+    },
+    "location_id": "a02cd6b8-06a0-4d3e-a9da-0a17befb7ecd"
+}, {
+    "fid": "MRN_Refill_4326_Point.109",
+    "description": "",
+    "rating": 3.5981308411214954,
+    "station_name": "Bloom's Friseur",
+    "opening_hours": "Mo-Mi 9:00-20:00 Do-Fr 9:00-21:00 Sa 9:00-19:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": "Plöck 2/2"
+    },
+    "location_id": "44cc185b-0e19-4bde-9e7c-ab971e0b65e5"
+}, {
+    "fid": "MRN_Refill_4326_Point.32",
+    "description": "",
+    "rating": 3.5784313725490198,
+    "station_name": "Wormser Erlebnisgarten",
+    "opening_hours": "Mo-Do 8:00-16:00 Fr 8:00-14:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Hammelsdamm 105"
+    },
+    "location_id": "5c626b48-3deb-4283-94d2-93ff25de100f"
+}, {
+    "fid": "MRN_Refill_4326_Point.33",
+    "description": "",
+    "rating": 3.621359223300971,
+    "station_name": "Boulderhaus Heidelberg",
+    "opening_hours": "10:00-23:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Im Bosseldorn 25/1"
+    },
+    "location_id": "532c2334-7fc1-4f41-9506-f319f3d22634"
+}, {
+    "fid": "MRN_Refill_4326_Point.39",
+    "description": "Geschmackvolle und phantastische Produkte die nicht nur eine Funktion sondern auch eine Geschichte haben.",
+    "rating": 3.5425531914893615,
+    "station_name": "Arte e Gusto",
+    "opening_hours": "Mo-Fr 9:00-19:00 Sa 9:00-14:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68165",
+        "street": "Seckenheimer Straße 27"
+    },
+    "location_id": "e180e57d-3336-4a47-9829-fa15a4935160"
+}, {
+    "fid": "MRN_Refill_4326_Point.49",
+    "description": "Friseurkette nicht besonders nachhaltig",
+    "rating": 3.841666666666667,
+    "station_name": "Bloom's Friseur - Kaiserring",
+    "opening_hours": "Mo-Do 10:00-20:00 Fr 10:00-21:00 Sa 9:00-19:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "Kaiserring 34"
+    },
+    "location_id": "35b9e729-f95a-4420-b080-d8eeef4582ca"
+}, {
+    "fid": "MRN_Refill_4326_Point.58",
+    "description": "Wir sind barrierefrei.",
+    "rating": 3.6320754716981134,
+    "station_name": "Gemeinde Dielheim",
+    "opening_hours": "Mo-Fr 08:00-12:00",
+    "address": {
+        "city": "Dielheim",
+        "plz": "69234",
+        "street": "Rathausstr. 3"
+    },
+    "location_id": "eac27e39-c28c-4137-95bd-ee2b2adcee32"
+}, {
+    "fid": "MRN_Refill_4326_Point.156",
+    "description": "Hier befindet sich eine Refill-Station. Eine mitgebrachte Flasche kann hier kostenfrei mit Leitungswasser aufgefüllt werden.",
+    "rating": 3.6288659793814433,
+    "station_name": "Volkshochschule Viernheim",
+    "opening_hours": "Mo-Fr 09:00-12:00 Mo;Di 14:00-16:00 Mi 14:00-18:00 Do 14:00-15:00",
+    "address": {
+        "city": "Viernheim",
+        "plz": "68519",
+        "street": "Kreuzstraße 2-4"
+    },
+    "location_id": "8b2e9d5e-bed5-45bb-b8dd-992a24f14297"
+}, {
+    "fid": "MRN_Refill_4326_Point.31",
+    "description": "Normaler Friseur nicht besonders nachhaltig",
+    "rating": 3.7572815533980584,
+    "station_name": "Bloom's Friseur Zollhof",
+    "opening_hours": "Mo-Sa 9:00-20:00",
+    "address": {
+        "city": "Ludwigshafen",
+        "plz": "67061",
+        "street": "Im Zollhof 4"
+    },
+    "location_id": "81f75b3c-b49e-47f5-a747-aefbc61d41f6"
+}, {
+    "fid": "MRN_Refill_4326_Point.43",
+    "description": "",
+    "rating": 3.5785123966942147,
+    "station_name": "Optik Stahr",
+    "opening_hours": "Di-Fr 9:30-13:00;14:00-18:00 Sa 9:30-13:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Stephansgasse 22"
+    },
+    "location_id": "4ac50b97-cc44-4546-a459-6c1b5c36f4fb"
+}, {
+    "fid": "MRN_Refill_4326_Point.46",
+    "description": "Unsere",
+    "rating": 3.6842105263157894,
+    "station_name": "Axa Generalvertretung",
+    "opening_hours": "Mo;Di;Do;Fr 09:00-12:00 Mo 15:00-17:00 Di;Fr 15:00-17:00",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Hauptstraße 31"
+    },
+    "location_id": "45b8c426-32b1-4bc6-b2aa-393ec5511734"
+}, {
+    "fid": "MRN_Refill_4326_Point.62",
+    "description": "",
+    "rating": 3.8,
+    "station_name": "AVR UmweltService GmbH",
+    "opening_hours": "Mo-Do 8:00-17:00 Fr 8:00-16:00",
+    "address": {
+        "city": "Sinsheim",
+        "plz": "74889",
+        "street": "Dietmar-Hopp-Str. 8"
+    },
+    "location_id": "dcc061b6-4d0a-4fdc-921d-1245e432736f"
+}, {
+    "fid": "MRN_Refill_4326_Point.93",
+    "description": "Der Campus Shop verkauft Fanartikel der Universität Mannheim und bietet für die Pausen den Studierenden Kaffee. Snacks und Kaltgetränke an. ",
+    "rating": 3.730769230769231,
+    "station_name": "Campus Shop Universität Mannheim",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "68161",
+        "plz": "Mannheim",
+        "street": "Schloss Bismarckstr. 40"
+    },
+    "location_id": "15e4b9d7-6e42-48f1-ae70-9aa9125d7315"
+}, {
+    "fid": "MRN_Refill_4326_Point.176",
+    "description": "",
+    "rating": 3.6574074074074074,
+    "station_name": "chamäleon - Hermann \u0026 Kurtz GbR",
+    "opening_hours": "Mo-Fr 11:00-18:00 Sa 11:00-16:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Wormser Straße 52"
+    },
+    "location_id": "58860b79-5c42-4ba6-8677-12253da162d3"
+}, {
+    "fid": "MRN_Refill_4326_Point.178",
+    "description": "",
+    "rating": 3.6504065040650406,
+    "station_name": "Starbucks Hauptstraße 137",
+    "opening_hours": "Mo-Do 07:30-21:00 Fr;Sa 07:30-22:00 So 09:00-20:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": "Hauptstraße 137"
+    },
+    "location_id": "3843b45e-5d15-4dc8-acb5-906a871aef0a"
+}, {
+    "fid": "MRN_Refill_4326_Point.5",
+    "description": "Fairtrade Produkte",
+    "rating": 3.53125,
+    "station_name": "Weltladen",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Lillengasse 8"
+    },
+    "location_id": "d5749ac5-763f-4d04-ad9c-f22832a9d535"
+}, {
+    "fid": "MRN_Refill_4326_Point.51",
+    "description": "Öffnungszeiten: immer geöffnet",
+    "rating": 3.898876404494382,
+    "station_name": "Schweinsbrunnen",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Unterer Neuer Weg 0"
+    },
+    "location_id": "74533eec-585f-4f0d-bd71-267168c5708a"
+}, {
+    "fid": "MRN_Refill_4326_Point.71",
+    "description": "Ein Ort abseits der Hektik bietet individuelle Beratung hat Atmosphäre voller Bücher die Frauen interessieren :",
+    "rating": 3.5904761904761906,
+    "station_name": "Frauenbuchladen Xanthippe",
+    "opening_hours": "Mo-Fr 10:00-18.30 Sa 10:00-16.00",
+    "address": {
+        "city": "Mannheim; Deutschland",
+        "plz": "68161",
+        "street": "T 3 4"
+    },
+    "location_id": "56246b0d-a9a0-4322-a983-a042825af9c5"
+}, {
+    "fid": "MRN_Refill_4326_Point.72",
+    "description": "Friseur nicht besonders nachhaltig",
+    "rating": 3.6354166666666665,
+    "station_name": "Bloom's Friseur",
+    "opening_hours": "Mo-Mi 9:00-20:00 Do-Fr 9:00-21:00 Sa 9:00-19:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "C 1 8"
+    },
+    "location_id": "8e15ba25-7170-4b19-9a47-accb04a12f91"
+}, {
+    "fid": "MRN_Refill_4326_Point.120",
+    "description": "",
+    "rating": 3.5742574257425743,
+    "station_name": "Lotte \u0026 Klara",
+    "opening_hours": "Mo;Di;Do;Fr 9:00-18:00 Sa 9:00-14:00 Sa 10:00-15:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Rotkreuzgasse 4"
+    },
+    "location_id": "bd6ba637-dec0-4b73-a79c-d562f65403ca"
+}, {
+    "fid": "MRN_Refill_4326_Point.169",
+    "description": "Nähkurse. Nähgeburtstage. Stoffe. Selbstgemachtes. Außergewöhnliche Geschenkideen für Erwachsene und Kinder sowie Kleidung aus fairem Handel bzw. biologischem Anbau",
+    "rating": 3.7168141592920354,
+    "station_name": "Fachwerk; Kunst-Kitsch-Design",
+    "opening_hours": "nach Vereinbarung",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Nußlocher Straße 11"
+    },
+    "location_id": "13e4ec9c-0491-4e97-95fb-7b624f37300f"
+}, {
+    "fid": "MRN_Refill_4326_Point.170",
+    "description": "Fachgeschäft für Wasserbetten. Luftbetten. Matratzen. Boxspringbetten. Bettwaren aller Art und Zubehör. Pflegemittel. Verkauf von Möbeln aus eigener Fertigung",
+    "rating": 3.6842105263157894,
+    "station_name": "Gröner Bettenfachgeschäft",
+    "opening_hours": "Mo;Di;Do 12:00-18:00 Do 12:00-20:00 Sa 10:00-14:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Kleinfeldweg 52"
+    },
+    "location_id": "09b8d7de-c702-472d-ae6f-6b6ea0c4cdbb"
+}, {
+    "fid": "MRN_Refill_4326_Point.177",
+    "description": "Wir sind barrierefrei",
+    "rating": 3.8839285714285716,
+    "station_name": "STA Travel Mannheim",
+    "opening_hours": "Mo-Fr 10:00-19:00 Sa 10:00-16:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "P3 6"
+    },
+    "location_id": "bc973c19-125b-48ce-a679-c734dedc77e0"
+}, {
+    "fid": "MRN_Refill_4326_Point.99",
+    "description": "",
+    "rating": 3.839080459770115,
+    "station_name": "Frollein Elfriede",
+    "opening_hours": "Do 12:00-18:00 Fr 9:30-18:00 Sa 9:30-13:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Kleine Wollgasse 7"
+    },
+    "location_id": "057b99ee-4cc9-4aee-bb6e-48a3d98ff028"
+}, {
+    "fid": "MRN_Refill_4326_Point.104",
+    "description": "Unverpackt Laden",
+    "rating": 3.580357142857143,
+    "station_name": "Unverpackt Laden",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Weinheim",
+        "plz": "69469",
+        "street": "Hauptstraße 66"
+    },
+    "location_id": "f1ba6990-2e86-43ca-bec4-1b93143db050"
+}, {
+    "fid": "MRN_Refill_4326_Point.8",
+    "description": "",
+    "rating": 3.6574074074074074,
+    "station_name": "Frischemacher FoodStore Heidelberg",
+    "opening_hours": "7:00-20:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": "Hauptstraße 146"
+    },
+    "location_id": "9e338cf5-9681-4997-b7de-43deefac104c"
+}, {
+    "fid": "MRN_Refill_4326_Point.57",
+    "description": "",
+    "rating": 3.8541666666666665,
+    "station_name": "Nibelungenmuseum Worms",
+    "opening_hours": "Di-Fr 10:00-17:00 Sa;So;FT 10:00-18:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Fischerpförtchen 10"
+    },
+    "location_id": "ca60ed99-d4cb-4ceb-8f37-3d372a330aa5"
+}, {
+    "fid": "MRN_Refill_4326_Point.91",
+    "description": "Er unterstützt in den Stadtteilen Innenstadt und Jungbusch Vereine. Kirchengemeinden. Schulen und Kitas sowie sonstige gemeinnützige Einrichtungen und Einzelpersonen in ihrem bürgerschaftlichen Engagement.",
+    "rating": 3.6704545454545454,
+    "station_name": "Stadtteilservice Innenstadt-Jungbusch",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "H7 8"
+    },
+    "location_id": "c1e48fb6-6510-4dfa-bbbe-af7cb87fbbb4"
+}, {
+    "fid": "MRN_Refill_4326_Point.121",
+    "description": "",
+    "rating": 3.6979166666666665,
+    "station_name": "SPD - Regionalgeschäftsstelle",
+    "opening_hours": "Mo-Do 8:00-16:00 Fr 8:00-13:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67549",
+        "street": "Bebelstraße 55a"
+    },
+    "location_id": "2494708c-0fc0-4cf3-829c-7daf91bd0af3"
+}, {
+    "fid": "MRN_Refill_4326_Point.44",
+    "description": "",
+    "rating": 3.7888888888888888,
+    "station_name": "Brillen Meyer GmbH",
+    "opening_hours": "Mo-Fr 9:00-17:00",
+    "address": {
+        "city": "Brühl",
+        "plz": "68782",
+        "street": "Mannheimerstr. 27"
+    },
+    "location_id": "40b2c029-6433-46b9-9201-229f135852fe"
+}, {
+    "fid": "MRN_Refill_4326_Point.55",
+    "description": "",
+    "rating": 3.747826086956522,
+    "station_name": "Café Fritzi's Manufakturei",
+    "opening_hours": "Di-Fr 8:00-18:00 Sa 8:00-14:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67549",
+        "street": "Gewerbeschulstraße 14"
+    },
+    "location_id": "5ea3c224-2a12-4bab-9c59-ac37a0d63f2b"
+}, {
+    "fid": "MRN_Refill_4326_Point.140",
+    "description": "Im Holzwurm ist immer was los und für Kinder und Jugendliche jede Menge geboten. Gerne füllen wir ein mitgebrachtes Gefäß mit Trinkwasser auf. ",
+    "rating": 3.5238095238095237,
+    "station_name": "Refill-Station im Holzwurm (Kinder- und Jugenzentrum)",
+    "opening_hours": "Mo 17:00-18:30 Di;Do 14:00-19:30 Mi;Fr 13:00-19:30",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Am Waldrand 21"
+    },
+    "location_id": "d9d547fd-ffe1-4ec6-837b-dea17f36845d"
+}, {
+    "fid": "MRN_Refill_4326_Point.143",
+    "description": "Jugenstil-Trinkbrunnen am Wasserturm Betreibssaison: Mai-Oktober",
+    "rating": 3.6607142857142856,
+    "station_name": "Öffentlicher Trinkbrunnen / Wasserturm",
+    "opening_hours": "Mai-Oktober",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68165",
+        "street": "Friedrichsplatz"
+    },
+    "location_id": "a6121a87-3c69-4be5-81b1-981cd5aa81aa"
+}, {
+    "fid": "MRN_Refill_4326_Point.28",
+    "description": "Wir sind barrierefrei.",
+    "rating": 3.7757009345794392,
+    "station_name": "Gemeinde Dielheim",
+    "opening_hours": "Mo-Fr 08:00-12:00",
+    "address": {
+        "city": "Dielheim",
+        "plz": "69234",
+        "street": "Hauptstr. 37"
+    },
+    "location_id": "9f47a287-d9cc-42d5-881a-4bbb2b6fc331"
+}, {
+    "fid": "MRN_Refill_4326_Point.92",
+    "description": "Der Stadtteilservice unterstützt in den Stadtteilen  Jungbusch Vereine. Kirchengemeinden. Schulen und Kitas sowie sonstige gemeinnützige Einrichtungen und Einzelpersonen in ihrem bürgerschaftlichen Engagement.  Die Tätigkeiten sind vielfältig: Auf- und Umräumarbeiten Auf- und Abbau bei Schul- Stadtteil- und Vereins- oder Gemeindefesten Kehrarbeiten  Grünschnitt beseitigen auf nicht-öffentlichen Grünflächen und einiges mehr  ",
+    "rating": 3.5271317829457365,
+    "station_name": "Stadteilservice Innenstadt-Jungbusch",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "H7 8"
+    },
+    "location_id": "c1e48fb6-6510-4dfa-bbbe-af7cb87fbbb4"
+}, {
+    "fid": "MRN_Refill_4326_Point.138",
+    "description": "Das kleine gemütliche Café für eine süße Auszeit. ",
+    "rating": 3.836734693877551,
+    "station_name": "Cupcake-Fee ",
+    "opening_hours": "Mi-Sa 12:00-17:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Grasgasse 4"
+    },
+    "location_id": "a2c37e56-d71d-47e8-9b87-ca1bf3296330"
+}, {
+    "fid": "MRN_Refill_4326_Point.166",
+    "description": "Fitnessstudio für EMS Training",
+    "rating": 3.7804878048780486,
+    "station_name": "fitbox Walldorf Drehscheibe",
+    "opening_hours": "Mo-Fr 9:00-20:00 Sa 9:00-16:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Johann-Jakob-Astor-Straße 6"
+    },
+    "location_id": "0efb7323-1bb9-44a1-92f6-2d6770e60274"
+}, {
+    "fid": "MRN_Refill_4326_Point.171",
+    "description": "Kompetenter Service rund um die Gesundheit.  Seit 1973 ist die Central Apotheke Walldorf Ihre zuverlässige Apotheke in Walldorf.  Beratung rund um Ihre Medikamente. Kosmetik und Pflegeprodukte. Serviceleistungen.",
+    "rating": 3.593220338983051,
+    "station_name": "Central Apotheke Walldorf",
+    "opening_hours": "Mo-Fr 08:00-19:00 Sa 8:00-14:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Hauptstraße 1"
+    },
+    "location_id": "50c83f8f-1b63-4657-a654-bfac3a8df7b1"
+}, {
+    "fid": "MRN_Refill_4326_Point.36",
+    "description": "",
+    "rating": 3.5974025974025974,
+    "station_name": "EWR-Kundencenter",
+    "opening_hours": "Mo-Do 8:00-18:00 Fr 8:00-16:00 Sa 10:00-13:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Lutherring 5"
+    },
+    "location_id": "81f03534-0817-42ec-9dbf-a0084d699e22"
+}, {
+    "fid": "MRN_Refill_4326_Point.78",
+    "description": "",
+    "rating": 3.900990099009901,
+    "station_name": "Erste Reserve Personalservice Spreen GmbH",
+    "opening_hours": "Mo-Fr 8:00-17:00",
+    "address": {
+        "city": "Ludwigshafen",
+        "plz": "67061",
+        "street": "Walzmühlstraße 65"
+    },
+    "location_id": "855e9c50-6d7a-4b3e-a4c8-743c601f1300"
+}, {
+    "fid": "MRN_Refill_4326_Point.81",
+    "description": "",
+    "rating": 3.5793650793650795,
+    "station_name": "Stadtbücherei Schifferstadt",
+    "opening_hours": "Mo;Mi;Do 15:00-18:00 Di 15:00-19:00 Mi 9:00-12:00 Fr 9:00-16:00",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Rehbachstrasse 2"
+    },
+    "location_id": "db710aa8-cb02-4236-9dad-af71955ee5ca"
+}, {
+    "fid": "MRN_Refill_4326_Point.94",
+    "description": "Unverpackt Laden mit Bio-Lebensmitteln (Trockenprodukte. Molkereiprodukte. Obst \u0026 Gemüse). Drogerie- Hygiene- \u0026 Reinigungsprodukte sind im Sortiment. Eine Postfiliale ist im Laden integriert. HIS (Hilfe in Sicht) \u0026 Refill station",
+    "rating": 3.6470588235294117,
+    "station_name": "lieber unverpackt Walldorf",
+    "opening_hours": "Mo 14:00-18:00 Di-Fr 09:00-12:30;14:00-18:00 Sa 09:00-14:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Sambugaweg 11"
+    },
+    "location_id": "578be1c5-b438-40cb-be02-817e35d458b1"
+}, {
+    "fid": "MRN_Refill_4326_Point.127",
+    "description": "Wir sind ein Frühstückscafé mit selbstgemachten Kuchen. Besonders Frühstück und Mittagessen bereiten wir für euch zu. Vegan und glutenfrei. ",
+    "rating": 3.650485436893204,
+    "station_name": "Klein Wohlig Café ",
+    "opening_hours": "Mo-Fr 7:00-14:00 Sa;So 9:00-14:00",
+    "address": {
+        "city": "Schwetzingen ",
+        "plz": "68723",
+        "street": "Mannheimerstr 43-45"
+    },
+    "location_id": "96ef9a5e-a08a-4473-af2a-6af001d0cc18"
+}, {
+    "fid": "MRN_Refill_4326_Point.172",
+    "description": "Kompetenter Service rund um die Gesundheit. Beratung rund um Ihre Medikamente mit großem Lager. Kosmetik und Pflegeprodukte. Serviceleistungen.",
+    "rating": 3.765957446808511,
+    "station_name": "Astoria Apotheke Walldorf",
+    "opening_hours": "Mo-Fr 08:00-13:00;14:00-18:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Nußlocher Str. 26a"
+    },
+    "location_id": "33797bfe-9d5b-40d6-bd1a-7bf2c2acc8c3"
+}, {
+    "fid": "MRN_Refill_4326_Point.38",
+    "description": "Refill Station",
+    "rating": 3.8155339805825244,
+    "station_name": "Café am Rathaus",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "E3 15"
+    },
+    "location_id": "de611fed-2ee8-4ed7-8cc7-840727e2b318"
+}, {
+    "fid": "MRN_Refill_4326_Point.64",
+    "description": "Platz und Jugendtreff",
+    "rating": 3.6846153846153844,
+    "station_name": "Jugendtreff Lindenhof",
+    "opening_hours": "Mo;Mi 14:00-18:00 Di;Do 14:00-20:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68163",
+        "street": "Pfalzplatz 29"
+    },
+    "location_id": "9b85cf4d-68be-46d8-89f8-23a22e9da1d4"
+}, {
+    "fid": "MRN_Refill_4326_Point.122",
+    "description": "Funk-Taxi Ottenberg ist der älteste Taxen- und Busbetrieb in Eckernförde.",
+    "rating": 3.97,
+    "station_name": "Taxi Ottenberg",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Eckernförde",
+        "plz": "24340",
+        "street": "Rosseer Weg 7-9"
+    },
+    "location_id": "5b45bc22-3d66-426f-8b7e-de93f306ea8d"
+}, {
+    "fid": "MRN_Refill_4326_Point.152",
+    "description": "Hier befindet sich eine Refill-Station. Eine mitgebrachte Flasche kann hier kostenfrei mit Leitungswasser aufgefüllt werden.",
+    "rating": 3.9901960784313726,
+    "station_name": "Brundtlandbüro der Stadt Viernheim",
+    "opening_hours": "Mo-Fr 8:30-12 Mi 14:00-17:30",
+    "address": {
+        "city": "Viernheim",
+        "plz": "68519",
+        "street": "Wasserstraße 20"
+    },
+    "location_id": "49d063c7-3f04-4cae-893b-6e4ad37e1b44"
+}, {
+    "fid": "MRN_Refill_4326_Point.181",
+    "description": "Caffee-Haus Kette die in der EU keine Steuern zahlt",
+    "rating": 3.6804123711340204,
+    "station_name": "Starbucks Am Wasserturm",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "O7 18A"
+    },
+    "location_id": "7f18ed7d-7f14-453f-bb67-2c78b4c4163e"
+}, {
+    "fid": "MRN_Refill_4326_Point.16",
+    "description": "",
+    "rating": 3.7196261682242993,
+    "station_name": "Küche \u0026 Co",
+    "opening_hours": "Mo-Fr 10:00-19:00 Sa 10:00-16:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Iggelheimer Straße 17"
+    },
+    "location_id": "bee7f722-1161-446e-844b-fea440a442e4"
+}, {
+    "fid": "MRN_Refill_4326_Point.75",
+    "description": "",
+    "rating": 3.5142857142857142,
+    "station_name": "l'Armadio Designer Secondhand",
+    "opening_hours": "Mi-Fr 11:00-18:00 Sa 11:00-13:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Czernyring 48"
+    },
+    "location_id": "d6eff403-d67c-49d5-ae86-2c462f4ec127"
+}, {
+    "fid": "MRN_Refill_4326_Point.88",
+    "description": "HHier werden Aspekte der Beschäftigungsförderung des Umweltschutzes und der Umweltpädagogik vereint. Stadtökologische Seminare Naturerlebnisangebote für Kinder sowie umweltpädagogische Kreativangebote für Groß und Klein sollen das Umweltverständnis durch Erlebnisorientierung fördern. Das durch die Stadt Mannheim geförderte Stadtökologische Zentrum liegt idyllisch direkt am Stollenwörthweiher in MA-Niederfeld.",
+    "rating": 3.7288135593220337,
+    "station_name": "Stadtökologisches Zentrum Mannheim",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "68305",
+        "plz": "Mannheim ",
+        "street": "Alberichstraße 98b"
+    },
+    "location_id": "2dead997-f2c7-4cca-8ff6-370d8188d08f"
+}, {
+    "fid": "MRN_Refill_4326_Point.100",
+    "description": "",
+    "rating": 3.731958762886598,
+    "station_name": "e-motion ebike-welt Worms",
+    "opening_hours": "Mo;Di;Do;Fr 10:00-18:30 Sa 10:00-15:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Hagenstraße 42"
+    },
+    "location_id": "0bc41cb9-3ba7-48bf-ad9d-9ae2bf09b144"
+}, {
+    "fid": "MRN_Refill_4326_Point.113",
+    "description": "Jugendtreff im Eisbachtal mit Tischkicker. Billiard. Musik und Projekte ",
+    "rating": 3.5268817204301075,
+    "station_name": "Jugendtreff Eisbachtal ",
+    "opening_hours": "Di;Do;Fr 17:00-20:00",
+    "address": {
+        "city": "Worms Horchheim",
+        "plz": "67551",
+        "street": "Höhlchenstraße 43"
+    },
+    "location_id": "e05136da-3777-4c05-a8b2-ef7908615491"
+}, {
+    "fid": "MRN_Refill_4326_Point.168",
+    "description": "JUGENDTREFF. KONZERTE. KINO. DISCO. KURSE. CAFÉ. WLAN. WERKSTATT. PROBERAUM. MEDIENRAUM UND MEHR  für Kinder Jugendliche und Erwachsene",
+    "rating": 3.6923076923076925,
+    "station_name": "JUMP (Jugendkulturhaus mit Pep)",
+    "opening_hours": "Mo-Fr 9:00-20:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Bahnhofstraße 5"
+    },
+    "location_id": "5bf3cd49-dc05-44ad-b869-a7b53f2810b5"
+}, {
+    "fid": "MRN_Refill_4326_Point.56",
+    "description": "Wir sind barrierefrei.",
+    "rating": 3.5454545454545454,
+    "station_name": "VR Bank Südliche Weinstraße-Wasgau eG",
+    "opening_hours": "Mo;Do 9:00-12:00 Di;Fr 14:00-16:00",
+    "address": {
+        "city": "Herxheim-Hayna",
+        "plz": "76863",
+        "street": "Hauptstraße 121 - 123"
+    },
+    "location_id": "95eb3b9c-50f3-49f3-be7a-c871c7ce3ac0"
+}, {
+    "fid": "MRN_Refill_4326_Point.1",
+    "description": "Faire Kleidung die nicht nur auf Labels sondern auch auf Transparenz und echte Transformation setzt. Wirtschaftet seit November 2023 teilweise gemeinschaftsbasiert. Bist du schon ein Ultra? ",
+    "rating": 3.760330578512397,
+    "station_name": "Umgekrempelt",
+    "opening_hours": "Di-Fr 11:00-14:00;15:00-19:00 Sa 12:00-18:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "M2 15a"
+    },
+    "location_id": "f27c4fa4-4aab-4ccc-b875-6b38b20d0f84"
+}, {
+    "fid": "MRN_Refill_4326_Point.63",
+    "description": "Ein Ort für das Schöne und Individuelle! Fernab des Mainstreams findest Du bei uns Kleinmöbel und Home Accessoires. Ausgefallene Mode und Taschen. Handgedruckte Poster und Prints. Naturkosmetik und Delikatessen",
+    "rating": 3.5546218487394956,
+    "station_name": "L'art pour l'art",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim; Deutschland",
+        "plz": "68167",
+        "street": "Lange Rötterstraße 4"
+    },
+    "location_id": "461ce905-9d85-4353-88d4-b27ed2156b6f"
+}, {
+    "fid": "MRN_Refill_4326_Point.86",
+    "description": "co-working Space",
+    "rating": 3.80188679245283,
+    "station_name": "Scheune.Space",
+    "opening_hours": "Mo-Fr 09:00-17:00",
+    "address": {
+        "city": "Meckenheim",
+        "plz": "67149",
+        "street": "Haßlocher Straße"
+    },
+    "location_id": "40a09a5d-b172-4551-b67e-867202f75da8"
+}, {
+    "fid": "MRN_Refill_4326_Point.111",
+    "description": "",
+    "rating": 3.73,
+    "station_name": "Weltladen Frankenthal",
+    "opening_hours": "Mo-Fr 10:00-18:00 Sa 10.00-14.00",
+    "address": {
+        "city": "Frankenthal",
+        "plz": "67227",
+        "street": "Sterngasse 14"
+    },
+    "location_id": "979350fc-d857-4200-a227-7178cb7b4e5b"
+}, {
+    "fid": "MRN_Refill_4326_Point.148",
+    "description": "Bei uns kann man zu unseren Öffnungszeiten gerne Leitungswasser auffüllen :)",
+    "rating": 3.5739130434782607,
+    "station_name": "Hörgeräte Henning",
+    "opening_hours": "Mo-Fr 09:00-12:30;14:30-18:30",
+    "address": {
+        "city": "Auerbach",
+        "plz": "64625",
+        "street": "Neuer Weg 2"
+    },
+    "location_id": "90adbd7a-5e56-456b-a9d8-9dab702b1d82"
+}, {
+    "fid": "MRN_Refill_4326_Point.150",
+    "description": "                             ",
+    "rating": 3.6770833333333335,
+    "station_name": "Gemeindeverwaltung Einhausen",
+    "opening_hours": "Mo;Di 08:00-16:00 Do 07:00-19:00 Fr 08:00-12:00 Sa* 08:00-12:00 1.2.Sa",
+    "address": {
+        "city": "Einhausen",
+        "plz": "64683",
+        "street": "Marktplatz 5"
+    },
+    "location_id": "b6f18230-be04-42d1-9c94-c7f1edd0f59a"
+}, {
+    "fid": "MRN_Refill_4326_Point.154",
+    "description": "                 ",
+    "rating": 3.622047244094488,
+    "station_name": "Die Brille",
+    "opening_hours": "Mo-Fr 9:00-13:00;14:00-18:00 Sa 9:00-13:00",
+    "address": {
+        "city": "Birkenau",
+        "plz": "69488",
+        "street": "Hauptstraße 25"
+    },
+    "location_id": "6f8e7f05-a58b-47af-8d17-9e69843ff749"
+}, {
+    "fid": "MRN_Refill_4326_Point.20",
+    "description": "",
+    "rating": 3.744,
+    "station_name": "!WOW!",
+    "opening_hours": "Di-Sa 10:00-13:00 Di;Do;Fr 15:00-18:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67551",
+        "street": "Untere Hauptstraße 82"
+    },
+    "location_id": "953b171c-ea6f-468f-95ce-869a5ff2fb87"
+}, {
+    "fid": "MRN_Refill_4326_Point.103",
+    "description": "Reisebüro  ",
+    "rating": 3.75,
+    "station_name": "pit Reisebüro",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Germersheim",
+        "plz": "76726",
+        "street": "Sandstrasse 15"
+    },
+    "location_id": "8c0574a7-c01f-41a7-a0b8-433683367307"
+}, {
+    "fid": "MRN_Refill_4326_Point.142",
+    "description": "Grander-Wasser schmeckt wie frisches Quellwasser und macht Wassertrinken für euch zum erfrischenden Trinkvergnügen.",
+    "rating": 3.6842105263157894,
+    "station_name": "KVM Kadel Versicherungsmakler",
+    "opening_hours": "Mo-Fr 09:00-12:00 Di;Do 15:00-17:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Hebelstr. 2"
+    },
+    "location_id": "6b95f44c-89bb-4bd4-81e9-977043dc957c"
+}, {
+    "fid": "MRN_Refill_4326_Point.145",
+    "description": "Granitsäule in  der Nähe der Haltestelle Kurpfalzstraße. Betriebssaison: Mai-Oktober",
+    "rating": 3.769230769230769,
+    "station_name": "Öffentlicher Trinkbrunnen / Paradeplatz ",
+    "opening_hours": "Mai-Oktober",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "Paradeplatz"
+    },
+    "location_id": "eb5fe64d-5088-4f01-8414-84578678f09b"
+}, {
+    "fid": "MRN_Refill_4326_Point.155",
+    "description": "Hier befindet sich eine Refill-Station. Eine mitgebrachte Flasche kann hier kostenfrei mit Leitungswasser aufgefüllt werden.",
+    "rating": 3.788235294117647,
+    "station_name": "Weltladen Heppenheim",
+    "opening_hours": "Mo;Di;Do;Fr 10:00-18:00 Mi;Sa 10:00-14:00",
+    "address": {
+        "city": "Heppenheim",
+        "plz": "64646",
+        "street": "Marktstr. 17"
+    },
+    "location_id": "a39febfa-3e96-40f8-9ef6-4b47d4901e1b"
+}, {
+    "fid": "MRN_Refill_4326_Point.161",
+    "description": "Museum und Archiv Viernheim",
+    "rating": 3.5869565217391304,
+    "station_name": "Museum und Archiv Viernheim",
+    "opening_hours": "So 14:00-17:00 Do 16:00-18:00* Oktober-Ostern",
+    "address": {
+        "city": "Viernheim",
+        "plz": "68519",
+        "street": "Berliner Ring 28"
+    },
+    "location_id": "fb1fff62-4fdd-420c-88bf-f281b0fe1df0"
+}, {
+    "fid": "MRN_Refill_4326_Point.165",
+    "description": "Südlich von Heidelberg. Im Herzen von Walldorf gelegen. bietet Ihnen unser Vier-Sterne-First-Class-Hotel den Komfort eines privat geführten Hauses mit einer über die Grenzen Walldorfs hinaus bekannten Küche. ",
+    "rating": 3.6736842105263157,
+    "station_name": "Hotel Vorfelder",
+    "opening_hours": "07:00-22:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Bahnhofstraße 28"
+    },
+    "location_id": "abfb956a-5d3b-4aab-ae44-1f78a8da2092"
+}, {
+    "fid": "MRN_Refill_4326_Point.15",
+    "description": "Stadtverwaltung mit Umweltschutz-Engagement",
+    "rating": 3.7244897959183674,
+    "station_name": "Stadtverwaltung Abt. Umweltschutz \u0026 Landwirtschaft",
+    "opening_hours": "Mo-Fr 8:00-12:00 Do 14:00-16:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Ludwigsplatz 5"
+    },
+    "location_id": "f310a0c8-1123-4ee8-8a06-b6839286e407"
+}, {
+    "fid": "MRN_Refill_4326_Point.23",
+    "description": "",
+    "rating": 3.8333333333333335,
+    "station_name": "Verbandsgemeinde Herxheim",
+    "opening_hours": "Mo 8:00-18:00 Di 8:00-12:00 Do 8:00-16:00 Fr 8:00-12:00",
+    "address": {
+        "city": "Herxheim",
+        "plz": "76863",
+        "street": "Obere Hauptstraße 2"
+    },
+    "location_id": "3804095c-be62-4ecc-af7a-b8f17b2c01bb"
+}, {
+    "fid": "MRN_Refill_4326_Point.30",
+    "description": "",
+    "rating": 3.989130434782609,
+    "station_name": "Stadtverwaltung Schifferstadt",
+    "opening_hours": "Mo-Fr 8:30-12:00 Do 14:00-18:00",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Marktplatz 2"
+    },
+    "location_id": "98f72b35-1965-42e7-808a-4fe4c741b62a"
+}, {
+    "fid": "MRN_Refill_4326_Point.60",
+    "description": "Wir sind barrierefrei.",
+    "rating": 3.814432989690722,
+    "station_name": "Gemeindeverwaltung Malsch",
+    "opening_hours": "Mo 7:30-18:00 Di-Fr 7:30-12:30",
+    "address": {
+        "city": "Malsch",
+        "plz": "69254",
+        "street": "Kirchberg 10"
+    },
+    "location_id": "f5355ea6-8db3-4bd4-bb6c-38d5e3818c67"
+}, {
+    "fid": "MRN_Refill_4326_Point.124",
+    "description": "Die Verbraucherzentrale ist eine Organisation die Verbraucher bei Fragen und Anliegen unterstützt. Sie setzt sich aktiv für Verbraucherinteressen ein und engagiert sich für faire Geschäftspraktiken und den Schutz der Verbraucherrechte.",
+    "rating": 3.8055555555555554,
+    "station_name": "Verbraucherzentrale Rheinland-Pfalz e.V. Beratungsstelle Ludwigshafen",
+    "opening_hours": "Mo;Mi 10:00-15:00 Do 10:00-13:00;14:00-18:00",
+    "address": {
+        "city": "Ludwigshafen",
+        "plz": "67059",
+        "street": "Wredestraße 33"
+    },
+    "location_id": "b5e8cc27-1839-4e34-a8da-6e6204ba5b4e"
+}, {
+    "fid": "MRN_Refill_4326_Point.68",
+    "description": "ab November:     Uhr * nach Ostern",
+    "rating": 3.5841584158415842,
+    "station_name": "Tourist Information Worms",
+    "opening_hours": "Mo-Fr 9:00-17:00 Mo-Fr 9:00-18:00 Sa;So;FT 10:00-14:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Neumarkt 14"
+    },
+    "location_id": "a83307b8-7362-4530-9c87-0142437b8049"
+}, {
+    "fid": "MRN_Refill_4326_Point.84",
+    "description": "",
+    "rating": 3.679611650485437,
+    "station_name": "Stadtbibliothek Weinheim",
+    "opening_hours": "Di;Mi;Fr 10:00-18:00 Do 10:00-19:00 Sa 10:00-14:00",
+    "address": {
+        "city": "Weinheim",
+        "plz": "69469",
+        "street": "Luisenstraße 5/1"
+    },
+    "location_id": "f639d603-691d-4041-91f8-0073d3300511"
+}, {
+    "fid": "MRN_Refill_4326_Point.137",
+    "description": "Reisebüro mit Terminvereinbarung. Man bekommt hier seine Flasche befüllt.",
+    "rating": 3.588785046728972,
+    "station_name": "Reiseberatung Stefanie Carcereri-Dhom",
+    "opening_hours": "nach Vereinbarung",
+    "address": {
+        "city": "Weisenheim am Berg",
+        "plz": "67273",
+        "street": "Hauptstraße 19"
+    },
+    "location_id": "ac9fe288-0617-4ffd-a2ea-487cc538b200"
+}, {
+    "fid": "MRN_Refill_4326_Point.70",
+    "description": "Bäckerei mit Sitzgelegenheit",
+    "rating": 3.504950495049505,
+    "station_name": "De' Bäcker Becker",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Bornheim",
+        "plz": "76879",
+        "street": "Hauptstraße  65"
+    },
+    "location_id": "1a20230b-ecbb-43ce-88e8-ee01266d2889"
+}, {
+    "fid": "MRN_Refill_4326_Point.98",
+    "description": "Im Kundenforum der Schwetzinger Zeitung sind Durstige eingeladen ihre Trinkwasserflasche mit Leitungswasser aufzufüllen.",
+    "rating": 3.6,
+    "station_name": "Schwetzinger Zeitungsverlag GmbH \u0026 Co. KG",
+    "opening_hours": "Mo-Fr 8:00-12:00; 13:00-17:00",
+    "address": {
+        "city": "Schwetzingen",
+        "plz": "68723",
+        "street": "Carl-Theodor-Straße 2 "
+    },
+    "location_id": "786c1c21-0710-46af-b116-8a89d3a85fdb"
+}, {
+    "fid": "MRN_Refill_4326_Point.119",
+    "description": "Wir sorgen für Ihre Gesundheit und halten Sie hydriert!",
+    "rating": 3.7383177570093458,
+    "station_name": "Apotheke am Schillerplatz",
+    "opening_hours": "Mo-Sa 8:30-12:30 Mo;Di;So;Fr 14:30-18:30",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Schillerplatz 4"
+    },
+    "location_id": "31b9c4a0-89cb-44d9-abb8-3bc80e7aa9f7"
+}, {
+    "fid": "MRN_Refill_4326_Point.11",
+    "description": "Nicht umsonst zieht der Luisenpark jährlich rund 1.2 Millionen Besucher an und gilt als einer der schönsten Parks Europas. Auf geschwungenen Parkwegen geht es vorbei an sprudelnden Wasserfontänen und blühenden Baum- und Strauchgruppen.",
+    "rating": 3.6578947368421053,
+    "station_name": "Luisenpark - Stadtpark Mannheim gGmbH",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68165",
+        "street": "Gartenschauweg"
+    },
+    "location_id": "8ba791d0-e207-4ee0-b32c-f8d7890fab6e"
+}, {
+    "fid": "MRN_Refill_4326_Point.66",
+    "description": "Bücher für alle     Wir sind barrierefrei.",
+    "rating": 3.4655172413793105,
+    "station_name": "Stadtbibliothek Mannheim",
+    "opening_hours": "Di-Fr 10:00-19:00 Sa 10:00-15:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "N1 1"
+    },
+    "location_id": "21602879-2e3d-4d08-a046-3b040d881442"
+}, {
+    "fid": "MRN_Refill_4326_Point.97",
+    "description": "Wir füllen Eure Trinkflaschen sehr gerne auf. Darüber hinaus beraten wir Euch rund um Eure Gesundheit.",
+    "rating": 3.786324786324786,
+    "station_name": "Brunnen Apotheke ",
+    "opening_hours": "Mo-Fr 8:00-18:30 Sa 8:30-12:30",
+    "address": {
+        "city": "Bad Dürkheim",
+        "plz": "67098",
+        "street": "Mannheimer Str. 16"
+    },
+    "location_id": "c8b8c4e2-adf8-4231-b9b1-124acd212ec3"
+}, {
+    "fid": "MRN_Refill_4326_Point.107",
+    "description": "AWO Seniorenzentrum mit angeschlossenem Kindergarten und Quaritersbüro* das mit  interkultureller Begegnung und Beratung für alle Menschen offen steht. *Gefördert von der Glücksspirale",
+    "rating": 3.715686274509804,
+    "station_name": "AWO Haus der Generationen Remyerhof",
+    "opening_hours": "8:00-18:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Remeyerhofstraße 19"
+    },
+    "location_id": "2d171139-9afa-4d6b-b3c8-f02fdd5044e6"
+}, {
+    "fid": "MRN_Refill_4326_Point.131",
+    "description": "Kunst und Antiquitäten im Industriehof und gerne ab sofort auch Refill-Station",
+    "rating": 3.757575757575758,
+    "station_name": "M. Wittmer Antiquitäten",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Franz-Kirrmeier-Straße 19"
+    },
+    "location_id": "803ca368-f140-468e-b75e-c7611509bcc1"
+}, {
+    "fid": "MRN_Refill_4326_Point.133",
+    "description": "Öffentliche Bibliothek",
+    "rating": 3.607142857142857,
+    "station_name": "Stadtbibliothek Wiesloch",
+    "opening_hours": "Di 10:00-13:00 Di-Do 14:00-18:00 Fr 10:00-16:00 Sa 10:00-14:00",
+    "address": {
+        "city": "Wiesloch",
+        "plz": "69168",
+        "street": "Gerbersruhstr. 41"
+    },
+    "location_id": "2d56b2ba-1f67-42a2-97b7-338065e9af0f"
+}, {
+    "fid": "MRN_Refill_4326_Point.141",
+    "description": "Unverpackt einkaufen",
+    "rating": 3.716666666666667,
+    "station_name": "Kaufladen - Speyer unverpackt",
+    "opening_hours": "Mo-Fr 10:00-18:00  Sa 10:00-15:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Große Greifengasse 1"
+    },
+    "location_id": "0bfaaffb-ac3c-4e86-9904-b4bf9a17f0b0"
+}, {
+    "fid": "MRN_Refill_4326_Point.157",
+    "description": "Therapie und Trainingszentrum",
+    "rating": 3.7563025210084033,
+    "station_name": "physio³ ",
+    "opening_hours": "Mo-Fr 7:30-22:00 Sa;So 9:00-16:00",
+    "address": {
+        "city": "Bensheim",
+        "plz": "64625",
+        "street": "161c Berliner Ring"
+    },
+    "location_id": "0847afea-f520-48d8-bfe9-05e4efa463d6"
+}, {
+    "fid": "MRN_Refill_4326_Point.13",
+    "description": "Gut sortierter Bio-Supermarkt mit Bäckerei/Café. Brot von Lummerland",
+    "rating": 3.625,
+    "station_name": "basic Bio-Supermarkt",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "Kurpfalzstraße 3-5"
+    },
+    "location_id": "d2506515-a368-4777-a9f9-0a8fa8e0ac91"
+}, {
+    "fid": "MRN_Refill_4326_Point.22",
+    "description": "",
+    "rating": 3.697478991596639,
+    "station_name": "Kath. Jugendzentrale / Bund dt. kath. Jugend",
+    "opening_hours": "Di 8:00-12:00 Mi 10:00-12:00 Fr 10:00-14:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Martinsgasse 8"
+    },
+    "location_id": "e896a2b4-5486-49e3-b8b1-8dbea98bd775"
+}, {
+    "fid": "MRN_Refill_4326_Point.59",
+    "description": "",
+    "rating": 3.561224489795918,
+    "station_name": "AVR GewerbeService GmbH",
+    "opening_hours": "Mo-Fr 07:00-12.00;12.30-16.00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Hatschekstraße 15"
+    },
+    "location_id": "60dd9a56-677e-4fad-9792-60c684f35793"
+}, {
+    "fid": "MRN_Refill_4326_Point.112",
+    "description": "",
+    "rating": 3.883495145631068,
+    "station_name": "Weltladen Worms",
+    "opening_hours": "Mo-Fr 10:00-18:00 Sa 10:00-16:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Obermarkt 4"
+    },
+    "location_id": "d1062311-1bb8-4475-925b-ce28d660584f"
+}, {
+    "fid": "MRN_Refill_4326_Point.125",
+    "description": "Brillengeschäft",
+    "rating": 3.6,
+    "station_name": "optiMaXX",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Germersheim",
+        "plz": "76726",
+        "street": "Marktstraße 17"
+    },
+    "location_id": "d346b1b8-1256-4e34-85fc-d2b15bd80510"
+}, {
+    "fid": "MRN_Refill_4326_Point.53",
+    "description": ":  Evangelische Tageseinrichtung für Kinder",
+    "rating": 3.619047619047619,
+    "station_name": "KiTa Zwickauer Weg",
+    "opening_hours": "Mo-Fr 7:00-17:15",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68309",
+        "street": "Zwickauer Weg 22"
+    },
+    "location_id": "a886a5f8-99de-4a8d-a69a-64f3cf4270d4"
+}, {
+    "fid": "MRN_Refill_4326_Point.24",
+    "description": "",
+    "rating": 3.737864077669903,
+    "station_name": "Kindertreff Kinderhaus",
+    "opening_hours": "Mo-Fr 7:30-15:00",
+    "address": {
+        "city": "Reilingen",
+        "plz": "68799",
+        "street": "Neugasse 46"
+    },
+    "location_id": "1f3f20d5-391a-4848-ad83-24892b00b9f2"
+}, {
+    "fid": "MRN_Refill_4326_Point.52",
+    "description": "",
+    "rating": 3.7457627118644066,
+    "station_name": "Schlör \u0026 Faß GmbH",
+    "opening_hours": "Mo-Fr 7:30-17:00 Sa 9:00-14:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Wormser Landstraße 247"
+    },
+    "location_id": "1a886a44-f1f5-4139-8f09-9cef60bd3062"
+}, {
+    "fid": "MRN_Refill_4326_Point.74",
+    "description": "",
+    "rating": 3.6666666666666665,
+    "station_name": "Wahlkreisbüro MdL Hermino Katzenstein (B'90/Grüne)",
+    "opening_hours": "Mo-Fr 9:30-15:00",
+    "address": {
+        "city": "Neckargemünd",
+        "plz": "69151",
+        "street": "Hauptstraße 20"
+    },
+    "location_id": "de23ec75-e172-4b95-8b47-e3469fde665c"
+}, {
+    "fid": "MRN_Refill_4326_Point.77",
+    "description": "Refill Station",
+    "rating": 3.7457627118644066,
+    "station_name": "Zahnarztpraxis Dr. Carola Wißmeier",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68163",
+        "street": "Meerfeldstr. 61"
+    },
+    "location_id": "92897044-1a29-4bc7-b3ce-dc17733ce040"
+}, {
+    "fid": "MRN_Refill_4326_Point.102",
+    "description": "Stadtverwaltung Ludwigshafen Büro Sozialer Zusammenhalt Dichterquartier",
+    "rating": 3.7281553398058254,
+    "station_name": "Stadtverwaltung Ludwigshafen. Büro Sozialer Zusammenhalt  Dichterquartier",
+    "opening_hours": "Mo-Do 9:00-12:00 Do 14:00-16:00",
+    "address": {
+        "city": "Ludwigshafen",
+        "plz": "67061",
+        "street": "Georg-Herwegh-Straße 41"
+    },
+    "location_id": "29914395-38e9-4a61-baf1-b4622474a7ac"
+}, {
+    "fid": "MRN_Refill_4326_Point.108",
+    "description": "Das Stadtteilbüro Bergstation wird vom Internationaler Bund (IB) freien Träger für Jugend- Sozial- und Bildungsarbeit im Auftrag der Stadt Heidelberg ausgeführt.  Wir füllen gerne und kostenlos ein mitgebrachtes Gefäß mit Trinkwasser auf.",
+    "rating": 3.9101123595505616,
+    "station_name": "Refill-Station im Stadtteilbüro Boxberg",
+    "opening_hours": "Mo 13:30-17:00 Di;Fr 10:00-13:30 Do 15:00-19:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Boxbergring 16"
+    },
+    "location_id": "5d65bb94-5ea9-4a06-935c-a73bf69e1f06"
+}, {
+    "fid": "MRN_Refill_4326_Point.95",
+    "description": "Photovoltaikhersteller ",
+    "rating": 3.850467289719626,
+    "station_name": "ET SolarPower GmbH",
+    "opening_hours": "Mo-Fr 8:00-12:00;13:00-17:00",
+    "address": {
+        "city": "Hockenheim",
+        "plz": "68766",
+        "street": "Neckarauer Straße 2"
+    },
+    "location_id": "6eabb933-5c0b-4f1c-af4b-c46cd482ea16"
+}, {
+    "fid": "MRN_Refill_4326_Point.158",
+    "description": " -                                 ",
+    "rating": 3.761467889908257,
+    "station_name": "Tupperware Bezirkshandlung Bergstraße",
+    "opening_hours": "Mo 9:00-20:00 Di;Mi 9:00-14:00",
+    "address": {
+        "city": "Bensheim",
+        "plz": "64625",
+        "street": "Berliner Ring 143"
+    },
+    "location_id": "28e4d0b4-e667-4405-bbf4-2df3af00fb50"
+}, {
+    "fid": "MRN_Refill_4326_Point.163",
+    "description": "Im AQWA Bäderpark kann man es sich gut gehen lassen! Egal ob im Hallenbad oder im Freien auf dem Gelände mit Kinderbereich. Badesee und Minigolf  ob im Saunabereich oder in der Salzlounge - für die ganze Familie gibt es das passende Angebot.",
+    "rating": 3.6095238095238096,
+    "station_name": "AQWA Bäderpark  Eingang Sauna",
+    "opening_hours": "Mo-So 10:00-22:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": " Schwetzinger Str. 88. Eingang Sauna"
+    },
+    "location_id": "8f700a9d-f937-4457-8c77-caf9c88358b9"
+}, {
+    "fid": "MRN_Refill_4326_Point.54",
+    "description": "",
+    "rating": 3.9903846153846154,
+    "station_name": "STA Travel Heidelberg",
+    "opening_hours": "Mo-Fr 10:00-19:00 Sa 10:00-17:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": "Hauptstr. 139"
+    },
+    "location_id": "a6724e0e-8d31-4b75-a5be-e63c2f622903"
+}, {
+    "fid": "MRN_Refill_4326_Point.6",
+    "description": "Streetstyle \u0026 Sportswear Vintage Shop - High Quality und Marken Second-Hand Damen und Herren Mode aus Mannheim - Fashion Blog",
+    "rating": 3.5943396226415096,
+    "station_name": "Langer Vintage Concept Store",
+    "opening_hours": "Mi 12:00-18:00 Do-Fr 12:00-19:00 Sa 11:00-18:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68169",
+        "street": "Langstraße 20"
+    },
+    "location_id": "08bdb83e-4a38-48d7-b0ca-e5bfece9db40"
+}, {
+    "fid": "MRN_Refill_4326_Point.12",
+    "description": "Unverpacktes in Ladenburg",
+    "rating": 3.4329896907216493,
+    "station_name": "Maggis unverpackt",
+    "opening_hours": "Di;Mi;Do;Sa 9:00-13:00 Di;Do 14:00-18:00 Fr 9:00-18:00",
+    "address": {
+        "city": "Ladenburg",
+        "plz": "68526",
+        "street": "Hauptstrasse 47"
+    },
+    "location_id": "40576780-a23c-419e-83c8-f9be1938468f"
+}, {
+    "fid": "MRN_Refill_4326_Point.34",
+    "description": "",
+    "rating": 3.5961538461538463,
+    "station_name": "Haus der Optik - Horst Riede GmbH",
+    "opening_hours": "Mo-Fr 8:30-18:30 Sa 9:30-14:00",
+    "address": {
+        "city": "Weinheim",
+        "plz": "69469",
+        "street": "Bahnhofstr. 17"
+    },
+    "location_id": "d20cd057-4caa-4baf-8cdf-9e2f4314bb7d"
+}, {
+    "fid": "MRN_Refill_4326_Point.61",
+    "description": "",
+    "rating": 3.814159292035398,
+    "station_name": "Bloom's Friseur Bismarckstraße",
+    "opening_hours": "Mo-Fr 9:00-19:30 Sa 09:00-18:00",
+    "address": {
+        "city": "Ludwigshafen",
+        "plz": "67059",
+        "street": "Bismarckstraße 52"
+    },
+    "location_id": "49dc1a21-c798-4ce7-a311-6598cab2dfd7"
+}, {
+    "fid": "MRN_Refill_4326_Point.130",
+    "description": "Im Stadtteilbüro Boxberg können Sie mitgebrachte Gefäße kostenlos mit Trinkwasser auffüllen.",
+    "rating": 3.7731958762886597,
+    "station_name": "refill Staion",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "6911769126",
+        "street": "Boxbergring 16"
+    },
+    "location_id": "420f7c05-488b-4780-a244-6ba5e7b11751"
+}, {
+    "fid": "MRN_Refill_4326_Point.174",
+    "description": "Öffentliche Bücherei im Bürgerhaus Mühlhausen ",
+    "rating": 3.765765765765766,
+    "station_name": "Bücherei Mühlhausen ",
+    "opening_hours": "Mo 9.30-11.30 Di; Mi; Do 15.30-18.30 * Ferienöffnungszeiten",
+    "address": {
+        "city": "Mühlhausen ",
+        "plz": "69242",
+        "street": "Schulstr. 6 / Bürgerhaus"
+    },
+    "location_id": "2daa8614-2ec4-4387-9645-8f8ed2007508"
+}, {
+    "fid": "MRN_Refill_4326_Point.50",
+    "description": "",
+    "rating": 3.787037037037037,
+    "station_name": "Haarfrei Leben",
+    "opening_hours": "Mo-Sa 10:00-19:00",
+    "address": {
+        "city": "Neuhofen",
+        "plz": "67141",
+        "street": "Industriestraße 13"
+    },
+    "location_id": "d891a599-68cb-4292-babc-606c6832947b"
+}, {
+    "fid": "MRN_Refill_4326_Point.26",
+    "description": "Wir sind barrierefrei.",
+    "rating": 3.7983193277310923,
+    "station_name": "VR Bank Südliche Weinstraße-Wasgau eG",
+    "opening_hours": "Mo-Fr 8:30-12:00 Mo;Do 14:00-18:00 Di;Mi;Fr 14:00-16:00",
+    "address": {
+        "city": "Herxheim",
+        "plz": "76863",
+        "street": "Obere Hauptstraße 49"
+    },
+    "location_id": "869fd73d-978a-41ff-ac69-a3e3aead2777"
+}, {
+    "fid": "MRN_Refill_4326_Point.48",
+    "description": "",
+    "rating": 3.6020408163265305,
+    "station_name": "Weingut Doppler-Hertel",
+    "opening_hours": "Sa 10:00-16:00",
+    "address": {
+        "city": "Essingen",
+        "plz": "76879",
+        "street": "Kirchstraße 33"
+    },
+    "location_id": "16b10f04-0b9d-40b2-ba59-71dad03f4b6b"
+}, {
+    "fid": "MRN_Refill_4326_Point.73",
+    "description": "Haare schneiden nicht besonders nachhaltig",
+    "rating": 3.5051546391752577,
+    "station_name": "Bloom's Friseur",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "C 1 8"
+    },
+    "location_id": "8e15ba25-7170-4b19-9a47-accb04a12f91"
+}, {
+    "fid": "MRN_Refill_4326_Point.135",
+    "description": "Apotheke barrierefrei. Eigener Brunnen zum eigenen Befüllen",
+    "rating": 3.9210526315789473,
+    "station_name": "HESSEL APOTHEKE",
+    "opening_hours": "Mo-Fr 8:00-19:00 Sa 9:00-14:00",
+    "address": {
+        "city": "Wiesloch",
+        "plz": "69168",
+        "street": "Hesselgasse 46"
+    },
+    "location_id": "535cfeb6-4dd9-428f-8b64-da940b5c4cd7"
+}, {
+    "fid": "MRN_Refill_4326_Point.162",
+    "description": "Mehr als 0 Medien. Bücher. CDs. Zeitschriften. DVDs. Ausleihe von über 0 digitalen Medien. WLAN in der Stadtbücherei. Internetnutzung an sechs Arbeitsplätzen. Veranstaltungen und Aktionen für Klein und Groß.",
+    "rating": 3.669724770642202,
+    "station_name": "Stadtbücherei Walldorf",
+    "opening_hours": "43.00 60.00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Hirschstraße 15"
+    },
+    "location_id": "c6c68d81-68e2-4bcf-8bdb-c8be1b7b833a"
+}, {
+    "fid": "MRN_Refill_4326_Point.167",
+    "description": "Moderne qualitäts- und serviceorientierte Apotheke mit Spezialisierung auf Homöopathie und Naturkosmetik.",
+    "rating": 3.9473684210526314,
+    "station_name": "Stadt-Apotheke",
+    "opening_hours": "Mo-Fr 8:00-13:00;14:00-18:30 Sa 08:00-13:00",
+    "address": {
+        "city": "Walldorf",
+        "plz": "69190",
+        "street": "Hauptstraße 8"
+    },
+    "location_id": "07e4019d-5060-4ce9-98d8-540fb87dd73d"
+}, {
+    "fid": "MRN_Refill_4326_Point.173",
+    "description": "Der Mannheimer Unverpacktladen mit biologisch produziertem und veganem Lebensmittel- und Non-Food Sortiment. Wir verbinden ökologisches und soziales Bewusstsein mit Gelassenheit.",
+    "rating": 3.6814159292035398,
+    "station_name": "grünkern",
+    "opening_hours": "Mo;Di;Do;Fr 10:00-19:00 Sa 10:00-16:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68163",
+        "street": "Meerfeldstraße 24"
+    },
+    "location_id": "e3abc2de-51b9-4697-846b-a67540545624"
+}, {
+    "fid": "MRN_Refill_4326_Point.4",
+    "description": "Öffnungszeiten: immer geöffnet",
+    "rating": 3.7444444444444445,
+    "station_name": "Wasserturm Mannheim",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "Friedrichsplatz"
+    },
+    "location_id": "e88eec0f-dbea-440d-a771-f73e8a940bb1"
+}, {
+    "fid": "MRN_Refill_4326_Point.25",
+    "description": "Wir sind barrierefrei.",
+    "rating": 3.573170731707317,
+    "station_name": "VR Bank Südliche Weinstraße-Wasgau eG",
+    "opening_hours": "Mo-Fr 9:00-12:00 Mo;Di;Fr 14:00-16:00 Do 14:00-18:00",
+    "address": {
+        "city": "Hatzenbühl",
+        "plz": "76770",
+        "street": "Luitpoldstraße 148"
+    },
+    "location_id": "1d24efe5-51de-45e8-bad3-7f788dd9e141"
+}, {
+    "fid": "MRN_Refill_4326_Point.37",
+    "description": "Buchladen mit kostenlosem Trinkwasser",
+    "rating": 3.6483516483516483,
+    "station_name": "Bücher Bender",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "O4 2"
+    },
+    "location_id": "4987d834-36e9-4f6f-9148-745404cc605b"
+}, {
+    "fid": "MRN_Refill_4326_Point.67",
+    "description": "Normaler Friseur. Nicht besonders nachhaltig",
+    "rating": 3.764705882352941,
+    "station_name": "Der Zetzsche",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68165",
+        "street": "Schwetzinger Straße 32"
+    },
+    "location_id": "e1cd4a13-8eda-469d-b4e0-fcba48e5ffe0"
+}, {
+    "fid": "MRN_Refill_4326_Point.134",
+    "description": "brillenhammer steht für High-End-Technologie. Präzisonsarbeit aus Meisterhand und intensiver Beratung und Betreuung. Für Sie ist uns das Beste gerade gut genug.",
+    "rating": 3.7475728155339807,
+    "station_name": "Brillen Hammer",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Germersheim",
+        "plz": "76726",
+        "street": "Ludwigstr. 12"
+    },
+    "location_id": "cdf40b7b-91a7-4ad0-b1a3-62ead574e04e"
+}, {
+    "fid": "MRN_Refill_4326_Point.136",
+    "description": "Bücherei für Alle",
+    "rating": 3.644230769230769,
+    "station_name": "Bücherei Hemsbach",
+    "opening_hours": "Di 9:00-11:30 Mi 15:00-18:00 Do 9:00-11:00;14:00-18:00",
+    "address": {
+        "city": "Hemsbach",
+        "plz": "69502",
+        "street": "Bachgasse 60"
+    },
+    "location_id": "0fde9ff0-1d15-498c-b019-d700f2553505"
+}, {
+    "fid": "MRN_Refill_4326_Point.175",
+    "description": "",
+    "rating": 3.75,
+    "station_name": "ReiseCenter Mutterstadt",
+    "opening_hours": "Mo-Fr 9:30-12:30;14:30-18:00",
+    "address": {
+        "city": "Mutterstadt",
+        "plz": "67112",
+        "street": "Neustadter Str. 8"
+    },
+    "location_id": "bb5c2770-caa8-4842-ac01-c48124262a1e"
+}, {
+    "fid": "MRN_Refill_4326_Point.10",
+    "description": "Das Fachgeschäft mit der sachkundigen und persönlichen Beratung",
+    "rating": 3.6850393700787403,
+    "station_name": "Raben-Drogerie",
+    "opening_hours": "Mo-Sa 9:00-12.30 Mo;Di 15:00-18.30 Do;Fr 15:00-18.30",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68165",
+        "street": "Traitteurstraße 56"
+    },
+    "location_id": "283b142a-15da-486d-a908-b2e8d7bf139e"
+}, {
+    "fid": "MRN_Refill_4326_Point.89",
+    "description": "Der Stadtteilservice unterstützt in den Stadtteilen Waldhof - Gartenstadt - Luzenberg. Sandhofen und Vereine. Kirchengemeinden. Schulen und Kitas sowie sonstige gemeinnützige Einrichtungen und Einzelpersonen in ihrem bürgerschaftlichen Engagement.  Die Tätigkeiten sind vielfältig: Auf- und Umräumarbeiten Auf- und Abbau bei Schul- Stadtteil- und Vereins- oder Gemeindefesten Kehrarbeiten  Grünschnitt beseitigen auf nicht-öffentlichen Grünflächen und einiges mehr",
+    "rating": 3.73728813559322,
+    "station_name": "Stadtteilservice Nord",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68305",
+        "street": "Speckweg 6"
+    },
+    "location_id": "d0cfa0bc-8ba2-4cb8-b27a-ca66b2f04ab9"
+}, {
+    "fid": "MRN_Refill_4326_Point.115",
+    "description": "Refill-Apotheke",
+    "rating": 3.6530612244897958,
+    "station_name": "Haardt-Apotheke",
+    "opening_hours": "Mo-Sa 8:00-12:30 Mo;Di;Do;Fr 14:30-18:30",
+    "address": {
+        "city": "Birkenheide",
+        "plz": "67134",
+        "street": "Waldstr. 30"
+    },
+    "location_id": "38a4539a-db7a-4128-9fdd-fd2ae2f997a4"
+}, {
+    "fid": "MRN_Refill_4326_Point.132",
+    "description": "Refill-Apotheke",
+    "rating": 3.6153846153846154,
+    "station_name": "Apotheke am Rathaus",
+    "opening_hours": "Mo-Fr 08:00-13:00;14:00-18:30 Sa 08:00-12:30",
+    "address": {
+        "city": "Haßloch",
+        "plz": "67454",
+        "street": "Rathausplatz 4"
+    },
+    "location_id": "a428bcaa-764f-469e-9f1e-d81b56894ae0"
+}, {
+    "fid": "MRN_Refill_4326_Point.29",
+    "description": "",
+    "rating": 3.8191489361702127,
+    "station_name": "Buchhandlung Gansler",
+    "opening_hours": "Mo-Fr 9:00-13:00;14:30-18:00 Sa 9:00-12.30",
+    "address": {
+        "city": "Hockenheim",
+        "plz": "68766",
+        "street": "Rathausstraße 2"
+    },
+    "location_id": "d1789127-a622-4d55-a6f1-0627d285617e"
+}, {
+    "fid": "MRN_Refill_4326_Point.35",
+    "description": "",
+    "rating": 3.707865168539326,
+    "station_name": "Sport65 Shop \u0026 Reisen",
+    "opening_hours": "Mo-Fr 10:00-13:00;14:00-19:00 Sa 10:00-16:00",
+    "address": {
+        "city": "Weinheim",
+        "plz": "69469",
+        "street": "Am Hauptbahnhof 8"
+    },
+    "location_id": "ac875c15-f748-424e-8784-866d579f3b07"
+}, {
+    "fid": "MRN_Refill_4326_Point.42",
+    "description": "",
+    "rating": 3.7304347826086954,
+    "station_name": "zweiachtel",
+    "opening_hours": "Mo-Fr 13:00-19:00 Sa 10:00-16:00",
+    "address": {
+        "city": "mannheim",
+        "plz": "68167",
+        "street": "Eichendorffstraße 12"
+    },
+    "location_id": "0a7460fc-0013-494c-b09a-70723de94cf8"
+}, {
+    "fid": "MRN_Refill_4326_Point.82",
+    "description": "Refill Station",
+    "rating": 3.7934782608695654,
+    "station_name": "City- und Touristenseelsorge",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Worms",
+        "plz": "67547",
+        "street": "Domplatz 3"
+    },
+    "location_id": "7599f549-0026-4b4f-88d9-470582f56fe0"
+}, {
+    "fid": "MRN_Refill_4326_Point.87",
+    "description": "",
+    "rating": 3.6869565217391305,
+    "station_name": "Weltladen Bad Dürkheim",
+    "opening_hours": "Mo 14.00-18.00 Di-Fr 10.00-18.00 Sa 10.00-13.00",
+    "address": {
+        "city": "Bad Dürkheim",
+        "plz": "67098",
+        "street": "Römerstr. 17"
+    },
+    "location_id": "00eacfca-4a3b-4ecc-8c20-bb3223d614c1"
+}, {
+    "fid": "MRN_Refill_4326_Point.2",
+    "description": "Unverpackte Biolebensmittel nachhaltiges und regionales Zubehör festes Schampoo Deocremes Trinkflaschen uvm. :",
+    "rating": 3.6782608695652175,
+    "station_name": "Annas Unverpacktes",
+    "opening_hours": "Di-Sa 10:00-18:30",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69120",
+        "street": "Ladenburger Straße 37"
+    },
+    "location_id": "56e5195a-74da-4de9-9629-5eb6dc6e3b7a"
+}, {
+    "fid": "MRN_Refill_4326_Point.80",
+    "description": "",
+    "rating": 3.8877551020408165,
+    "station_name": "Optik Riede",
+    "opening_hours": "Mo-Fr 8:30-13:00;14:30-18:00 Sa 8:30-13:00",
+    "address": {
+        "city": "Hemsbach",
+        "plz": "69502",
+        "street": "Bachgasse 49"
+    },
+    "location_id": "68b9ad90-c0e4-4456-93f9-936eae1e7ee7"
+}, {
+    "fid": "MRN_Refill_4326_Point.90",
+    "description": "Schütze unsere Umwelt! ",
+    "rating": 3.6633663366336635,
+    "station_name": "Müller Automobile e.K.",
+    "opening_hours": "Mo-Fr 08:00-18:00 Sa 09:00-13:00",
+    "address": {
+        "city": "Hatzenbühl",
+        "plz": "76770",
+        "street": "Im Gereut 35"
+    },
+    "location_id": "60e631cc-d5fb-4ab8-9f35-b72c2cf7ce6d"
+}, {
+    "fid": "MRN_Refill_4326_Point.106",
+    "description": "Refill-Station \u0026 offene Anlaufstelle für alle Menschen am Bahnhof. Begegnungort. Aufenthalt. Gesprächsangebot. Fairer Kaffee. Hilfe in Notlagen und Weitervermittlung. Unterstützung für Reisende.",
+    "rating": 3.6597938144329896,
+    "station_name": "Bahnhofsmission Heidelberg",
+    "opening_hours": "Mo-Fr 8:00-18:00  Sa-So 10:00-18:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69115",
+        "street": "Willy-Brandt-Platz 5"
+    },
+    "location_id": "f142a273-4ccf-410a-8921-5e7437d29e26"
+}, {
+    "fid": "MRN_Refill_4326_Point.129",
+    "description": "Refill Leitungswasser",
+    "rating": 3.7580645161290325,
+    "station_name": "Salamander Schwetzingen ",
+    "opening_hours": "Mo-Fr 9:30-18:30 Sa 9:30-16:00",
+    "address": {
+        "city": "Schwetzingen ",
+        "plz": "68723",
+        "street": "Mannheimerstrasse 10"
+    },
+    "location_id": "15171677-3117-4914-a598-506a6694356f"
+}, {
+    "fid": "MRN_Refill_4326_Point.139",
+    "description": "Wir machen mit und füllen gerne sowie kostenlos ein mitgebrachtes Gefäß mit Trinkwasser auf.",
+    "rating": 3.516949152542373,
+    "station_name": "Refill-Station in der Boxberg Apothekte",
+    "opening_hours": "Mo-Fr 08:30-13:00;15:00-18:30 Sa 08:30-13:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69126",
+        "street": "Boxbergring 16"
+    },
+    "location_id": "c2dd4910-9ecc-4fea-9d5a-666b45106c89"
+}, {
+    "fid": "MRN_Refill_4326_Point.7",
+    "description": "Das Sortiment ist liebevoll ausgesucht und bietet vor allem Lesestoff für Roman- und Krimi-Fans. Auch Freunde des historischen Romans und des Sachbuchs kommen nicht zu kurz. Kinder- und Jugendbücher bilden einen weiteren Schwerpunkt.",
+    "rating": 3.84070796460177,
+    "station_name": "Buchhandlung Karl Böttger e.k.",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68199",
+        "street": "Sennteichplatz 2"
+    },
+    "location_id": "b18e63d2-0ce7-4445-a923-55ab4cdf143a"
+}, {
+    "fid": "MRN_Refill_4326_Point.9",
+    "description": "Modegeschäft mit Fokus auf fair und biologisch hergestellter Kleidung.",
+    "rating": 3.6021505376344085,
+    "station_name": "Freudenhaus",
+    "opening_hours": "Mo-Sa 11:00-19:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "Q5 2"
+    },
+    "location_id": "c63c62b2-d503-451f-8c1c-0d0fee07ea8f"
+}, {
+    "fid": "MRN_Refill_4326_Point.27",
+    "description": "",
+    "rating": 3.8473282442748094,
+    "station_name": "ERGO Versicherungsbüro",
+    "opening_hours": "Di-Do 9:30-14:00",
+    "address": {
+        "city": "Worms",
+        "plz": "67549",
+        "street": "Friedrich-Ebert-Straße 1a"
+    },
+    "location_id": "b7de44ab-5270-48ac-83ea-57d2cd652ac7"
+}, {
+    "fid": "MRN_Refill_4326_Point.41",
+    "description": "Agentur für individuelle Softwareentwicklung",
+    "rating": 3.7777777777777777,
+    "station_name": "Onwerk GmbH",
+    "opening_hours": "Mo-Fr 9:00-17:00",
+    "address": {
+        "city": "Mannheim; Deutschland",
+        "plz": "68219",
+        "street": "Krügerstraße 7-11"
+    },
+    "location_id": "93bd97b3-3054-47e4-a1d0-536b9cb43d6b"
+}, {
+    "fid": "MRN_Refill_4326_Point.21",
+    "description": "",
+    "rating": 3.6416666666666666,
+    "station_name": "Cafè \u0026 Konditorei Petticakes",
+    "opening_hours": "Do;Fr 13:00-17:00 Sa 10:00-17:00",
+    "address": {
+        "city": "Grünstadt",
+        "plz": "67269",
+        "street": "Kirchheimer Str. 67"
+    },
+    "location_id": "63144b23-d069-4aec-bbff-7db02d9d62a9"
+}, {
+    "fid": "MRN_Refill_4326_Point.116",
+    "description": "Wir füllen gerne Ihre mitgebrachten Flaschen zu unseren Öffnungszeiten auf!",
+    "rating": 3.6666666666666665,
+    "station_name": "Central Apotheke",
+    "opening_hours": "Mo-Sa 8:30-13:00 Mo-Fr 15:00-18:30",
+    "address": {
+        "city": "Leimen",
+        "plz": "69181",
+        "street": "St. Ilgener Str. 1"
+    },
+    "location_id": "663ad8c2-ab28-4f17-b297-51adc386996c"
+}, {
+    "fid": "MRN_Refill_4326_Point.128",
+    "description": "Der etwas andere Blumenladen Floristik mitten aus der Natur Workshops für Hand und Herz Handgemachte Unikate für Dich und Deine Lieben",
+    "rating": 3.7027027027027026,
+    "station_name": "Kreativ Treff",
+    "opening_hours": "Di-Fr 13:30-18:00 Sa 9:00-13:00",
+    "address": {
+        "city": "Maxdorf",
+        "plz": "67133",
+        "street": "Maxstraße 42"
+    },
+    "location_id": "2e191f08-b168-4e71-8bd9-1a879102f8bd"
+}, {
+    "fid": "MRN_Refill_4326_Point.159",
+    "description": " -                                            ",
+    "rating": 3.8247422680412373,
+    "station_name": "Gaststätte Krumm Stubb",
+    "opening_hours": "Mi-Sa 17:30-24:00 So;FT 17:00-24:00",
+    "address": {
+        "city": "Rimbach",
+        "plz": "64668",
+        "street": "Rathausstr. 7"
+    },
+    "location_id": "bd708d14-5ed6-48b1-9dad-934d0beae29b"
+}, {
+    "fid": "MRN_Refill_4326_Point.179",
+    "description": "",
+    "rating": 3.51,
+    "station_name": "Starbucks Rhein Neckar Zentrum",
+    "opening_hours": "Mo-Sa 08:30-20:15",
+    "address": {
+        "city": "Viernheim",
+        "plz": "68519",
+        "street": "Robert-Schumann-Straße 2"
+    },
+    "location_id": "f2b418e7-1d4c-4763-89b2-b79cacb175b1"
+}, {
+    "fid": "MRN_Refill_4326_Point.14",
+    "description": "Gute Produkte aus der ganzen Welt",
+    "rating": 3.6636363636363636,
+    "station_name": "Weltladen Mannheim",
+    "opening_hours": "Mo 10:00-18:00 Di-Sa 11:00-15:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68161",
+        "street": "S2 3  "
+    },
+    "location_id": "d0e8ce07-916c-44f0-9fdd-bd08a4ea630e"
+}, {
+    "fid": "MRN_Refill_4326_Point.40",
+    "description": "",
+    "rating": 3.7142857142857144,
+    "station_name": "ALPHA Buchhandlung",
+    "opening_hours": "Mo-Fr 10:00-18.30 Sa 10:00-15:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68159",
+        "street": "C2 23"
+    },
+    "location_id": "85c60b59-4def-44b6-8781-02bff30026ba"
+}, {
+    "fid": "MRN_Refill_4326_Point.96",
+    "description": "Alten-und Pflegeheim",
+    "rating": 3.5510204081632653,
+    "station_name": "Senioren-Residenz Schifferstadt GmbH ",
+    "opening_hours": "8:00-20:00",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Hans-Purrmann-Straße 31"
+    },
+    "location_id": "e58add9a-e88a-4204-a75d-d246dd139b99"
+}, {
+    "fid": "MRN_Refill_4326_Point.114",
+    "description": "Refill-Apotheke",
+    "rating": 3.9,
+    "station_name": "Dorf Apotheke",
+    "opening_hours": "Mo-Fr 8:15-12:15 Mo-Di 14:30-18:30 Do-Fr 14:30-18:30 Sa 9:15-12:15 ",
+    "address": {
+        "city": "Haßloch",
+        "plz": "67454",
+        "street": "Schmähgasse 72"
+    },
+    "location_id": "c5697ff6-b20a-4c13-91ef-591d8ad72d7e"
+}, {
+    "fid": "MRN_Refill_4326_Point.147",
+    "description": "Edelstahlsäule",
+    "rating": 3.6454545454545455,
+    "station_name": "Öffentlicher Trinkbrunnen / BUGA Spielplatz \"Vernetzung\"",
+    "opening_hours": "Mai-Oktober",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68259",
+        "street": "Kurpfälzer Meile der Innovationen (Dominic-Spinelli-Weg)"
+    },
+    "location_id": "4fabe0e1-2f90-464c-b1f7-e49268e9a65e"
+}, {
+    "fid": "MRN_Refill_4326_Point.19",
+    "description": "Öffnungszeiten: immer geöffnet",
+    "rating": 3.669642857142857,
+    "station_name": "Weingut WoW by Wolfgang Bender",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Bissersheim",
+        "plz": "67281",
+        "street": "Freinsheimer Weg 9"
+    },
+    "location_id": "9d8c50af-9b57-4d57-99de-807d9fbc9ef3"
+}, {
+    "fid": "MRN_Refill_4326_Point.45",
+    "description": "",
+    "rating": 3.611111111111111,
+    "station_name": "Theater- und Spielberatung Baden-Württemberg e.V.",
+    "opening_hours": "Mo;Mi;Fr 9:00-12:00;14:00-16:00",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69117",
+        "street": "Bienenstraße 5"
+    },
+    "location_id": "169d5d95-5c99-4d22-81fb-24d20fd00b19"
+}, {
+    "fid": "MRN_Refill_4326_Point.76",
+    "description": "Öffnungszeiten: immer geöffnet",
+    "rating": 3.5754716981132075,
+    "station_name": "Trinkwasserbrunnen Am Steinbruch",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Heidelberg",
+        "plz": "69118",
+        "street": "Kleingemünder Str 0"
+    },
+    "location_id": "86434b7a-cc09-4770-85eb-aa6b9977ae01"
+}, {
+    "fid": "MRN_Refill_4326_Point.105",
+    "description": "Jugendtreff   Fr;So* Nach Aushang",
+    "rating": 3.803921568627451,
+    "station_name": "Jugendtreff Neckarau",
+    "opening_hours": "Mo;Mi 14:00-18:00 Di;Do 14:00-20:00",
+    "address": {
+        "city": "Mannheim",
+        "plz": "68199",
+        "street": "Heinrich-Heine-Straße 2"
+    },
+    "location_id": "ffb6d257-a165-4eb1-b513-aa8d0b31e358"
+}, {
+    "fid": "MRN_Refill_4326_Point.118",
+    "description": "Wasserbar im Foyer des Verwaltungsgebäudes. Wassersprudler oder Trinkwasserhahn steht zur Verfügung. ",
+    "rating": 3.626086956521739,
+    "station_name": "Wasserversorgung Pfälzische Mittelrheingruppe",
+    "opening_hours": "Mo-Do 8:15-11:45;13:15-15:45 Fr 8:15-12.00",
+    "address": {
+        "city": "Schifferstadt",
+        "plz": "67105",
+        "street": "Am Wasserturm 2"
+    },
+    "location_id": "63c26ded-54e0-4d69-88f0-b6b4612fb984"
+}, {
+    "fid": "MRN_Refill_4326_Point.160",
+    "description": "Hier befindet sich eine Refill-Station. Eine mitgebrachte Flasche kann hier kostenfrei mit Leitungswasser aufgefüllt werden.",
+    "rating": 3.706896551724138,
+    "station_name": "Stadtbücherei Viernheim",
+    "opening_hours": "Di 10:00-17:00 Mi 14:00-17:00 Do 10:00-13:00;15:00-19:00 Fr 14:00-17:00 Sa 10:00-12:00",
+    "address": {
+        "city": "Viernheim",
+        "plz": "68519",
+        "street": "Satonévri-Platz"
+    },
+    "location_id": "49d31552-c746-45b2-898e-76881ee15063"
+}, {
+    "fid": "MRN_Refill_4326_Point.83",
+    "description": "",
+    "rating": 3.857142857142857,
+    "station_name": "Wonderpots Speyer GmbH",
+    "opening_hours": "Mo-Do 11:00-19:00 Fr;Sa 10:00-20:00 So;FT 12:00-19:00",
+    "address": {
+        "city": "Speyer",
+        "plz": "67346",
+        "street": "Roßmarktstraße 36"
+    },
+    "location_id": "ecc5d578-90f8-43d1-adbe-3eceb06f9152"
+}, {
+    "fid": "MRN_Refill_4326_Point.123",
+    "description": "Blumenladen",
+    "rating": 3.6666666666666665,
+    "station_name": "Blumen Kronenberg",
+    "opening_hours": "Unbekannt",
+    "address": {
+        "city": "Germersheim",
+        "plz": "76726",
+        "street": "Oberamtsstraße 4"
+    },
+    "location_id": "b800f6b6-e8e2-4711-a59c-bf9db94c3505"
+}, {
+    "fid": "MRN_Refill_4326_Point.149",
+    "description": "                   ",
+    "rating": 3.7474747474747474,
+    "station_name": "KV Bergstraße von Bündnis 90/ Die Grünen",
+    "opening_hours": "Mo-Do 9:00-13:00 Fr 10:00-12:00",
+    "address": {
+        "city": "Bensheim",
+        "plz": "64625",
+        "street": "Gerbergasse 9"
+    },
+    "location_id": "6defd2ed-9129-4691-91f9-3c5427316ece"
+}]
