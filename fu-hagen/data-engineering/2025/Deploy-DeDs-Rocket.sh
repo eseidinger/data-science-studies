@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 export GID="$(id -g)"
-export UID="$(id -u)"
+# export UID="$(id -u)"
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]
  then
