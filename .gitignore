@@ -71,6 +71,7 @@ deep-learning-nano/3-CNNs/4-Transfer_Learning/flowers/
 MNIST/
 MNISTWritable/
 **/1-object_detection/data/
+**/1-intro_rnn/data/
 
 mlflow.db
 runs/
