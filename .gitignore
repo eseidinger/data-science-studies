@@ -64,3 +64,17 @@ CIFAR10/
 **/6-identify_customer_segments/*.md
 
 projects.csv
+cifar-10-python.tar.gz
+cifar-10-batches-py/
+
+deep-learning-nano/3-CNNs/4-Transfer_Learning/flowers/
+MNIST/
+MNISTWritable/
+**/1-object_detection/data/
+
+mlflow.db
+runs/
+
+PennFudanPed/
+summer2winter_yosemite/
+samples_cyclegan/

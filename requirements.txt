@@ -9,3 +9,16 @@ jupyterlab
 torch
 torchvision
 torchaudio
+netron
+tensorboard
+tqdm
+opencv-python
+livelossplot
+mlflow
+timm
+pycocotools
+segmentation-models-pytorch
+albumentations
+nltk
+transformers
+sentencepiece
