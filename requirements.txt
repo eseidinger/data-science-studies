@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
 numpy
 pandas
 scikit-learn
@@ -5,7 +7,6 @@ matplotlib
 seaborn
 scipy
 jupyterlab
---extra-index-url https://download.pytorch.org/whl/cu128
 torch
 torchvision
 torchaudio
@@ -22,3 +23,4 @@ albumentations
 nltk
 transformers
 sentencepiece
+pytest

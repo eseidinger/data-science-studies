@@ -81,3 +81,6 @@ summer2winter_yosemite/
 samples_cyclegan/
 
 *.zip
+*.tar.gz
+
+landmark_images/
