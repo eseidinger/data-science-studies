@@ -79,3 +79,5 @@ runs/
 PennFudanPed/
 summer2winter_yosemite/
 samples_cyclegan/
+
+*.zip
