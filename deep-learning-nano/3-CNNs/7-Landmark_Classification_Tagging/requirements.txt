@@ -1,0 +1,15 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+opencv-python-headless
+matplotlib
+numpy
+pillow
+bokeh
+torch
+torchvision
+tqdm
+ipywidgets
+livelossplot
+pytest
+pandas
+seaborn
