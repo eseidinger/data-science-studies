@@ -7781,7 +7781,25 @@ src/transfer.py: 32 warnings
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="&gt;" src="static_images/icons/noun-answer-3361020.png" style="width:25px"/> <strong>Answer:</strong> I decided to use ResNet18 for the base of my model, since it performs fairly well on ImageNet and is not too large of a model. Also, since ResNet18 was trained for the ImageNet task, it is a good model to use for this landmark classificaiton task, since both ImageNet and this landmark task use images of natural scenes.</p>
+<ol>
+<li>Used ResNet18 pre-trained on ImageNet</li>
+</ol>
+<p>Already learned useful features (edges, textures, shapes) from millions of images</p>
+<ol start="2">
+<li>Froze all backbone layers</li>
+</ol>
+<ul>
+<li>Pre-trained features are already good for landmark recognition</li>
+<li>Only train the final classification layer</li>
+</ul>
+<ol start="3">
+<li>Replaced final FC layer</li>
+</ol>
+<ul>
+<li>Changed output from 1000 (ImageNet classes) to n_classes (landmark classes)</li>
+<li>Only ~1% of parameters need training</li>
+</ul>
+<p>Benefits: Faster training, less overfitting, better performance with limited data by leveraging ImageNet knowledge.</p>
 </div>
 </div>
 </div>

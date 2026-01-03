@@ -7759,7 +7759,22 @@ E       RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="&gt;" src="static_images/icons/noun-answer-3361020.png" style="width:25px"/> <strong>Answer</strong>: My code first resizes the image to 256 and then crops to 224. I picked 224 as the input size because it is the recommended input size for using pytorch's pre-trained models. I did decide to augment the dataset via RandAugment, a typical set of augmentations for natural images. I added this augmentation with the goal of improving my model's robustness, thus improving test accuracy.</p>
+<p>Training:</p>
+<ul>
+<li>Resize(256) → RandomResizedCrop(224) → RandomHorizontalFlip → ToTensor → Normalize</li>
+<li>Augmentation provides scale/position invariance and helps prevent overfitting</li>
+</ul>
+<p>Validation/Test:</p>
+<ul>
+<li>Resize(256) → CenterCrop(224) → ToTensor → Normalize</li>
+<li>No augmentation for consistent, reproducible evaluation</li>
+</ul>
+<p>Key Points:</p>
+<ul>
+<li>Normalization uses dataset-computed mean/std for proper feature scaling</li>
+<li>Only horizontal flips used (vertical would be unrealistic for landmarks)</li>
+<li>Same normalization applied to all splits for consistency</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7939,7 +7954,30 @@ src/model.py::test_model_construction </span><span class="ansi-green-intense-fg 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="&gt;" src="static_images/icons/noun-answer-3361020.png" style="width:25px"/> <strong>Answer:</strong> I decided to use 5 convolutional layers so that my model could be sufficiently expressive. I used dropout layers to reduce my model's tendency to overfit the training data. I made my model output a 50-dimensional vector to match with the 50 available landmark classes.</p>
+<ol>
+<li>VGG-Style Blocks (5 layers)</li>
+</ol>
+<p>Used conv-conv-pool pattern to learn hierarchical features at different scales</p>
+<ol start="2">
+<li>Channel Progression (64→128→256→512→512)</li>
+</ol>
+<p>Doubled channels after each pooling to maintain representational capacity as spatial dimensions shrink</p>
+<ol start="3">
+<li>Batch Normalization</li>
+</ol>
+<p>Stabilizes training and helps gradient flow in this deep network</p>
+<ol start="4">
+<li>Global Average Pooling</li>
+</ol>
+<p>Reduces 512×8×8 features to 512×1×1, cutting parameters dramatically while preventing overfitting</p>
+<ol start="5">
+<li>Compact Classifier</li>
+</ol>
+<ul>
+<li>Single 512-unit hidden layer with high dropout (0.7) for final classification to 1000 classes</li>
+<li>High dropout necessary since we're classifying into many classes from compressed features</li>
+<li>This design prioritizes depth for feature learning while using global pooling and dropout to control overfitting.</li>
+</ul>
 </div>
 </div>
 </div>
