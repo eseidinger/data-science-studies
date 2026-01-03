@@ -84,3 +84,5 @@ samples_cyclegan/
 *.tar.gz
 
 landmark_images/
+
+processed_celeba_small/
