@@ -86,3 +86,4 @@ samples_cyclegan/
 landmark_images/
 
 processed_celeba_small/
+.env

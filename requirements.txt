@@ -24,3 +24,5 @@ nltk
 transformers
 sentencepiece
 pytest
+openai
+python-dotenv
