@@ -26,3 +26,6 @@ sentencepiece
 pytest
 openai
 python-dotenv
+json-repair
+numexpr
+pydantic
