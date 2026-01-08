@@ -176,7 +176,6 @@ class RAGKnowledgePromptAgent:
 
             # Ensure start always advances to prevent infinite loop
             start = max(end - self.chunk_overlap, start + 1) if end < len(text) else end
-            print(start, end)
             chunk_id += 1
 
         with open(f"chunks-{self.unique_filename}", 'w', newline='', encoding='utf-8') as csvfile:
@@ -365,7 +364,7 @@ class ActionPlanningAgent:
         )
         system_prompt = (
             f"You are an action planning agent. Using your knowledge, you extract from the user prompt "
-            f"the steps requested to complete the action the user is asking for. You return the steps as a list. "
+            f"the steps requested to complete the action the user is asking for. You return the steps as a list starting each step with a *.\n"
             f"Only return the steps in your knowledge. Forget any previous context. This is your knowledge: {self.knowledge}"
         )
         response = client.chat.completions.create(
@@ -380,6 +379,7 @@ class ActionPlanningAgent:
         response_text = response.choices[0].message.content
 
         steps = response_text.split("\n")
-        steps = [step.strip() for step in steps if step.strip() and not step.lower().startswith("steps:")]
+        steps = [step.strip() for step in steps if step.strip() and step.strip().startswith("*")]
+        steps = [step.lstrip("*").strip() for step in steps]
 
         return steps
