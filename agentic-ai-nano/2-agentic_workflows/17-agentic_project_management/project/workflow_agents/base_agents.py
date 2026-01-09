@@ -56,11 +56,21 @@ class AugmentedPromptAgent:
 
 # KnowledgeAugmentedPromptAgent class definition
 class KnowledgeAugmentedPromptAgent:
-    def __init__(self, openai_api_key, persona, knowledge):
-        """Initialize the agent with provided attributes."""
+    """
+    An agent that responds to prompts using provided knowledge, ignoring its own internal knowledge.
+    """
+    def __init__(self, openai_api_key, persona, knowledge, knowledge_getter=None):
+        """Initialize the agent with provided attributes.
+        Parameters:
+        openai_api_key (str): API key for accessing OpenAI.
+        persona (str): Persona description for the agent.
+        knowledge (str): The knowledge base to use for responses.
+        knowledge_getter (callable, optional): Function to dynamically retrieve knowledge.
+        """
         self.openai_api_key = openai_api_key
         self.persona = persona
         self.knowledge = knowledge
+        self.knowledge_getter = knowledge_getter
 
     def respond(self, input_text):
         """Generate a response using the OpenAI API."""
@@ -68,11 +78,14 @@ class KnowledgeAugmentedPromptAgent:
             # base_url="https://openai.vocareum.com/v1",
             api_key=self.openai_api_key
         )
+        knowledge_to_use = self.knowledge
+        if self.knowledge_getter:
+            knowledge_to_use = self.knowledge_getter()
         system_prompt = (
             f"{self.persona}\n"
             "You are a knowledge-based assistant. Forget all previous context. "
             f"Use only the following knowledge to answer, "
-            f"do not use your own knowledge: {self.knowledge}. "
+            f"do not use your own knowledge: {knowledge_to_use}. "
             "Answer the prompt based on this knowledge, not your own."
         )
         response = client.chat.completions.create(
@@ -232,13 +245,22 @@ class RAGKnowledgePromptAgent:
 
 class EvaluationAgent:
     
-    def __init__(self, openai_api_key, persona, evaluation_criteria, worker_agent, max_interactions):
-        # Initialize the EvaluationAgent with given attributes.
+    def __init__(self, openai_api_key, persona, evaluation_criteria, worker_agent, max_interactions, output_setter=None):
+        """Initialize the EvaluationAgent with given attributes.
+        Parameters:
+        openai_api_key (str): API key for accessing OpenAI.
+        persona (str): Persona description for the agent.
+        evaluation_criteria (str): Criteria to evaluate the worker agent's responses.
+        worker_agent (object): The agent whose responses are being evaluated.
+        max_interactions (int): Maximum number of evaluation interactions.
+        output_setter (callable, optional): Function to set the final output.
+        """
         self.openai_api_key = openai_api_key
         self.persona = persona
         self.evaluation_criteria = evaluation_criteria
         self.worker_agent = worker_agent
         self.max_interactions = max_interactions
+        self.output_setter = output_setter
 
     def evaluate(self, initial_prompt):
         # This method manages interactions between agents to achieve a solution.
@@ -300,6 +322,8 @@ class EvaluationAgent:
                     f"It has been evaluated as incorrect.\n"
                     f"Make only these corrections, do not alter content validity: {instructions}"
                 )
+        if self.output_setter:
+            self.output_setter(response_from_worker)
         return {
             "final_response": response_from_worker,
             "final_evaluation": evaluation,
