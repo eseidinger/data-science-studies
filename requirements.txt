@@ -29,3 +29,6 @@ python-dotenv
 json-repair
 numexpr
 pydantic
+chromadb
+pdfplumber
+tavily

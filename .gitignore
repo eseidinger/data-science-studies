@@ -87,3 +87,4 @@ landmark_images/
 
 processed_celeba_small/
 .env
+chromadb/
