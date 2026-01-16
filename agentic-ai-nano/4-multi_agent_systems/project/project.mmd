@@ -1,0 +1,59 @@
+graph TB
+    Start([Customer Request]) --> Orchestrator[OrchestrationAgent]
+    
+    Orchestrator --> ProcessRequest[1. Process Request]
+    ProcessRequest --> InvAgent1[InventoryAgent:<br/>get_inventory_snapshot]
+    InvAgent1 --> ExtractItems[Extract Items & Quantities]
+    
+    ExtractItems --> CheckInv[2. Check Inventory]
+    CheckInv --> InvAgent2[InventoryAgent]
+    InvAgent2 --> InvCheck1[is_product_in_inventory]
+    InvCheck1 --> InvCheck2[check_restock_needed]
+    InvCheck2 --> InvResult{Inventory Result}
+    
+    InvResult --> Available[Items Available]
+    InvResult --> Restock[Items Need Restocking]
+    
+    Available --> CalcPrice[3. Calculate Prices]
+    Restock --> CalcPrice
+    
+    CalcPrice --> QuoteAgent1[QuotingAgent]
+    QuoteAgent1 --> GetPrice[get_item_price]
+    QuoteAgent1 --> FetchHistory[fetch_historical_quotes]
+    FetchHistory --> PriceInfo[Price Information]
+    GetPrice --> PriceInfo
+    
+    Restock --> GetDelivery[4. Get Delivery Schedule]
+    GetDelivery --> OrderAgent1[OrderingAgent]
+    OrderAgent1 --> PlaceOrder[order_stock]
+    PlaceOrder --> ScheduleDeliv[schedule_delivery]
+    ScheduleDeliv --> DeliveryInfo[Delivery Information]
+    
+    PriceInfo --> CreateQuote[5. Create Quote]
+    DeliveryInfo --> CreateQuote
+    CreateQuote --> QuoteAgent2[QuotingAgent:<br/>Generate Final Quote]
+    QuoteAgent2 --> FinalQuote([Customer Quote])
+    
+    subgraph InventoryAgent_Tools
+        InvCheck1
+        InvCheck2
+        InvAgent1
+    end
+    
+    subgraph QuotingAgent_Tools
+        GetPrice
+        FetchHistory
+        QuoteAgent2
+    end
+    
+    subgraph OrderingAgent_Tools
+        PlaceOrder
+        ScheduleDeliv
+    end
+    
+    style Orchestrator fill:#ff9999,stroke:#333,stroke-width:3px
+    style InventoryAgent_Tools fill:#99ccff,stroke:#333,stroke-width:2px
+    style QuotingAgent_Tools fill:#99ff99,stroke:#333,stroke-width:2px
+    style OrderingAgent_Tools fill:#ffcc99,stroke:#333,stroke-width:2px
+    style Start fill:#e6e6fa,stroke:#333,stroke-width:2px
+    style FinalQuote fill:#90ee90,stroke:#333,stroke-width:3px

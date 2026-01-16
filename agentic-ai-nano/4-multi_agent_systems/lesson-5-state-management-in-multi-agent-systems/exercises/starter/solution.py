@@ -1,7 +1,25 @@
+"""
+EXERCISE: Multi-Agent State Management with Purchase Tracking
+
+In this exercise, you'll extend the Colombian Fruit Market system by implementing
+purchase tracking functionality while maintaining the multi-agent orchestration patterns.
+
+You'll need to:
+1. Implement the purchase_fruit tool to record transactions
+2. Implement get_purchase_summary tool for analytics
+3. Add the purchase summary tool to the PurchaseAgent
+4. Add 'summary' action support to the orchestrator's handle_purchase tool
+
+This demonstrates extending multi-agent systems with new capabilities while
+maintaining proper orchestration patterns.
+"""
+
 from typing import Dict, List, Any
 import os
 import dotenv
 import time
+from datetime import datetime
+from collections import Counter
 
 from smolagents import (
     ToolCallingAgent,
@@ -9,7 +27,7 @@ from smolagents import (
     tool,
 )
 
-dotenv.load_dotenv(dotenv_path="../.env")
+dotenv.load_dotenv(dotenv_path="../../.env")
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 model = OpenAIServerModel(
@@ -26,9 +44,10 @@ fruit_data = {
     "chontaduro": {"description": "A starchy fruit, often eaten with salt. Rich in nutrients.", "origin": "Colombia", "price": 2.25}
 }
 
-# Global state storage
+# Enhanced global state storage - now includes purchase history
 user_states = {}
 
+# Existing tools from the demo
 @tool
 def get_fruit_description(fruit_name: str) -> str:
     """Retrieves the description of a fruit from the fruit database.
@@ -93,52 +112,100 @@ def save_user_state(user_id: str) -> str:
     """
     return f"User state for {user_id} saved successfully."
 
+# TODO: Implement this tool to record fruit purchases
 @tool
-def record_purchase(user_id: str, fruit_name: str, quantity: int) -> str:
-    """Records a fruit purchase.
+def purchase_fruit(user_id: str, fruit_name: str, quantity: int) -> str:
+    """Records a fruit purchase in the user's purchase history.
     
     Args:
         user_id: The ID of the user making the purchase.
         fruit_name: The name of the fruit being purchased.
-        quantity: The quantity being purchased.
+        quantity: The quantity of fruit being purchased.
         
     Returns:
         A confirmation message with purchase details.
     """
+    # TODO: Implement purchase recording with timestamps and pricing
     if fruit_name not in fruit_data:
-        return f"Sorry, {fruit_name} is not available."
+        return f"Sorry, we don't have {fruit_name} available for purchase."
     
-    price = fruit_data[fruit_name]["price"]
-    total = price * quantity
+    price_per_unit = fruit_data[fruit_name]["price"]
+    total_cost = price_per_unit * quantity
     
-    user_state = user_states.get(user_id, {"preferences": [], "purchases": []})
-    if "purchases" not in user_state:
-        user_state["purchases"] = []
-    
-    purchase = {
-        "fruit": fruit_name,
+    purchase_record = {
+        "timestamp": datetime.now().isoformat(),
+        "fruit_name": fruit_name,
         "quantity": quantity,
-        "total_cost": total,
-        "timestamp": time.time()
+        "price_per_unit": price_per_unit,
+        "total_cost": total_cost
     }
     
-    user_state["purchases"].append(purchase)
-    user_states[user_id] = user_state
+    if user_id not in user_states:
+        user_states[user_id] = {"preferences": [], "purchases": []}
+    elif "purchases" not in user_states[user_id]:
+        user_states[user_id]["purchases"] = []
     
-    return f"Purchase recorded: {quantity} {fruit_name}(s) for ${total:.2f}"
+    user_states[user_id]["purchases"].append(purchase_record)
+    
+    return f"Purchase recorded: {quantity} {fruit_name}(s) for ${total_cost:.2f} (${price_per_unit:.2f} each)"
 
 @tool
 def get_purchase_history(user_id: str) -> List[Dict]:
-    """Gets user's purchase history.
+    """Retrieves the purchase history for a user.
     
     Args:
-        user_id: The ID of the user.
+        user_id: The ID of the user whose purchase history to retrieve.
         
     Returns:
-        List of purchase records.
+        A list of the user's past purchases.
     """
-    user_state = user_states.get(user_id, {"preferences": [], "purchases": []})
-    return user_state.get("purchases", [])
+    if user_id not in user_states:
+        user_states[user_id] = {"preferences": [], "purchases": []}
+    elif "purchases" not in user_states[user_id]:
+        user_states[user_id]["purchases"] = []
+    
+    return user_states[user_id]["purchases"]
+
+# TODO: Implement this tool for purchase analytics
+@tool
+def get_purchase_summary(user_id: str) -> Dict:
+    """Calculates a summary of the user's purchase history.
+    
+    Args:
+        user_id: The ID of the user whose purchase summary to calculate.
+        
+    Returns:
+        A dictionary containing the total spent, number of transactions, 
+        and most purchased fruit.
+    """
+    # TODO: Implement purchase summary calculation
+    purchases = get_purchase_history(user_id)
+    
+    total_spent = 0
+    num_transactions = len(purchases)
+    fruit_counts = Counter()
+    total_fruits_purchased = 0
+    
+    for purchase in purchases:
+        total_spent += purchase["total_cost"]
+        fruit_counts[purchase["fruit_name"]] += purchase["quantity"]
+        total_fruits_purchased += purchase["quantity"]
+    
+    most_purchased_fruit = None
+    most_purchased_count = 0
+    
+    for fruit, count in fruit_counts.items():
+        if count > most_purchased_count:
+            most_purchased_fruit = fruit
+            most_purchased_count = count
+    
+    return {
+        "total_spent": total_spent,
+        "num_transactions": num_transactions,
+        "most_purchased_fruit": most_purchased_fruit,
+        "most_purchased_count": most_purchased_count if most_purchased_fruit else 0,
+        "total_fruits_purchased": total_fruits_purchased
+    }
 
 # Specialized agents with real responsibilities
 
@@ -165,14 +232,14 @@ class PreferenceAgent(ToolCallingAgent):
         )
 
 class PurchaseAgent(ToolCallingAgent):
-    """Agent specialized in handling purchases."""
+    """Agent specialized in handling purchases and purchase history."""
     
     def __init__(self, model: OpenAIServerModel):
         super().__init__(
-            tools=[record_purchase, get_purchase_history],
+            tools=[purchase_fruit, get_purchase_history],  # TODO: Add get_purchase_summary
             model=model,
             name="purchase_agent",
-            description="Handles fruit purchases and purchase history.",
+            description="Handles fruit purchases, purchase history, and purchase summaries.",
         )
 
 class Orchestrator(ToolCallingAgent):
@@ -220,11 +287,11 @@ class Orchestrator(ToolCallingAgent):
 
         @tool
         def handle_purchase(user_id: str, action: str, fruit_name: str = None, quantity: int = None) -> str:
-            """Handle purchase operations.
+            """Handle purchase operations including buying fruits and viewing history.
             
             Args:
                 user_id: ID of the user
-                action: Either 'buy' or 'history'
+                action: Either 'buy', 'history', or 'summary'
                 fruit_name: Name of fruit (required for 'buy')
                 quantity: Quantity to purchase (required for 'buy')
                 
@@ -235,6 +302,9 @@ class Orchestrator(ToolCallingAgent):
                 return self.purchases.run(f"Record purchase for user {user_id}: {quantity} {fruit_name}")
             elif action == "history":
                 return self.purchases.run(f"Get purchase history for user {user_id}")
+            # TODO: Add support for action == "summary"
+            elif action == "summary":
+                return self.purchases.run(f"Get purchase summary for user {user_id}")
             return "Invalid purchase action"
 
         super().__init__(
@@ -248,8 +318,9 @@ class Orchestrator(ToolCallingAgent):
             Workflow:
             1. For fruit questions: Route to fruit info agent
             2. For preference management: Route to preference agent  
-            3. For purchases: Route to purchase agent, then update preferences
-            4. Always save state after preference/purchase changes
+            3. For purchases: Route to purchase agent, then update preferences if new fruit
+            4. For purchase history/summaries: Route to purchase agent
+            5. Always save state after preference or purchase changes
             """,
         )
 
@@ -264,84 +335,89 @@ class Orchestrator(ToolCallingAgent):
         context = f"""
         User ID: {user_id}
         Current preferences: {current_preferences}
-        Purchase history: {len(purchase_history)} previous purchases
+        Purchase history: {len(purchase_history)} previous transactions
         
         User message: "{message}"
         
         Coordinate the appropriate agents to handle this request:
         - Use get_fruit_info for fruit information requests
         - Use manage_preferences for adding/viewing preferences  
-        - Use handle_purchase for buying fruits or viewing purchase history
+        - Use handle_purchase for buying fruits, viewing purchase history, or getting purchase summaries
         - Always save user state after preference or purchase changes
         
         Follow this workflow:
         1. If asking about fruit info → get fruit info
         2. If expressing interest → get info first, then add to preferences
-        3. If wanting to buy → handle purchase, then add to preferences if new
-        4. Always save state after changes
+        3. If wanting to buy → handle purchase, then add to preferences if new fruit
+        4. If asking for purchase history → handle_purchase with action 'history'
+        5. If asking for purchase summary → handle_purchase with action 'summary'
+        6. Always save state after changes
         """
         
         return self.run(context)
 
 def run_demo():
     """
-    Runs the fruit advisor demo with real orchestration.
+    Runs the fruit advisor demo with purchase tracking and real orchestration.
     """
-    print("🍎 Colombian Fruit Market - True Orchestration Demo 🍍")
-    print("="*60)
+    print("🍎 Colombian Fruit Market with Purchase Tracking 🍍")
+    print("="*70)
     
     orchestrator = Orchestrator(model)
-    user_id = "putzie"
+    user_id = "miercoles"
     
-    print("\n--- Session 1: Demonstrating Agent Coordination ---")
+    print("\n--- First Session ---")
     
     messages = [
-        "Hi! What can you tell me about lulo?",
-        "That sounds great! I'd like to try it - add it to my preferences.",
-        "What about mango? I love tropical fruits.",
-        "Perfect! Add mango to my preferences too.",
-        "I want to buy 3 lulos please.",
-        "Can I also buy 2 mangoes?",
-        "What are my current preferences?",
-        "Show me my purchase history.",
+        "Hi! What kind of fruits do you have?",
+        "Tell me about lulo.",
+        "I'd like to buy 3 lulos please.",
+        "I also want to try mango. Can I buy 2 mangos?",
+        "What's my purchase history so far?",
+        "Can you give me a summary of my purchases?",
+        "Thank you! I'll come back later."
     ]
     
     for message in messages:
         print(f"\nUser: {message}")
         response = orchestrator.process_user_message(user_id, message)
-        print(f"System: {response}")
+        print(f"Agent: {response}")
         time.sleep(0.5)
     
-    print("\n--- Session 2: State Persistence Test ---")
+    print("\n--- Continuing in New Session ---")
     
-    # Create new orchestrator to test state persistence
-    new_orchestrator = Orchestrator(model)
-    
-    persistence_messages = [
-        "Hi again! What are my preferences?",
-        "What's my purchase history?",
-        "I'd like to try granadilla - tell me about it first.",
-        "Sounds good! Add it to my preferences and I'll buy 1.",
+    new_messages = [
+        "Hello again! I'd like to see my purchase history.",
+        "Great! I'd like to buy 4 granadillas.",
+        "Can you give me an updated summary of all my purchases?",
+        "Thank you for your help!"
     ]
     
-    for message in persistence_messages:
+    for message in new_messages:
         print(f"\nUser: {message}")
-        response = new_orchestrator.process_user_message(user_id, message)
-        print(f"System: {response}")
+        response = orchestrator.process_user_message(user_id, message)
+        print(f"Agent: {response}")
         time.sleep(0.5)
     
-    # Final state
-    final_preferences = get_user_preferences(user_id)
-    final_purchases = get_purchase_history(user_id)
+    # Final state check - display purchase history and summary
+    purchase_history = get_purchase_history(user_id)
+    # TODO: Uncomment when get_purchase_summary is implemented
+    purchase_summary = get_purchase_summary(user_id)
     
-    print("\n" + "="*60)
-    print("FINAL STATE:")
-    print(f"Preferences: {final_preferences}")
-    print(f"Purchases: {len(final_purchases)} total")
-    for purchase in final_purchases:
-        print(f"  - {purchase['quantity']} {purchase['fruit']} for ${purchase['total_cost']:.2f}")
-    print("="*60)
-    print("\nDemo complete! Shows real orchestration with agent coordination.")
+    print("\n" + "="*70)
+    print("Final Purchase History:")
+    for i, purchase in enumerate(purchase_history):
+        print(f"  {i+1}. [Purchase details will show when purchase_fruit is implemented]")
+    
+    print("\nPurchase Summary:")
+    print(f"  - Total spent: ${purchase_summary['total_spent']:.2f}")
+    print(f"  - Number of transactions: {purchase_summary['num_transactions']}")
+    print(f"  - Total fruits purchased: {purchase_summary['total_fruits_purchased']}")
+    if purchase_summary['most_purchased_fruit']:
+        print(f"  - Most purchased fruit: {purchase_summary['most_purchased_fruit']} ({purchase_summary['most_purchased_count']} units)")
+    
+    print("\n" + "="*70)
+    print("Demo complete! This demonstrates state persistence and transaction tracking across sessions.")
 
 if __name__ == "__main__":
     run_demo()

@@ -10,7 +10,7 @@ load_dotenv()
 model = OpenAIServerModel(
     model_id="gpt-4o-mini",
     api_key=os.getenv("UDACITY_OPENAI_API_KEY"),
-    api_base="https://openai.vocareum.com/v1",
+    # api_base="https://openai.vocareum.com/v1",
 )
 
 DISTRIBUTION_HISTORY: Dict[str, List[Dict[str, Any]]] = {}

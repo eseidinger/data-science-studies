@@ -32,3 +32,4 @@ pydantic
 chromadb
 pdfplumber
 tavily
+smolagents
