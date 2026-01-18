@@ -780,6 +780,7 @@ class InventoryAgent(ToolCallingAgent):
             model=model,
             name="inventory_processor",
             description="Agent responsible for tracking inventory stock levels.",
+            max_tool_threads=1,
         )
 
 class QuotingAgent(ToolCallingAgent):
@@ -789,6 +790,7 @@ class QuotingAgent(ToolCallingAgent):
             model=model,
             name="quote_processor",
             description="Agent responsible for generating quotes based on customer requests.",
+            max_tool_threads=1,
         )
 
 class OrderingAgent(ToolCallingAgent):
@@ -798,6 +800,7 @@ class OrderingAgent(ToolCallingAgent):
             model=model,
             name="order_processor",
             description="Agent responsible for placing stock orders with suppliers and scheduling deliveries.",
+            max_tool_threads=1,
         )
 
 @dataclass
@@ -850,6 +853,7 @@ class OrchestrationAgent(ToolCallingAgent):
         self.state = {
             "original_request": None,
             "request_date": None,
+            "latest_date": None,
             "requested_items": None,
             "inventory_result": None,
             "price_info": None,
@@ -1089,7 +1093,16 @@ class OrchestrationAgent(ToolCallingAgent):
             The delivery information is: "{delivery_info}"
             The discounted price information is: "{discounted_prices_info}"
             Generate a quote based on the delivery and discounted price information.
-            Format the quote clearly for the customer, including itemized prices, any discounts applied with reasons, and delivery dates.
+            
+            Use the following formatting for the quote:
+
+            Thanks for your request! Here is your quote:
+
+            Item Name | Quantity | Sales Price | Discounted Price | Delivery Date
+
+            Total amount: $X.XX
+
+            Provide a clear explanation of the quote including any discounts applied.
             """)
             
             # Store final quote
@@ -1121,9 +1134,12 @@ class OrchestrationAgent(ToolCallingAgent):
             self.state = {
                 "original_request": None,
                 "request_date": None,
+                "latest_date": None,
                 "requested_items": None,
                 "inventory_result": None,
                 "price_info": None,
+                "order_size": None,
+                "discount_info": None,
                 "delivery_info": None,
                 "final_quote": None
             }
@@ -1148,13 +1164,13 @@ class OrchestrationAgent(ToolCallingAgent):
             You are the orchestrator for processing orders for a paper supply company.
             You coordinate between the inventory, quoting, and ordering agents to fulfill customer requests.
             
-            For customer requests, follow this workflow:
-            1. Extract the date of the request
+            For customer requests, follow this exact workflow:
+            1. Extract the date of the request and the latest delivery date (if provided) from the request.
             2. Determine requested items and quantities using process_request (stores results in state)
             3. Use check_inventory to verify wether items are in inventory and wether they need restocking (stores results in state)
-            4. Use can_order_be_fulfilled to check if the order can be fulfilled based on inventory and delivery dates (stores results in state)
+            4. Use can_order_be_fulfilled to check if the order can be fulfilled based on inventory and delivery dates
                If the order cannot be fulfilled, inform the customer accordingly and stop processing.
-            5. Use calculate_prices to determine pricing for the requested items (stores results in state)
+            5. Use calculate_prices to get pricing information for requested items (stores results in state)
             6. Use determine_order_size to classify the order size (stores results in state)
             7. Use calculate_discounted_prices to apply any discounts based on historical quotes (stores results in state)
             8. Use get_delivery_schedule to arrange deliveries (stores results in state)
@@ -1204,6 +1220,7 @@ def run_test_scenarios():
     ############
 
     orchestration_agent = OrchestrationAgent(server_model)
+    orchestration_agent.max_tool_threads = 1
 
     results = []
     for idx, row in quote_requests_sample.iterrows():
@@ -1248,8 +1265,6 @@ def run_test_scenarios():
         )
 
         time.sleep(1)
-        if idx == 2:  # Limit to first 3 requests for testing
-            break
 
     # Final report
     final_date = quote_requests_sample["request_date"].max().strftime("%Y-%m-%d")
