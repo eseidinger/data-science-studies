@@ -1,14 +1,16 @@
+import os
+import time
+import ast
+from dataclasses import dataclass
+from typing import Dict, List, Optional, Union
+from enum import Enum
+from datetime import datetime, timedelta
+
 from matplotlib import category
 import pandas as pd
 import numpy as np
-import os
-import time
-import dotenv
-import ast
-from dataclasses import dataclass
+
 from sqlalchemy.sql import text
-from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Union
 from sqlalchemy import create_engine, Engine
 
 from dotenv import load_dotenv
@@ -624,12 +626,13 @@ def get_inventory_snapshot(as_of_date: str) -> Dict[str, int]:
     return get_all_inventory(as_of_date)
 
 @tool
-def check_restock_needed(item_name: str, as_of_date: str) -> bool:
+def check_restock_needed(item_name: str, requested_amount: int, as_of_date: str) -> bool:
     """
     Tool to check if a specific item needs restocking as of a given date.
     
     Args:
         item_name (str): The name of the item to check.
+        requested_amount (int): The amount requested by a customer.
         as_of_date (str): The date to check stock levels against (ISO format).
     Returns:
         bool: True if restocking is needed, False otherwise.
@@ -648,7 +651,7 @@ def check_restock_needed(item_name: str, as_of_date: str) -> bool:
 
     min_stock_level = inventory_df["min_stock_level"].iloc[0]
 
-    return current_stock < min_stock_level
+    return current_stock < min_stock_level + requested_amount
 
 
 @tool
@@ -702,6 +705,20 @@ def get_item_price(item_name: str) -> float:
 # Tools for ordering agent
 
 @tool
+def get_delivery_date(item_name: str, quantity: int, order_date: str) -> str:
+    """
+    Tool to get the estimated delivery date for an ordered item.
+
+    Args:
+        item_name (str): The name of the item.
+        quantity (int): The quantity ordered.
+        order_date (str): The date the order is placed (ISO format).
+    Returns:
+        str: Estimated delivery date.
+    """
+    return get_supplier_delivery_date(order_date, quantity)
+
+@tool
 def order_stock(item_name: str, quantity: int, order_date: str) -> str:
     """
     Tool to place an order for stock replenishment.
@@ -731,28 +748,29 @@ def order_stock(item_name: str, quantity: int, order_date: str) -> str:
 
 
 @tool
-def schedule_delivery(item_name: str, quantity: int, order_date: str, out_of_stock: bool) -> str:
+def schedule_delivery(item_name: str, quantity: int, unit_price: float, order_date: str, supplier_delivery_date: Optional[str]) -> str:
     """
     Tool to schedule delivery for an ordered item.
 
     Args:
         item_name (str): The name of the item.
         quantity (int): The quantity ordered.
+        unit_price (float): The unit price of the item.
         order_date (str): The date the order was placed (ISO format).
-        out_of_stock (bool): Whether the item was out of stock at the time of order.
+        supplier_delivery_date (Optional[str]): The supplier's estimated delivery date (ISO format).
     Returns:
         str: Estimated delivery date.
     """
-    delivery_date = get_supplier_delivery_date(order_date, quantity) if out_of_stock else order_date
-    price = get_item_price(item_name) * quantity
+    delivery_date = supplier_delivery_date if supplier_delivery_date else order_date
     create_transaction(
         item_name=item_name,
         transaction_type="sales",
         quantity=quantity,
-        price=price * quantity,
+        price=unit_price * quantity,
         date=delivery_date,
     )
     return f"Estimated delivery date for {quantity} units of {item_name} ordered on {order_date} is {delivery_date}."
+
 
 # Set up your agents and create an orchestration agent that will manage them.
 class InventoryAgent(ToolCallingAgent):
@@ -787,17 +805,33 @@ class ItemQuantity:
     item_name: str
     quantity: int
 
+class ItemAvailability(Enum):
+    IN_STOCK = "in_stock"
+    NEEDS_RESTOCK = "needs_restock"
+    UNAVAILABLE = "unavailable"
+
 @dataclass
 class InventoryResult:
-    items_available: List[str]
-    items_to_restock: List[str]
+    item_name: str
+    availability: ItemAvailability
 
 @dataclass
 class PriceInfo:
     item_name: str
     unit_price: float
-    discounted_price: float = None
-    discount_reason: str = None
+
+
+class OrderSize(Enum):
+    SMALL = "small"
+    MEDIUM = "medium"
+    LARGE = "large"
+
+@dataclass
+class DiscountInfo:
+    item_name: str
+    sales_price: float
+    discount_price: float
+    reason: str
 
 @dataclass
 class DeliveryInfo:
@@ -811,102 +845,303 @@ class OrchestrationAgent(ToolCallingAgent):
         self.inventory_agent = InventoryAgent(model)
         self.quoting_agent = QuotingAgent(model)
         self.ordering_agent = OrderingAgent(model)
+        
+        # Initialize state storage for intermediate results
+        self.state = {
+            "original_request": None,
+            "request_date": None,
+            "requested_items": None,
+            "inventory_result": None,
+            "price_info": None,
+            "order_size": None,
+            "discount_info": None,
+            "delivery_info": None,
+            "final_quote": None
+        }
 
         @tool
-        def process_request(original_request: str, as_of_date: str) -> List[ItemQuantity]:
+        def process_request(original_request: str, request_date: str, latest_date: Optional[str] = None) -> List[ItemQuantity]:
             """
             Process the original customer request to extract requested items and quantities.
+            Stores results in agent state for use by subsequent tools.
 
             Args:
                 original_request: The original customer request string.
-                as_of_date: Date to check stock levels against (ISO format).
+                request_date: Date to check stock levels against (ISO format).
+                latest_date: Latest acceptable date for order fulfillment (ISO format, optional).
             Returns:
                 List of RequestedItem objects.
             """
-            return self.inventory_agent.run(f"""
+            # Store original request for later reference
+            self.state["original_request"] = original_request
+            self.state["request_date"] = request_date
+            self.state["latest_date"] = latest_date
+            
+            result = self.inventory_agent.run(f"""
             The customer request is: "{original_request}"
-            The date of the request is: "{as_of_date}"
+            The date of the request is: "{request_date}"
             Determine items and quantities requested by the customer.
-            Use get_inventory_snapshot to get the current inventory and find closest matching item names from the inventory.
-            Use names from the inventory for requested items.
+            Use get_inventory_snapshot to get the current inventory.
+            Map names in the request to inventory item names if possible.
             
             Return the requested items as a list of ItemQuantity objects.
             """)
+            
+            # Store intermediate result
+            self.state["requested_items"] = result
+            return result
         
         @tool
-        def check_inventory(requested_items: List[ItemQuantity], as_of_date: str) -> InventoryResult:
+        def check_inventory(requested_items: List[ItemQuantity] = None, request_date: str = None) -> InventoryResult:
             """
             Check inventory for requested items and determine availability.
+            Can use stored values from previous process_request if parameters not provided.
 
             Args:
-                requested_items: List of RequestedItem objects.
-                as_of_date: Date to check stock levels against (ISO format).
+                requested_items: List of RequestedItem objects (optional - uses stored if not provided).
+                request_date: Date to check stock levels against (ISO format, optional - uses stored if not provided).
             Returns:
-                InventoryResult object with lists of available items and items needing restocking.
+                InventoryResult object with list of item availabilities.
             """
-            return self.inventory_agent.run(f"""
+            # Use stored values if not provided
+            if requested_items is None:
+                requested_items = self.state["requested_items"]
+            if request_date is None:
+                request_date = self.state["request_date"]
+                
+            result = self.inventory_agent.run(f"""
             The requested items are: "{requested_items}"
-            The date to check inventory is: "{as_of_date}"
+            The date to check inventory is: "{request_date}"
             For each item, check if it is in inventory using is_product_in_inventory.
             For each requested item that is in inventory, check if restocking is needed using check_restock_needed.
-            Return an InventoryResult object with lists of items that are either available or need restocking.
+            Return an InventoryResult object with list of item availabilities.
             """)
+            
+            # Store result
+            self.state["inventory_result"] = result
+            return result
         
         @tool
-        def calculate_prices(inventory_result: InventoryResult, original_request: str) -> List[PriceInfo]:
+        def can_order_be_fulfilled(inventory_result: InventoryResult = None, request_date: str = None, latest_date: str = None) -> bool:
             """
-            Calculate prices for requested items based on inventory results.
+            Determine if the order can be fulfilled based on inventory results.
+            Can use stored values if parameters not provided.
 
             Args:
-                inventory_result: The result from check_inventory.
-                original_request: The original customer request string.
+                inventory_result: The result from check_inventory (optional - uses stored if not provided).
+                request_date: The date the order is placed (ISO format, optional - uses stored if not provided).
+                latest_date: Latest acceptable date for order fulfillment (ISO format, optional - uses stored if not provided).
+            Returns:
+                bool: True if all items can be fulfilled, False otherwise.
+            """
+            # Use stored value if not provided
+            if inventory_result is None:
+                inventory_result = self.state["inventory_result"]
+            if request_date is None:
+                request_date = self.state["request_date"]
+            if latest_date is None:
+                latest_date = self.state["latest_date"]
+                
+            result = self.inventory_agent.run(f"""
+            The inventory result is: "{inventory_result}"
+            The latest acceptable date for order fulfillment is: "{latest_date}"
+            Determine if all requested items can be fulfilled (either in stock or can be restocked).
+            For each item that needs restocking, check if it can be delivered by the latest acceptable date using get_delivery_date.
+            Return True if all items can be fulfilled, otherwise return False.
+            """)
+            
+            return result
+
+        
+        @tool
+        def calculate_prices(inventory_result: InventoryResult = None) -> List[PriceInfo]:
+            """
+            Calculate prices for requested items based on inventory results.
+            Can use stored values if parameters not provided.
+
+            Args:
+                inventory_result: The result from check_inventory (optional - uses stored if not provided).
             Returns:
                 List of PriceInfo objects with item names, unit price and any discounts applied with reasons.
             """
-            return self.quoting_agent.run(f"""
+            # Use stored values if not provided
+            if inventory_result is None:
+                inventory_result = self.state["inventory_result"]
+                
+            result = self.quoting_agent.run(f"""
             The inventory result is: "{inventory_result}"
-            The original customer request is: "{original_request}"
-            For each available or restocking item, get the unit price using get_item_price.
-            Fetch historical quotes using fetch_historical_quotes for each requested item, using the original_request as search terms.
-            Use historical pricing data to determine a competitive price and discount if applicable.
-            If no historical data is found, use the current unit price from get_item_price.
+            For each item in stock or in need of restocking, get the unit price using get_item_price.
+            Apply a standard markup of 20% to determine the sales price.
+            Return a list of PriceInfo objects with item names and unit prices.
             """)
-
+            
+            # Store result
+            self.state["price_info"] = result
+            return result
+        
         @tool
-        def get_delivery_schedule(inventory_result: InventoryResult, order_date: str) -> List[DeliveryInfo]:
+        def determine_order_size(requested_items: List[ItemQuantity] = None) -> OrderSize:
             """
-            Get delivery schedule for items based on inventory results.
+            Determine the order size (small, medium, large) based on the original customer request.
 
             Args:
-                inventory_result: The result from check_inventory.
-                order_date: The date the order is placed (ISO format).
+                requested_items: List of ItemQuantity objects (optional - uses stored if not provided).
+            Returns:
+                OrderSize enum value.
+            """
+            # Use stored value if not provided
+            if requested_items is None:
+                requested_items = self.state["requested_items"]
+
+            result = self.quoting_agent.run(f"""
+            The customer request is: "{requested_items}"
+            Analyze the request to determine the order size as small, medium, or large.
+            Use historical quotes as reference if needed by fetching them using fetch_historical_quotes using item names as search terms.
+            Return the order size as an OrderSize enum value.
+            """)
+
+            # Store result
+            self.state["order_size"] = result
+            return result
+
+        @tool
+        def calculate_discounted_prices(price_info: List[PriceInfo] = None, order_size: OrderSize = None) -> List[DiscountInfo]:
+            """
+            Calculate discounted prices for items based on historical quotes and original request.
+
+            Args:
+                price_info: List of PriceInfo objects (optional - uses stored if not provided).
+                order_size: The determined order size (optional - uses stored if not provided).
+            Returns:
+                List of PriceInfo objects with updated discounted prices and reasons.
+            """
+            # Use stored values if not provided
+            if price_info is None:
+                price_info = self.state["price_info"]
+            if order_size is None:
+                order_size = self.state["order_size"]
+            
+            result = self.quoting_agent.run(f"""
+            The price information is: "{price_info}"
+            The order size is: "{order_size}"
+            Based on the order size, determine if any discounts should be applied to the sales prices.
+            For small orders, apply no discount.
+            For medium orders, apply a 5% discount.
+            For large orders, apply a 10% discount.
+            """)
+
+            # Store result
+            self.state["discounted_prices_info"] = result
+            return result
+
+        @tool
+        def get_delivery_schedule(requested_items: List[ItemQuantity] = None, inventory_result: List[InventoryResult] = None, order_date: str = None) -> List[DeliveryInfo]:
+            """
+            Get delivery schedule for items based on inventory results.
+            Can use stored values if parameters not provided.
+
+            Args:
+                requested_items: List of ItemQuantity objects (optional - uses stored if not provided).
+                inventory_result: The result from check_inventory (optional - uses stored if not provided).
+                order_date: The date the order is placed (ISO format, optional - uses stored if not provided).
             Returns:
                 List of DeliveryInfo objects with item names, quantities, and delivery dates.
             """
-            return self.ordering_agent.run(f"""
+            # Use stored values if not provided
+            if requested_items is None:
+                requested_items = self.state["requested_items"]
+            if inventory_result is None:
+                inventory_result = self.state["inventory_result"]
+            if order_date is None:
+                order_date = self.state["request_date"]
+                
+            result = self.ordering_agent.run(f"""
+            The requested items are: "{requested_items}"
             The inventory result is: "{inventory_result}"
             The order date is: "{order_date}"
-            For each item that needs restocking, place an order using order_stock.
-            For each item, schedule delivery using schedule_delivery.
+            For each item that needs restocking, place an order for the requested quantity using order_stock.
+            For each item in the inventory, schedule delivery for the requested quantity using schedule_delivery.
             """)
+            
+            # Store result
+            self.state["delivery_info"] = result
+            return result
         
         @tool
-        def create_quote(delivery_info: List[DeliveryInfo], price_info: List[PriceInfo]) -> str:
+        def create_quote(delivery_info: List[DeliveryInfo] = None, discounted_prices_info: List[DiscountInfo] = None) -> str:
             """
-            Create a quote for the customer based on delivery and price information.
+            Create a quote for the customer based on delivery and discounted price information.
+            Can use stored values if parameters not provided.
 
             Args:
-                delivery_info: List of DeliveryInfo objects.
-                price_info: List of PriceInfo objects.
+                delivery_info: List of DeliveryInfo objects (optional - uses stored if not provided).
+                discounted_prices_info: List of DiscountInfo objects (optional - uses stored if not provided).
+            Returns:
+                str: Formatted quote for the customer.
             """
-            return self.quoting_agent.run(f"""
+            # Use stored values if not provided
+            if delivery_info is None:
+                delivery_info = self.state["delivery_info"]
+            if discounted_prices_info is None:
+                discounted_prices_info = self.state["discounted_prices_info"]
+                
+            result = self.quoting_agent.run(f"""
             The delivery information is: "{delivery_info}"
-            The price information is: "{price_info}"
-            Generate a quote based on the delivery and price information.
+            The discounted price information is: "{discounted_prices_info}"
+            Generate a quote based on the delivery and discounted price information.
+            Format the quote clearly for the customer, including itemized prices, any discounts applied with reasons, and delivery dates.
             """)
+            
+            # Store final quote
+            self.state["final_quote"] = result
+            return result
+        
+        @tool
+        def get_state(key: str = None) -> dict:
+            """
+            Retrieve stored state for debugging or accessing previous results.
+
+            Args:
+                key: Optional specific state key to retrieve. If None, returns all state.
+            Returns:
+                dict: The requested state value(s).
+            """
+            if key:
+                return {key: self.state.get(key)}
+            return self.state.copy()
+        
+        @tool
+        def reset_state() -> str:
+            """
+            Clear all stored intermediate results and prepare for a new request.
+
+            Returns:
+                str: Confirmation message.
+            """
+            self.state = {
+                "original_request": None,
+                "request_date": None,
+                "requested_items": None,
+                "inventory_result": None,
+                "price_info": None,
+                "delivery_info": None,
+                "final_quote": None
+            }
+            return "State cleared successfully - ready for new request"
 
         super().__init__(
-            tools=[process_request, check_inventory, calculate_prices, get_delivery_schedule, create_quote],
+            tools=[
+                process_request,
+                check_inventory,
+                can_order_be_fulfilled,
+                calculate_prices,
+                determine_order_size,
+                calculate_discounted_prices,
+                get_delivery_schedule,
+                create_quote,
+                get_state,
+                reset_state
+            ],
             model=model,
             name="orchestration_agent",
             description="""
@@ -915,11 +1150,21 @@ class OrchestrationAgent(ToolCallingAgent):
             
             For customer requests, follow this workflow:
             1. Extract the date of the request
-            2. Determine requested items and quantities using process_request
-            3. Use check_inventory to verify wether items are in inventory and wether they need restocking
-            4. Use calculate_prices to determine pricing for the requested items
-            5. Use get_delivery_schedule to arrange deliveries
-            6. Use create_quote to generate a final quote for the customer
+            2. Determine requested items and quantities using process_request (stores results in state)
+            3. Use check_inventory to verify wether items are in inventory and wether they need restocking (stores results in state)
+            4. Use can_order_be_fulfilled to check if the order can be fulfilled based on inventory and delivery dates (stores results in state)
+               If the order cannot be fulfilled, inform the customer accordingly and stop processing.
+            5. Use calculate_prices to determine pricing for the requested items (stores results in state)
+            6. Use determine_order_size to classify the order size (stores results in state)
+            7. Use calculate_discounted_prices to apply any discounts based on historical quotes (stores results in state)
+            8. Use get_delivery_schedule to arrange deliveries (stores results in state)
+            9. Use create_quote to generate a final quote for the customer (stores results in state)
+
+            Output the final quote as the response to the customer.
+            
+            Note: Most tools can use stored state values automatically if parameters are not provided.
+            Use get_state to inspect intermediate results if needed.
+            Use reset_state when starting a new customer request.
             """,
         )
 
@@ -1003,7 +1248,8 @@ def run_test_scenarios():
         )
 
         time.sleep(1)
-        break
+        if idx == 2:  # Limit to first 3 requests for testing
+            break
 
     # Final report
     final_date = quote_requests_sample["request_date"].max().strftime("%Y-%m-%d")
