@@ -611,12 +611,12 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 # )
 
 worker_model = OpenAIServerModel(
-    model_id="gpt-4.1-mini",
+    model_id="gpt-4.1",
     api_key=openai_api_key,
 )
 
 orchestrator_model = OpenAIServerModel(
-    model_id="gpt-4.1-mini",
+    model_id="gpt-4.1",
     api_key=openai_api_key,
 )
 
@@ -1249,7 +1249,7 @@ class OrchestrationAgent(ToolCallingAgent):
             """
             discount_analysis = self.quoting_agent.run(
                 f"The inventory analysis is: {inventory_analysis}\n"
-                "Use the discount_analyzer tool to generate a discount analysis based on this information.\n"
+                "Use the discount_analyzer tool to generate a discount analysis using the exact format of the inventory analysis.\n"
                 "Return the DiscountAnalysisResult returned by the tool as final output."
             )
 
@@ -1269,7 +1269,7 @@ class OrchestrationAgent(ToolCallingAgent):
             quote = self.quoting_agent.run(
                 f"The inventory analysis result is: {inventory_analysis}\n"
                 f"The discount analysis result is: {discount_analysis}\n"
-                "Use the generate_quote tool with exactly these inputs.\n"
+                "Use the generate_quote tool with the exact format of these inputs.\n"
                 "Return the Quote object returned by the tool as final output."
             )
             return quote
@@ -1287,7 +1287,7 @@ class OrchestrationAgent(ToolCallingAgent):
             """
             order_confirmation = self.ordering_agent.run(
                 f"The inventory analysis result is: {inventory_analysis}\n"
-                "Use the order_stock tool to place stock orders based on the inventory analysis.\n"
+                "Use the order_stock tool to place stock orders using the exact format of the inventory analysis.\n"
                 "Return the output of the tool as final output."
             )
             return order_confirmation
@@ -1335,7 +1335,7 @@ class OrchestrationAgent(ToolCallingAgent):
             """
             delivery_confirmation = self.ordering_agent.run(
                 f"The generated quote is: {quote}\n"
-                "Use the schedule_delivery tool to schedule deliveries based on the quote.\n"
+                "Use the schedule_delivery tool to schedule deliveries using the exact format of the quote.\n"
                 "Return the output of the tool as final output."
             )
             return delivery_confirmation
@@ -1364,9 +1364,10 @@ class OrchestrationAgent(ToolCallingAgent):
 
                 "3. Use the analyze_discount tool to generate a discount analysis based on the full inventory analysis.\n"
                 "4. Use the generate_quote tool to create the quote based on the full inventory analysis and discount analysis.\n"
-                "5. Use the place_stock_orders tool to place stock orders based on the inventory analysis.\n"
-                "6. Use the schedule_deliveries tool to schedule deliveries based on the generated quote.\n"
-                "7. Finally, use the create_formatted_quote tool to generate a formatted string representation of the quote to present to the customer as final output.\n"
+                "5. Use the place_stock_orders tool to place stock orders using the exact format of the inventory analysis.\n"
+                "6. Use the schedule_deliveries tool to schedule deliveries using the exact format of the generated quote.\n"
+                "7. Use the create_formatted_quote tool to generate a formatted string using the exact format of the generated quote.\n"
+                "8. Return the exact formatted quote as the final output."
             )
         )
 

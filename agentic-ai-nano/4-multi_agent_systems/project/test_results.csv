@@ -1,8 +1,49 @@
 request_id,request_date,cash_balance,inventory_value,response
-1,2025-04-01,45059.7,4940.299999999999,"Your request for paper supplies has been successfully processed. Here are the details of your order:
+1,2025-04-01,45144.7,4875.3,"Quote Details for Ceremony Order:
 
-- **200 sheets of A4 glossy paper**
-- **100 sheets of heavy cardstock (white)**
-- **100 sheets of colored paper (assorted colors)**
+- Item: Glossy paper, Requested Amount: 200, Unit Price: $0.26, Total Price: $52.00
+- Item: Cardstock, Requested Amount: 100, Unit Price: $0.20, Total Price: $20.00
+- Item: Colored paper, Requested Amount: 100, Unit Price: $0.13, Total Price: $13.00
 
-These supplies will be delivered by April 15, 2025. If you need any further assistance, feel free to ask. Thank you!"
+Total Amount before Discount: $85.00
+Total Amount with Discount: $80.75
+Estimated Delivery Date: 2025-04-01
+Discount Applied: $4.25 (5% discount applied as a reward for a medium-sized ceremonial event order)
+Comments: Quote generated successfully."
+2,2025-04-03,45144.7,4875.3,"The order cannot be fulfilled because none of the requested items (colorful poster paper, streamers, or balloons) are currently in inventory, and there is no supplier delivery date available for restocking. Therefore, we are unable to meet your requested delivery date of April 15, 2025."
+3,2025-04-04,45144.7,4875.3,"The order cannot be fulfilled because A3 paper and printer paper are currently not available in inventory, and no supplier delivery dates are provided for these items. Therefore, we are unable to confirm the order or delivery schedule as requested."
+4,2025-04-05,45116.1,4903.9,"Quote Details:
+- Item: Cardstock, Requested Amount: 500, Unit Price: $0.20, Total Price: $100.00
+- Item: A4 paper, Requested Amount: 250, Unit Price: $0.07, Total Price: $17.50
+Total Amount before Discount: $117.50
+Total Amount with Discount: $111.62
+Estimated Delivery Date: 2025-04-09
+Discount Applied: $5.88 (The order is moderately sized—500 sheets of cardstock and 250 sheets of A4 paper—for a reception, which is smaller than several of the large bulk event orders. Historical quotes show that 10% discounts are typically offered on very large bulk orders (hundreds of reams/multiple item types), while smaller bulk sheet orders receive a smaller price adjustment or a partial discount. Since this reception order is significant but less than the largest historic orders, a 5% bulk discount is appropriate.)
+Comments: Quote generated successfully."
+5,2025-04-05,45116.1,4903.9,"The order cannot be fulfilled because Decorative washi tape is not in inventory and there is no supplier delivery date available to restock before your desired delivery date of April 15, 2025."
+6,2025-04-06,45116.1,4903.9,The order cannot be fulfilled because colorful construction paper is not currently in inventory and there is no supplier delivery date available for it. Please contact us for alternatives or updated availability.
+7,2025-04-07,45116.1,4903.9,"The order cannot be fulfilled as requested because Matte A3 paper is currently unavailable and cannot be sourced from suppliers by the required delivery date (April 15, 2025). Please let us know if you would like to adjust your order or choose alternative items."
+8,2025-04-07,45116.1,4903.9,"The order cannot be fulfilled because some requested items (A4 matte paper and A4 recycled paper) are not currently in inventory and do not have a supplier delivery date, making it impossible to guarantee delivery by April 15, 2025."
+9,2025-04-07,45116.1,4903.9,"Unfortunately, we are unable to fulfill your order because the item ""100% recycled kraft paper envelopes"" is currently not in our inventory and cannot be supplied by your requested delivery date of April 10, 2025. Please let us know if you would like a partial order or would like to select an alternative product."
+13,2025-04-08,45116.1,4903.9,"The order cannot be fulfilled as requested because the available inventory of A4 paper is insufficient and the soonest restock from the supplier is not available until April 12, 2025—after your requested delivery date of April 10, 2025. Please let us know if you would like to adjust your order or consider an alternate delivery date."
+12,2025-04-08,45116.1,4903.9,"The order cannot be fulfilled because 'Paper napkins' are not available in inventory, and there is no supplier delivery date for this item. Please advise if you would like to proceed without the paper napkins or substitute with a different product."
+10,2025-04-08,45116.1,4903.9,"Quote Details:
+- Item: Glossy paper, Requested Amount: 500, Unit Price: $0.26, Total Price: $130.00
+- Item: Cardstock, Requested Amount: 300, Unit Price: $0.20, Total Price: $60.00
+Total Amount before Discount: $190.00
+Total Amount with Discount: $171.00
+Estimated Delivery Date: 2025-04-12
+Discount Applied: $19.00 (The order size for glossy paper and cardstock (500 + 300 units) is similar to prior large orders (e.g., 500 reams + 300 reams or 500 sheets + 300 sheets) that received a 10% discount. Event type is 'show', comparable in scope to previous 'event' or 'assembly' orders where bulk discounts were consistently awarded at this level to reward larger needs and to make the total more budget-friendly.)
+Comments: Quote generated successfully."
+11,2025-04-08,45116.1,4903.9,The order cannot be fulfilled because A4 matte paper is not currently available in inventory and there is no supplier delivery date provided for restocking. Please contact us if you would like to discuss alternatives or substitute items.
+14,2025-04-09,45233.6,4816.4,"The order cannot be fulfilled. The earliest supplier delivery date for the required restocks is April 16, 2025, which is after the requested delivery date of April 15, 2025. Therefore, delivery by your requested date is not possible."
+15,2025-04-12,45423.6,4671.4,"The order cannot be fulfilled as requested. The items (A4 paper and colored paper) cannot be restocked and delivered by your required delivery date of April 15, 2025—the earliest available delivery from suppliers is April 19, 2025. Additionally, cardboard for signage is not currently available and there is no supplier delivery date provided for it. Please let us know if you'd like to proceed with an alternative delivery date or modify your order."
+16,2025-04-13,45423.6,4671.4,"The order cannot be fulfilled because:
+- A4 printer paper: The supplier delivery date is April 17, 2025, which is after your requested delivery date of April 15, 2025.
+- Construction paper and poster board: These items are not in inventory and have no available supplier delivery date.
+
+As a result, we cannot deliver the requested items by April 15, 2025. Please let us know if you would like to change your order or the delivery date."
+17,2025-04-14,45423.6,4671.4,"The order cannot be fulfilled as requested. Several items (A4 paper, table napkins, and paper cups) are either out of stock or cannot be restocked before your required delivery date of April 15, 2025. The earliest possible full delivery is April 18, 2025. Please let us know if you would like to proceed with this revised delivery date or adjust your order."
+18,2025-04-14,45423.6,4671.4,"The order cannot be fulfilled. Reason: We do not have sufficient stock of high-quality white cardstock (short by 152 sheets and the earliest supplier delivery is on April 18, 2025), and we have no stock or supplier delivery date for standard printing paper. The earliest possible delivery of any items (excluding standard printing paper) would be April 18, which is after your required date of April 15, 2025."
+19,2025-04-15,45423.6,4671.4,"The order cannot be fulfilled because none of the requested paper supplies (A4 glossy paper, A3 matte paper, cardstock in assorted colors) are currently available in inventory, and there is no information on when they can be restocked or delivered by the required deadline (April 20, 2025)."
+20,2025-04-17,45423.6,4671.4,"The order cannot be fulfilled because none of the requested items (flyers, posters, tickets) are in inventory or available for restock and delivery by the required deadline (May 15, 2025)."
