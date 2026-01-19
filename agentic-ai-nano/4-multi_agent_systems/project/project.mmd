@@ -1,54 +1,51 @@
 graph TB
     Start([Customer Request]) --> Orchestrator[OrchestrationAgent]
     
-    Orchestrator --> ProcessRequest[1. Process Request]
-    ProcessRequest --> InvAgent1[InventoryAgent:<br/>get_inventory_snapshot]
-    InvAgent1 --> ExtractItems[Extract Items & Quantities]
+    Orchestrator --> Step1[1. process_request]
+    Step1 --> InvAgent[InventoryAgent]
+    InvAgent --> OrderParser[OrderParser Tool]
+    OrderParser --> AnalyzeInv[analyze_order_inventory Tool]
+    AnalyzeInv --> InvResult[InventoryAnalysisResult]
     
-    ExtractItems --> CheckInv[2. Check Inventory]
-    CheckInv --> InvAgent2[InventoryAgent]
-    InvAgent2 --> InvCheck1[is_product_in_inventory]
-    InvCheck1 --> InvCheck2[check_restock_needed]
-    InvCheck2 --> InvResult{Inventory Result}
+    InvResult --> Decision{Can Fulfill?}
+    Decision -->|No| StopProcessing([Stop: Cannot Fulfill])
+    Decision -->|Yes| Step2[2. analyze_discount]
     
-    InvResult --> Available[Items Available]
-    InvResult --> Restock[Items Need Restocking]
+    Step2 --> QuoteAgent1[QuotingAgent]
+    QuoteAgent1 --> DiscountTool[DiscountAnalyzer Tool]
+    DiscountTool --> DiscountResult[DiscountAnalysisResult]
     
-    Available --> CalcPrice[3. Calculate Prices]
-    Restock --> CalcPrice
+    DiscountResult --> Step3[3. generate_quote]
+    Step3 --> QuoteAgent2[QuotingAgent]
+    QuoteAgent2 --> QuoteTool[QuoteGenerator Tool]
+    QuoteTool --> QuoteResult[Quote Object]
     
-    CalcPrice --> QuoteAgent1[QuotingAgent]
-    QuoteAgent1 --> GetPrice[get_item_price]
-    QuoteAgent1 --> FetchHistory[fetch_historical_quotes]
-    FetchHistory --> PriceInfo[Price Information]
-    GetPrice --> PriceInfo
+    QuoteResult --> Step4[4. place_stock_orders]
+    Step4 --> OrderAgent1[OrderingAgent]
+    OrderAgent1 --> StockTool[StockOrder Tool]
+    StockTool --> OrderConfirm[Order Confirmation]
     
-    Restock --> GetDelivery[4. Get Delivery Schedule]
-    GetDelivery --> OrderAgent1[OrderingAgent]
-    OrderAgent1 --> PlaceOrder[order_stock]
-    PlaceOrder --> ScheduleDeliv[schedule_delivery]
-    ScheduleDeliv --> DeliveryInfo[Delivery Information]
+    OrderConfirm --> Step5[5. schedule_deliveries]
+    Step5 --> OrderAgent2[OrderingAgent]
+    OrderAgent2 --> DeliveryTool[DeliveryScheduler Tool]
+    DeliveryTool --> DeliveryConfirm[Delivery Confirmation]
     
-    PriceInfo --> CreateQuote[5. Create Quote]
-    DeliveryInfo --> CreateQuote
-    CreateQuote --> QuoteAgent2[QuotingAgent:<br/>Generate Final Quote]
-    QuoteAgent2 --> FinalQuote([Customer Quote])
+    DeliveryConfirm --> Step6[6. create_formatted_quote]
+    Step6 --> FinalQuote([Formatted Customer Quote])
     
     subgraph InventoryAgent_Tools
-        InvCheck1
-        InvCheck2
-        InvAgent1
+        OrderParser
+        AnalyzeInv
     end
     
     subgraph QuotingAgent_Tools
-        GetPrice
-        FetchHistory
-        QuoteAgent2
+        DiscountTool
+        QuoteTool
     end
     
     subgraph OrderingAgent_Tools
-        PlaceOrder
-        ScheduleDeliv
+        StockTool
+        DeliveryTool
     end
     
     style Orchestrator fill:#ff9999,stroke:#333,stroke-width:3px
@@ -57,3 +54,5 @@ graph TB
     style OrderingAgent_Tools fill:#ffcc99,stroke:#333,stroke-width:2px
     style Start fill:#e6e6fa,stroke:#333,stroke-width:2px
     style FinalQuote fill:#90ee90,stroke:#333,stroke-width:3px
+    style StopProcessing fill:#ffcccc,stroke:#333,stroke-width:2px
+    style Decision fill:#ffffcc,stroke:#333,stroke-width:2px
