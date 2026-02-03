@@ -33,3 +33,4 @@ chromadb
 pdfplumber
 tavily
 smolagents
+gymnasium
