@@ -1,0 +1,42 @@
+--extra-index-url https://pypi.ngc.nvidia.com
+--extra-index-url https://download.pytorch.org/whl/cu121
+# nvidia-pyindex
+nvidia-cuda-runtime-cu12
+torch
+torchvision
+torchaudio
+jupyterlab
+ipywidgets
+transformers[torch]
+sentence-transformers
+evaluate
+datasets
+peft
+pandas
+matplotlib
+numpy==1.26.4
+scikit-learn
+python-dotenv
+openai==0.28
+transformers
+bertviz
+plotly
+tiktoken
+symspellpy
+dlib
+face-recognition
+ema-pytorch
+opencv-python
+timm
+ninja
+cuda-python
+diffusers
+imageio
+imageio[pyav]
+pytest
+lancedb
+pydantic
+langchain
+langchain-core
+langchain-community
+chromadb
